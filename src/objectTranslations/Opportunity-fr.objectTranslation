@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- If you have moved this opportunity to Closed Lost with a reason of &quot;Won with Another Opportunity&quot; please look up the winning opportunity here.  The winning opportunity must be in Closed Won in order for you to select it. --></help>
+        <label><!-- Associated Winning Opportunity --></label>
+        <name>Associated_Winning_Opportunity__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Payeur</label>
+        <name>Bill_To__c</name>
+        <relationshipLabel>Opportunités (payeur)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Budget confirmé</label>
+        <name>Budget_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label>Perdu en faveur de ce concurrent</label>
+        <name>Competitor_Lost_To__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez les concurrents qui font également une offre pour cette opportunité</help>
+        <label>Concurrent(s)</label>
+        <name>Competitors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label>Concurrent DB</label>
+        <name>DB_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation>Concurrent A</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation>Concurrent B</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation>Concurrent C</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Découverte terminée</label>
+        <name>Discovery_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA SAP Ready --></label>
+        <name>EMEA_SAP_Ready__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA SAP Required Data Checklist --></label>
+        <name>EMEA_SAP_Required_Data_Checklist__c</name>
+    </fields>
+    <fields>
+        <label>Utilisateur final</label>
+        <name>End_User__c</name>
+        <relationshipLabel>Opportunités</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Exclure du pipeline</label>
+        <name>Exclude_from_Exec_Pipeline__c</name>
+    </fields>
+    <fields>
+        <label>Industrie</label>
+        <name>Industry__c</name>
+    </fields>
+    <fields>
+        <label>Secteur d&apos;activité</label>
+        <name>LOB_Lookup__c</name>
+        <relationshipLabel>Opportunités</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Dernier message entrant</label>
+        <name>Last_Inbound_Message__c</name>
+    </fields>
+    <fields>
+        <label>Dernière étiquette entrante</label>
+        <name>Last_Inbound_Tag__c</name>
+    </fields>
+    <fields>
+        <label>Dernière heure entrante</label>
+        <name>Last_Inbound_Time__c</name>
+    </fields>
+    <fields>
+        <label>Motif de la perte</label>
+        <name>Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation>Perdu en faveur de ce concurrent</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Budget / Lost Funding</masterLabel>
+            <translation>Pas de budget/Financement perdu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Decision / Non-Responsive</masterLabel>
+            <translation>Sans décision/Non réactif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Autre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Prix</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Dup possible</label>
+        <name>Possible_Dup__c</name>
+    </fields>
+    <fields>
+        <label>Devis primaire approuvé</label>
+        <name>Primary_Quote_approved__c</name>
+    </fields>
+    <fields>
+        <help>Si cette opportunité fait partie d&apos;un projet plus grand, vous pouvez rechercher le projet et y associer cette opportunité.</help>
+        <label>Projet</label>
+        <name>Project__c</name>
+        <relationshipLabel>Opportunités</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Analyse ROI terminée</label>
+        <name>ROI_Analysis_Completed__c</name>
+    </fields>
+    <fields>
+        <help>Référence à votre contrat amendé.</help>
+        <label><!-- Amended Contract --></label>
+        <name>SBQQ__AmendedContract__c</name>
+        <relationshipLabel><!-- Amendment Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Salesforce CPQ utilise ce champ pour convertir automatiquement les ressources et les abonnements.</help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour créer des prix contractés sans créer de contrat.</help>
+        <label><!-- Create Contracted Prices --></label>
+        <name>SBQQ__CreateContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help>Cochez cette case pour créer automatiquement une commande à partir du devis primaire.</help>
+        <label>Commandé</label>
+        <name>SBQQ__Ordered__c</name>
+    </fields>
+    <fields>
+        <help>Salesforce CPQ l&apos;utilise pour pointer vers le devis principal de cette opportunité.</help>
+        <label><!-- Primary Quote --></label>
+        <name>SBQQ__PrimaryQuote__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Pricebook Id --></label>
+        <name>SBQQ__QuotePricebookId__c</name>
+    </fields>
+    <fields>
+        <help>Indique que cette opportunité est un renouvellement.</help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help>Contrat renouvelé par cette opportunité de renouvellement. Si les contrats sont cumulés dans cette opportunité, il pointe vers le contrat principal.</help>
+        <label><!-- Renewed Contract --></label>
+        <name>SBQQ__RenewedContract__c</name>
+        <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SBU --></label>
+        <name>SBU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Area Code --></label>
+        <name>Sales_Area_Code__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Area Data --></label>
+        <name>Sales_Area_Data__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- On the creation of the opportunity, you can only select the Sold To Customer as the ship to. However, after creating the record, you can select any account that is associated with the Sales Area for this opportunity. --></help>
+        <label><!-- Select Ship To --></label>
+        <name>Select_Ship_To_SAD__c</name>
+        <relationshipLabel><!-- Opportunities (Ship To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- To add a ship to that does not have preexisting relationship to the sold to on a new opportunity, first save the record and then edit this field. --></help>
+        <label><!-- Ship To Data (DELETE) --></label>
+        <name>Ship_To_Data__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To Name --></label>
+        <name>Ship_To_Name__c</name>
+    </fields>
+    <fields>
+        <label>Options de site</label>
+        <name>Site_Options__c</name>
+    </fields>
+    <fields>
+        <label>Sous-section d&apos;industrie</label>
+        <name>Sub_Industry__c</name>
+    </fields>
+    <fields>
+        <label>Technologie</label>
+        <name>Technology__c</name>
+    </fields>
+    <fields>
+        <label>Motif de la réussite/perte</label>
+        <name>Win_Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Competition</masterLabel>
+            <translation>Concurrence</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leadtime</masterLabel>
+            <translation>Délai</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Relationship</masterLabel>
+            <translation>Relation personnelle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing</masterLabel>
+            <translation>Tarification</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quality</masterLabel>
+            <translation>Qualité des produits</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Delays</masterLabel>
+            <translation>Retards du projet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFP Changed</masterLabel>
+            <translation><!-- RFP Changed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation>Technologie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timing Consideration</masterLabel>
+            <translation>Considération de temps</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won with Another Opportunity</masterLabel>
+            <translation><!-- Won with Another Opportunity --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>EMEA Project CPQ Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Dup Management --></label>
+            <section>Dup Management</section>
+        </sections>
+        <sections>
+            <label>Informations principales</label>
+            <section>Key Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping --></label>
+            <section>Shipping</section>
+        </sections>
+        <sections>
+            <label>Informations sur la réussite/perte</label>
+            <section>Win/Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EMEA Repeat CPQ Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Dup Management --></label>
+            <section>Dup Management</section>
+        </sections>
+        <sections>
+            <label>Champs principaux</label>
+            <section>Key Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping --></label>
+            <section>Shipping</section>
+        </sections>
+        <sections>
+            <label>Informations sur la réussite/perte</label>
+            <section>Win/Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EMEA Standard CPQ Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Dup Management --></label>
+            <section>Dup Management</section>
+        </sections>
+        <sections>
+            <label>Champs principaux</label>
+            <section>Key Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Ship To --></label>
+            <section>Ship To</section>
+        </sections>
+        <sections>
+            <label>Informations sur la réussite/perte</label>
+            <section>Win/Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project CPQ Opportunity Layout</layout>
+        <sections>
+            <label>Personnaliser les liens</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Gestion Dup</label>
+            <section>Dup Management</section>
+        </sections>
+        <sections>
+            <label>Informations principales</label>
+            <section>Key Information</section>
+        </sections>
+        <sections>
+            <label>Secteur d&apos;activité du devis primaire</label>
+            <section>Line of Business from Primary Quote</section>
+        </sections>
+        <sections>
+            <label>Nouveau calcul</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Informations sur la réussite/perte</label>
+            <section>Win/Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Repeat CPQ Opportunity Layout</layout>
+        <sections>
+            <label>Personnaliser les liens</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Gestion Dup</label>
+            <section>Dup Management</section>
+        </sections>
+        <sections>
+            <label>Champs principaux</label>
+            <section>Key Fields</section>
+        </sections>
+        <sections>
+            <label>Secteur d&apos;activité du devis primaire</label>
+            <section>Line of Business from Primary Quote</section>
+        </sections>
+        <sections>
+            <label>Nouveau calcul</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Informations sur la réussite/perte</label>
+            <section>Win/Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Standard CPQ Opportunity Layout</layout>
+        <sections>
+            <label>Personnaliser les liens</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Gestion Dup</label>
+            <section>Dup Management</section>
+        </sections>
+        <sections>
+            <label>Champs principaux</label>
+            <section>Key Fields</section>
+        </sections>
+        <sections>
+            <label>Secteur d&apos;activité du devis primaire</label>
+            <section>Line of Business from Primary Quote</section>
+        </sections>
+        <sections>
+            <label>Nouveau calcul</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Informations sur la réussite/perte</label>
+            <section>Win/Loss Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label>Projet</label>
+        <name>Project</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Répétée</label>
+        <name>Repeat</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Opportunité standard</label>
+        <name>Standard</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Votre devis primaire doit être approuvé pour passer cet enregistrement sur GAGNÉ.</errorMessage>
+        <name>Approved_primary_quote</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field should only be edited and therefore required if the Win/Loss reason is &quot;Won with Another Opportunity&quot; --></errorMessage>
+        <name>Associated_Winning_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Veuillez sélectionner.</errorMessage>
+        <name>Closed_Lost_Competitor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Veuillez sélectionner.</errorMessage>
+        <name>Closed_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot create an Opportunity on a Account flagged as National. --></errorMessage>
+        <name>Prevent_Opp_Creation_on_National_Acc</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+</CustomObjectTranslation>

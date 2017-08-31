@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <fields>
+        <label>Konfigurator Name</label>
+        <name>Configurator_Name__c</name>
+    </fields>
+    <fields>
+        <label>Externe Id</label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label>Japan</label>
+        <name>JSON_QuoteConfig__c</name>
+    </fields>
+    <fields>
+        <label>Angebot Zeile Erstellungsdatum</label>
+        <name>Quote_Line_Creation_Date__c</name>
+    </fields>
+    <fields>
+        <label>Angebot Zeile Erstellungsfehler</label>
+        <name>Quote_Line_Creation_Errors__c</name>
+    </fields>
+    <fields>
+        <label>Angebot Zeile Erstellungswarnungen</label>
+        <name>Quote_Line_Creation_Warnings__c</name>
+    </fields>
+    <fields>
+        <label>Angebot</label>
+        <name>Quote__c</name>
+        <relationshipLabel>Externe Konfigurationen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>WS Anfrage</label>
+        <name>WS_Request__c</name>
+        <relationshipLabel>Externe Konfigurationen</relationshipLabel>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>External Configuration Layout</layout>
+        <sections>
+            <label>Individuelle Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- External Configuration Name --></nameFieldLabel>
+</CustomObjectTranslation>

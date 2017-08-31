@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Prix</label>
+        <name>CostPrice__c</name>
+    </fields>
+    <fields>
+        <label>Date requise par le client</label>
+        <name>Customer_Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label>Élément #</label>
+        <name>Item__c</name>
+    </fields>
+    <fields>
+        <label>Secteur d&apos;activité</label>
+        <name>LOB__c</name>
+        <relationshipLabel>Produits commandés</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Délai</label>
+        <name>Lead_Time__c</name>
+    </fields>
+    <fields>
+        <label>Erreur d&apos;élément</label>
+        <name>Line_Item_Error__c</name>
+    </fields>
+    <fields>
+        <label>Remarques</label>
+        <name>Line_Notes__c</name>
+    </fields>
+    <fields>
+        <label>Texte élément (supprimer)</label>
+        <name>Line_Text__c</name>
+    </fields>
+    <fields>
+        <label>Entreprise de la commande #</label>
+        <name>Order_Company__c</name>
+    </fields>
+    <fields>
+        <label>Validation du produit commandé</label>
+        <name>Order_Product_Validation__c</name>
+    </fields>
+    <fields>
+        <help>Définit la fréquence de facturation.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- The billing type that defines when the billing occurs. Billing in advance lets you bill your customers for products or services before you provide them; Billing in arrears lets you bill your customers after the products or services are provided. --></help>
+        <label>Type de facturation</label>
+        <name>SBQQ__BillingType__c</name>
+    </fields>
+    <fields>
+        <help>Le prix du bloc qui s&apos;applique à ce produit commandé au moment de la création de la commande.</help>
+        <label>Prix du bloc</label>
+        <name>SBQQ__BlockPrice__c</name>
+        <relationshipLabel>Produits commandés</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le type de charge du produit.</help>
+        <label>Type de charge</label>
+        <name>SBQQ__ChargeType__c</name>
+    </fields>
+    <fields>
+        <help>Durée de la souscription qui s&apos;applique uniquement si le produit est une souscription. Elle est copiée depuis les conditions de souscription du produit associé lorsque l&apos;élément est généré en premier.</help>
+        <label>Délai de souscription par défaut</label>
+        <name>SBQQ__DefaultSubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Barème de remise appliqué à ce produit commandé.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Prix unitaire du produit inscrit sur le devis à ce niveau. Le prix catalogue provient du catalogue de prix.</help>
+        <label>Prix catalogue</label>
+        <name>SBQQ__ListPrice__c</name>
+    </fields>
+    <fields>
+        <help>Quantité réelle du produit commandé.</help>
+        <label>Quantité commandée</label>
+        <name>SBQQ__OrderedQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Référence la dimension du prix appliquée à ce produit commandé.</help>
+        <label>Dimension du prix</label>
+        <name>SBQQ__PriceDimension__c</name>
+        <relationshipLabel>Produits commandés</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Barème de prix appliqué à ce produit commandé.</help>
+        <label>Barème de prix</label>
+        <name>SBQQ__PriceSchedule__c</name>
+        <relationshipLabel>Produits commandés</relationshipLabel>
+    </fields>
+    <fields>
+        <help>La ligne du devis à partir de laquelle ce produit commandé est créé.</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La quantité indiquée sur le devis.</help>
+        <label>Quantité indiquée sur le devis</label>
+        <name>SBQQ__QuotedQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required By --></label>
+        <name>SBQQ__RequiredBy__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Pour les produits à segments multiples, l&apos;index qui représente la position de cette ligne de devis dans le tableau des segments.</help>
+        <label><!-- Segment Index --></label>
+        <name>SBQQ__SegmentIndex__c</name>
+    </fields>
+    <fields>
+        <help>Indique comment le prix de l&apos;abonnement est calculé. Si ce champ est vide, les éléments de ligne ne correspondent pas à un produit d&apos;abonnement.</help>
+        <label><!-- Subscription Pricing --></label>
+        <name>SBQQ__SubscriptionPricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Montant de la taxe</help>
+        <label>Taxe</label>
+        <name>SBQQ__TaxAmount__c</name>
+    </fields>
+    <fields>
+        <help>Précise le code de taxe pour les règles en matière de taxation.</help>
+        <label>Code de la taxe</label>
+        <name>SBQQ__TaxCode__c</name>
+    </fields>
+    <fields>
+        <help>Barème de remise sur la durée appliqué à ce produit commandé.</help>
+        <label><!-- Term Discount Schedule --></label>
+        <name>SBQQ__TermDiscountSchedule__c</name>
+        <relationshipLabel><!-- Order Products (Term Discount Schedule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Montant total, taxe incluse</help>
+        <label>Montant total (avec taxe)</label>
+        <name>SBQQ__TotalAmount__c</name>
+    </fields>
+    <fields>
+        <help>Le prix net sur toute la durée de cette ligne individuelle.</help>
+        <label><!-- Full-Term Net Unit Price --></label>
+        <name>SBQQ__UnproratedNetPrice__c</name>
+    </fields>
+    <fields>
+        <help>Abonnement mis à niveau par cette ligne de devis. Lorsque le devis est contracté, la Date de fin de cet abonnement est renseignée.</help>
+        <label><!-- Upgraded Subscription --></label>
+        <name>SBQQ__UpgradedSubscription__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Code de l&apos;entrepôt</label>
+        <name>Warehouse_Code__c</name>
+    </fields>
+    <fields>
+        <label>Entrepôt</label>
+        <name>Warehouse__c</name>
+        <relationshipLabel>Produits commandés</relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Order Product Layout</layout>
+        <sections>
+            <label>Infos nécessaires à la validation</label>
+            <section>Info Required for Validation</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage>Lorsque le type de charge est récurrent, il faut sélectionner un type de facturation.&quot;</errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Lorsque le type de charge est ponctuel, il est impossible de sélectionner une fréquence de facturation.&quot;</errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Lorsque le type de charge est ponctuel ou à l&apos;utilisation, il est impossible de sélectionner un type de facturation.&quot;</errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vous ne pouvez pas modifier le prix unitaire. Pour toute modification, éditez le devis.&quot;</errorMessage>
+        <name>Unit_Price_Locked</name>
+    </validationRules>
+</CustomObjectTranslation>

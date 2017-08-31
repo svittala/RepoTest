@@ -1,0 +1,4 @@
+<apex:component controller="EuroFormatterController">
+  <apex:attribute name="value" type="Decimal" description="Value to format" assignTo="{!valueAttr}"/>
+  <apex:outputText value="{!formattedValue}"/>
+</apex:component>

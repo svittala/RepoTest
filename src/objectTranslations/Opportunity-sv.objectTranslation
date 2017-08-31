@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- If you have moved this opportunity to Closed Lost with a reason of &quot;Won with Another Opportunity&quot; please look up the winning opportunity here.  The winning opportunity must be in Closed Won in order for you to select it. --></help>
+        <label><!-- Associated Winning Opportunity --></label>
+        <name>Associated_Winning_Opportunity__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Faktureringsadress</label>
+        <name>Bill_To__c</name>
+        <relationshipLabel>Prospekt (faktureringsadress)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Budget bekräftad</label>
+        <name>Budget_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label>Gick till konkurrent</label>
+        <name>Competitor_Lost_To__c</name>
+    </fields>
+    <fields>
+        <help>Ange de konkurrenter som också gett anbud/offert för detta prospekt</help>
+        <label>Konkurrent(er)</label>
+        <name>Competitors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label>DB-konkurrent</label>
+        <name>DB_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation>Konkurrent A</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation>Konkurrent B</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation>Konkurrent C</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Undersökning slutförd</label>
+        <name>Discovery_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA SAP Ready --></label>
+        <name>EMEA_SAP_Ready__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA SAP Required Data Checklist --></label>
+        <name>EMEA_SAP_Required_Data_Checklist__c</name>
+    </fields>
+    <fields>
+        <label>Slutanvändare</label>
+        <name>End_User__c</name>
+        <relationshipLabel>Prospekt</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Undanta från pipeline</label>
+        <name>Exclude_from_Exec_Pipeline__c</name>
+    </fields>
+    <fields>
+        <label>Industri</label>
+        <name>Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB --></label>
+        <name>LOB_Lookup__c</name>
+        <relationshipLabel>Prospekt</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Senast inkommet - meddelande</label>
+        <name>Last_Inbound_Message__c</name>
+    </fields>
+    <fields>
+        <label>Senast inkommet - tagg</label>
+        <name>Last_Inbound_Tag__c</name>
+    </fields>
+    <fields>
+        <label>Senast inkommet - tid</label>
+        <name>Last_Inbound_Time__c</name>
+    </fields>
+    <fields>
+        <label>Orsak till förlust</label>
+        <name>Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation>Gick till konkurrent</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Budget / Lost Funding</masterLabel>
+            <translation>Ingen budget/förlorad finansiering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Decision / Non-Responsive</masterLabel>
+            <translation>Inget beslut/ingen reaktion</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Annan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Pris</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Möjlig DUP</label>
+        <name>Possible_Dup__c</name>
+    </fields>
+    <fields>
+        <label>Primär offert godkänd</label>
+        <name>Primary_Quote_approved__c</name>
+    </fields>
+    <fields>
+        <help>Om det här prospektet ingår i ett större projekt kan du söka fram projektet och koppla prospektet till projektet här.</help>
+        <label>Projekt</label>
+        <name>Project__c</name>
+        <relationshipLabel>Prospekt</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Avkastningsanalys slutförd</label>
+        <name>ROI_Analysis_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to your Amended Contract. --></help>
+        <label><!-- Amended Contract --></label>
+        <name>SBQQ__AmendedContract__c</name>
+        <relationshipLabel><!-- Amendment Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Salesforce CPQ uses this field to automatically convert assets and subscriptions. --></help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to create Contracted Prices without creating a Contract. --></help>
+        <label><!-- Create Contracted Prices --></label>
+        <name>SBQQ__CreateContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to automatically create an order from the primary quote. --></help>
+        <label><!-- Ordered --></label>
+        <name>SBQQ__Ordered__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce CPQ uses this to point to the primary quote on this opportunity. --></help>
+        <label><!-- Primary Quote --></label>
+        <name>SBQQ__PrimaryQuote__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Pricebook Id --></label>
+        <name>SBQQ__QuotePricebookId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates this opportunity is a renewal opportunity. --></help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract being renewed by this renewal opportunity. If the several contracts roll up to this opportunity, this points at the master contract. --></help>
+        <label><!-- Renewed Contract --></label>
+        <name>SBQQ__RenewedContract__c</name>
+        <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SBU --></label>
+        <name>SBU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Area Code --></label>
+        <name>Sales_Area_Code__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Area Data --></label>
+        <name>Sales_Area_Data__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- On the creation of the opportunity, you can only select the Sold To Customer as the ship to. However, after creating the record, you can select any account that is associated with the Sales Area for this opportunity. --></help>
+        <label><!-- Select Ship To --></label>
+        <name>Select_Ship_To_SAD__c</name>
+        <relationshipLabel><!-- Opportunities (Ship To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- To add a ship to that does not have preexisting relationship to the sold to on a new opportunity, first save the record and then edit this field. --></help>
+        <label><!-- Ship To Data (DELETE) --></label>
+        <name>Ship_To_Data__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To Name --></label>
+        <name>Ship_To_Name__c</name>
+    </fields>
+    <fields>
+        <label>Platsalternativ</label>
+        <name>Site_Options__c</name>
+    </fields>
+    <fields>
+        <label>Underbransch</label>
+        <name>Sub_Industry__c</name>
+    </fields>
+    <fields>
+        <label>Teknik</label>
+        <name>Technology__c</name>
+    </fields>
+    <fields>
+        <label>Orsak till vinst/förlust</label>
+        <name>Win_Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Competition</masterLabel>
+            <translation>Konkurrens</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leadtime</masterLabel>
+            <translation>Ledtid</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Relationship</masterLabel>
+            <translation>Personlig relation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing</masterLabel>
+            <translation>Prissättning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quality</masterLabel>
+            <translation>Produktkvalitet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Delays</masterLabel>
+            <translation>Projektförseningar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFP Changed</masterLabel>
+            <translation><!-- RFP Changed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation>Teknik</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timing Consideration</masterLabel>
+            <translation>Tidskänslighet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won with Another Opportunity</masterLabel>
+            <translation><!-- Won with Another Opportunity --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>EMEA Project CPQ Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Dup Management --></label>
+            <section>Dup Management</section>
+        </sections>
+        <sections>
+            <label><!-- Key Information --></label>
+            <section>Key Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping --></label>
+            <section>Shipping</section>
+        </sections>
+        <sections>
+            <label><!-- Win/Loss Information --></label>
+            <section>Win/Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EMEA Repeat CPQ Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Dup Management --></label>
+            <section>Dup Management</section>
+        </sections>
+        <sections>
+            <label><!-- Key Fields --></label>
+            <section>Key Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping --></label>
+            <section>Shipping</section>
+        </sections>
+        <sections>
+            <label><!-- Win/Loss Information --></label>
+            <section>Win/Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EMEA Standard CPQ Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Dup Management --></label>
+            <section>Dup Management</section>
+        </sections>
+        <sections>
+            <label><!-- Key Fields --></label>
+            <section>Key Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Ship To --></label>
+            <section>Ship To</section>
+        </sections>
+        <sections>
+            <label><!-- Win/Loss Information --></label>
+            <section>Win/Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project CPQ Opportunity Layout</layout>
+        <sections>
+            <label>Egna länkar</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>DUP-hantering</label>
+            <section>Dup Management</section>
+        </sections>
+        <sections>
+            <label>Nyckelinformation</label>
+            <section>Key Information</section>
+        </sections>
+        <sections>
+            <label>Verksamhetsområde från primär offert</label>
+            <section>Line of Business from Primary Quote</section>
+        </sections>
+        <sections>
+            <label>Räknar om</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Vinst/förlust-information</label>
+            <section>Win/Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Repeat CPQ Opportunity Layout</layout>
+        <sections>
+            <label>Egna länkar</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>DUP-hantering</label>
+            <section>Dup Management</section>
+        </sections>
+        <sections>
+            <label>Nyckelfält</label>
+            <section>Key Fields</section>
+        </sections>
+        <sections>
+            <label>Verksamhetsområde från primär offert</label>
+            <section>Line of Business from Primary Quote</section>
+        </sections>
+        <sections>
+            <label>Räknar om</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Vinst/förlust-information</label>
+            <section>Win/Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Standard CPQ Opportunity Layout</layout>
+        <sections>
+            <label>Egna länkar</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>DUP-hantering</label>
+            <section>Dup Management</section>
+        </sections>
+        <sections>
+            <label>Nyckelfält</label>
+            <section>Key Fields</section>
+        </sections>
+        <sections>
+            <label>Verksamhetsområde från primär offert</label>
+            <section>Line of Business from Primary Quote</section>
+        </sections>
+        <sections>
+            <label>Räknar om</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Vinst/förlust-information</label>
+            <section>Win/Loss Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label>Projekt</label>
+        <name>Project</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Återkommande</label>
+        <name>Repeat</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Standardprospekt</label>
+        <name>Standard</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Din primära offert måste vara godkänd för att posten ska kunna flyttas till VUNNEN</errorMessage>
+        <name>Approved_primary_quote</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field should only be edited and therefore required if the Win/Loss reason is &quot;Won with Another Opportunity&quot; --></errorMessage>
+        <name>Associated_Winning_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Välj.</errorMessage>
+        <name>Closed_Lost_Competitor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Välj.</errorMessage>
+        <name>Closed_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot create an Opportunity on a Account flagged as National. --></errorMessage>
+        <name>Prevent_Opp_Creation_on_National_Acc</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+</CustomObjectTranslation>

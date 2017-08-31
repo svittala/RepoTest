@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Numéro de devis Baan</label>
+        <name>Baan_Quote_Number__c</name>
+    </fields>
+    <fields>
+        <label>Payeur</label>
+        <name>Bill_To_Lookup__c</name>
+        <relationshipLabel>Commandes (payeur)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Payeur</label>
+        <name>Bill_To__c</name>
+    </fields>
+    <fields>
+        <label>Ville de facturation</label>
+        <name>Billing_City__c</name>
+    </fields>
+    <fields>
+        <label>Pays de facturation</label>
+        <name>Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label>Code postal de facturation</label>
+        <name>Billing_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label>État de facturation</label>
+        <name>Billing_State__c</name>
+    </fields>
+    <fields>
+        <label>Rue de facturation 1</label>
+        <name>Billing_Street_1__c</name>
+    </fields>
+    <fields>
+        <label>Rue de facturation 2</label>
+        <name>Billing_Street_2__c</name>
+    </fields>
+    <fields>
+        <label>Entreprise #</label>
+        <name>Company_Number__c</name>
+    </fields>
+    <fields>
+        <label>Utilisateur notification actuelle</label>
+        <name>Current_Notification_User__c</name>
+    </fields>
+    <fields>
+        <label>Client #</label>
+        <name>Customer_Number__c</name>
+    </fields>
+    <fields>
+        <label>Date requise par le client</label>
+        <name>Customer_Requested_Date__c</name>
+    </fields>
+    <fields>
+        <label>Code des délais de livraison</label>
+        <name>Delivery_Terms_Code__c</name>
+    </fields>
+    <fields>
+        <label>Délais de livraison</label>
+        <name>Delivery_Terms__c</name>
+        <relationshipLabel>Commandes (Délais de livraison à partir du devis)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Nom de l&apos;utilisateur final</label>
+        <name>End_User_Name__c</name>
+    </fields>
+    <fields>
+        <label>Utilisateur final</label>
+        <name>End_User__c</name>
+        <relationshipLabel>Commandes (Utilisateur final)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Adresse d&apos;envoi du tiers</label>
+        <name>Freight_Address__c</name>
+    </fields>
+    <fields>
+        <label>Attn d&apos;envoi du tiers</label>
+        <name>Freight_Attn__c</name>
+    </fields>
+    <fields>
+        <label>Ville d&apos;envoi du tiers</label>
+        <name>Freight_City__c</name>
+    </fields>
+    <fields>
+        <label>Pays d&apos;envoi du tiers</label>
+        <name>Freight_Country__c</name>
+    </fields>
+    <fields>
+        <label>Nom d&apos;envoi du tiers</label>
+        <name>Freight_Name__c</name>
+    </fields>
+    <fields>
+        <label>État d&apos;envoi du tiers</label>
+        <name>Freight_State__c</name>
+    </fields>
+    <fields>
+        <label>Code postal d&apos;envoi du tiers</label>
+        <name>Freight_Zipcode__c</name>
+    </fields>
+    <fields>
+        <label>Erreur en-tête</label>
+        <name>Header_Error__c</name>
+    </fields>
+    <fields>
+        <label>N° secteur d&apos;activité</label>
+        <name>LOB_Number__c</name>
+    </fields>
+    <fields>
+        <label>Secteur d&apos;activité</label>
+        <name>LOB__c</name>
+        <relationshipLabel>Commandes</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Remarques</label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label>Utilisateur notification</label>
+        <name>Notification_User__c</name>
+        <relationshipLabel>Commandes (Utilisateur notification)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Utilisateur final</label>
+        <name>Opp_End_User__c</name>
+    </fields>
+    <fields>
+        <label>Flux de commandes utilisé</label>
+        <name>Order_Flow_Used__c</name>
+    </fields>
+    <fields>
+        <label>Code des séries de la commande</label>
+        <name>Order_Series_Code__c</name>
+    </fields>
+    <fields>
+        <label>Séries de la commande</label>
+        <name>Order_Series__c</name>
+        <relationshipLabel>Commandes (Séries de la commande)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Code de type de commande</label>
+        <name>Order_Type_Code__c</name>
+    </fields>
+    <fields>
+        <label>Type de commande</label>
+        <name>Order_Type__c</name>
+        <relationshipLabel>Commandes</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ce champ sert à écraser pour validation, il est surtout utilisé à des fins de test uniquement</help>
+        <label>Écraser la validation des commandes</label>
+        <name>Order_Validation_Override__c</name>
+    </fields>
+    <fields>
+        <label>Validation des commandes</label>
+        <name>Order_Validation__c</name>
+    </fields>
+    <fields>
+        <label>Code des délais de paiement</label>
+        <name>Payment_Terms_Code__c</name>
+    </fields>
+    <fields>
+        <label>Délais de paiement de l&apos;acheteur</label>
+        <name>Payment_Terms_Sold_To__c</name>
+        <relationshipLabel>Commandes (Délais de paiement)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Date de livraison prévue</label>
+        <name>Planned_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label>Propriétaire du devis</label>
+        <name>Quote_Owner__c</name>
+    </fields>
+    <fields>
+        <label>Référence B</label>
+        <name>Reference_B__c</name>
+    </fields>
+    <fields>
+        <help>Définit la fréquence de facturation.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la commande est contractée.</help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help>Les conditions de paiement de cette commande.</help>
+        <label><!-- Payment Term --></label>
+        <name>SBQQ__PaymentTerm__c</name>
+    </fields>
+    <fields>
+        <help>Le message d&apos;état de calcul du prix</help>
+        <label>Message d&apos;état de calcul du prix</label>
+        <name>SBQQ__PriceCalcStatusMessage__c</name>
+    </fields>
+    <fields>
+        <help>Indique l&apos;état du calcul du prix de la commande.  Défini par le système.</help>
+        <label>État de calcul du prix</label>
+        <name>SBQQ__PriceCalcStatus__c</name>
+    </fields>
+    <fields>
+        <help>Le devis à partir duquel la commande est créée.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le montant de la taxe</help>
+        <label>Taxe</label>
+        <name>SBQQ__TaxAmount__c</name>
+    </fields>
+    <fields>
+        <help>Le montant total de la commande, taxe incluse</help>
+        <label>Montant total (avec taxe)</label>
+        <name>SBQQ__TotalAmount__c</name>
+    </fields>
+    <fields>
+        <help>champ d&apos;entrée des données non logiques pour Baan.</help>
+        <label>Resp. ventes #</label>
+        <name>Sales_Rep_Number__c</name>
+    </fields>
+    <fields>
+        <label>Resp. ventes - ancien</label>
+        <name>Sales_Rep_Number_old__c</name>
+    </fields>
+    <fields>
+        <label>Resp. ventes</label>
+        <name>Sales_Rep__c</name>
+        <relationshipLabel>Commandes (Resp. ventes)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Sélectionner destinataire</label>
+        <name>Select_Shipping_Address__c</name>
+        <relationshipLabel>Commandes</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Code d&apos;adresse destinataire</label>
+        <name>Ship_To_Address_Code__c</name>
+    </fields>
+    <fields>
+        <label>À l&apos;attention du destinataire</label>
+        <name>Ship_To_Attn__c</name>
+    </fields>
+    <fields>
+        <label>Nom du destinataire</label>
+        <name>Ship_To_Name__c</name>
+    </fields>
+    <fields>
+        <label>Ville d&apos;expédition</label>
+        <name>Shipping_City__c</name>
+    </fields>
+    <fields>
+        <label>Pays d&apos;expédition</label>
+        <name>Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label>Code postal d&apos;expédition</label>
+        <name>Shipping_Postal_code__c</name>
+    </fields>
+    <fields>
+        <label>État d&apos;expédition</label>
+        <name>Shipping_State__c</name>
+    </fields>
+    <fields>
+        <label>Rue d&apos;expédition 1</label>
+        <name>Shipping_Street_1__c</name>
+    </fields>
+    <fields>
+        <label>Rue d&apos;expédition 2</label>
+        <name>Shipping_Street_2__c</name>
+    </fields>
+    <fields>
+        <label>Entrepôt</label>
+        <name>Warehouse__c</name>
+        <relationshipLabel>Commandes (Entrepôt)</relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Americas Orders</layout>
+        <sections>
+            <label>Informations supplémentaires</label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label>Informations relatives au payeur</label>
+            <section>Bill To Information</section>
+        </sections>
+        <sections>
+            <label>Personnaliser les liens</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Secteur d&apos;activité</label>
+            <section>Line of Business</section>
+        </sections>
+        <sections>
+            <label>Informations relatives au destinataire</label>
+            <section>Ship To  Information</section>
+        </sections>
+        <sections>
+            <label>Informations relatives à l&apos;acheteur et à l&apos;utilisateur final</label>
+            <section>Sold To and End User Information</section>
+        </sections>
+        <sections>
+            <label>Informations relatives au transport du tiers</label>
+            <section>Third Party Freight Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Americas Orders - Sent</layout>
+        <sections>
+            <label>Informations supplémentaires</label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label>Informations relatives au payeur</label>
+            <section>Bill To Information</section>
+        </sections>
+        <sections>
+            <label>Personnaliser les liens</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Secteur d&apos;activité</label>
+            <section>Line of Business</section>
+        </sections>
+        <sections>
+            <label>Informations relatives au destinataire</label>
+            <section>Ship To  Information</section>
+        </sections>
+        <sections>
+            <label>Informations relatives à l&apos;acheteur et à l&apos;utilisateur final</label>
+            <section>Sold To and End User Information</section>
+        </sections>
+        <sections>
+            <label>Informations relatives au transport du tiers</label>
+            <section>Third Party Freight Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EMEA Orders</layout>
+        <sections>
+            <label>Informations supplémentaires</label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label>Informations relatives au payeur</label>
+            <section>Bill To Information</section>
+        </sections>
+        <sections>
+            <label>Personnaliser les liens</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Secteur d&apos;activité</label>
+            <section>Line of Business</section>
+        </sections>
+        <sections>
+            <label>Destinataire et Transport tiers</label>
+            <section>Ship To and 3rd Party Freight</section>
+        </sections>
+        <sections>
+            <label>Informations relatives à l&apos;acheteur et à l&apos;utilisateur final</label>
+            <section>Sold To and End User Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label>Amériques - Commandes</label>
+        <name>Americas_Orders</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Amériques - Commandes - Envoyées</label>
+        <name>Americas_Orders_Sent</name>
+    </recordTypes>
+    <recordTypes>
+        <label>EMEA - Commandes</label>
+        <name>EMEA_Orders</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Les commandes doivent être créées à partir de l&apos;objet Devis.</errorMessage>
+        <name>Order_Flow_Must_Be_Used</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Un n° de resp. ventes ne peut pas contenir de texte.</errorMessage>
+        <name>Rep_number_is_a_number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vous ne pouvez pas modifier le statut.</errorMessage>
+        <name>Restrict_User_from_Changing_Order_Status</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- EditOrderProducts --></label>
+        <name>SBQQ__EditOrderProducts</name>
+    </webLinks>
+</CustomObjectTranslation>

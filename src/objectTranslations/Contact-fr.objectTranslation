@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Big Event --></label>
+        <name>Big_Event__c</name>
+        <relationshipLabel><!-- Contacts (Big Events) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Type de contact</label>
+        <name>Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Admin</masterLabel>
+            <translation><!-- Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation>Ingénierie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation>Exécutif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Autre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation>Approvisionnement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation>Ventes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service/Maintenance</masterLabel>
+            <translation>Service/Entretien</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation>Technique</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Si vous apprenez que cette personne a quitté l&apos;entreprise mais ne savez pas où elle est partie, cochez cette case pour la marquer comme ancien employé. Si vous savez où elle est partie, mettez son compte à jour.</help>
+        <label>Ancien employé</label>
+        <name>Former_Employee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <label>Liste d&apos;envoi Vacances</label>
+        <name>Holiday_Mailing_List__c</name>
+    </fields>
+    <fields>
+        <help>Depuis la conversation de la piste</help>
+        <label>Date de l&apos;événement contact initial</label>
+        <name>Initial_Contact_Event_Date__c</name>
+    </fields>
+    <fields>
+        <help>Depuis la conversion de la piste</help>
+        <label>Événement contact initial</label>
+        <name>Initial_Contact_Event__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provide additional information about the individuals type if &apos;Other&apos; is selected. --></help>
+        <label><!-- Other --></label>
+        <name>Other_Contact_Type__c</name>
+    </fields>
+    <fields>
+        <help>Utiliser pour suivre les informations d&apos;un contact afin de construire la relation.</help>
+        <label>Informations personnelles</label>
+        <name>Personal_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Personnel ID --></label>
+        <name>SAP_Personnel_ID__c</name>
+    </fields>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Source --></label>
+            <section>Lead Source</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label>Contact EnerSys</label>
+        <name>EnerSys_Contact</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Use the &apos;Other&apos; field only for additional text when the Contact Type field is set to Other. Please delete any text in this field or change the role to &apos;Other&apos;. --></errorMessage>
+        <name>Other_Field_For_Roles_Contact</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

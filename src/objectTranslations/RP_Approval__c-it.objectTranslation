@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- RP Approval Matrix --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- RP Approval Matrix --></value>
+    </caseValues>
+    <fields>
+        <label>Compreso nell&apos;intervallo o altro</label>
+        <name>In_Range_or_Other__c</name>
+    </fields>
+    <fields>
+        <label>Max. gruppo articoli</label>
+        <name>Item_Group_Maximum__c</name>
+    </fields>
+    <fields>
+        <label>Min. gruppo articoli</label>
+        <name>Item_Group_Minimum__c</name>
+    </fields>
+    <fields>
+        <label>Descrizione LOB</label>
+        <name>LOB_Descripton__c</name>
+    </fields>
+    <fields>
+        <label>Numero LOB</label>
+        <name>LOB_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB --></label>
+        <name>LOB__c</name>
+        <relationshipLabel>Matrice di approvazione RP</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Approvazione di livello 1</label>
+        <name>Level_1_Approval__c</name>
+    </fields>
+    <fields>
+        <label>Approvazione di livello 2</label>
+        <name>Level_2_Approval__c</name>
+    </fields>
+    <fields>
+        <label>Approvazione di livello 3</label>
+        <name>Level_3_Approval__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <layouts>
+        <layout>RP Approval Matrix Layout</layout>
+        <sections>
+            <label><!-- Approval Levels --></label>
+            <section>Approval Levels</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Item Group &amp; LOB --></label>
+            <section>Item Group &amp; LOB</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- RP Approval  Name --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

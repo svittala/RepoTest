@@ -1,0 +1,35 @@
+<apex:page standardController="Opportunity" extensions="SAPCreateQuoteFromOpptyController" showHeader="true" sidebar="true">
+    <strong>Create Salesforce and SAP Quote From Opportunity</strong><br/><br/>
+
+	<apex:form >
+	    <apex:actionFunction name="step1" status="step1_status" rerender="step1_status"
+	      action="{!step1Method}" oncomplete="step2();"/>
+	    <apex:actionFunction name="step2" status="step2_status" rerender="step2_status, jsFunctions"
+	      action="{!step2Method}" oncomplete="finalRedirect();"/>
+
+		<apex:actionStatus id="step1_status" startText="loading..." stopText="{!step1_status}"/><br/><br/>
+		<apex:actionStatus id="step2_status" startText="loading..." stopText="{!step2_status}"/><br/><br/>
+
+	</apex:form>
+
+	<script>
+		step1();
+	</script>
+
+	<apex:outputPanel id="jsFunctions">
+	<script>
+	    function finalRedirect() {
+	        var launchUrl="{!launchUrl}";
+	        var isOkToRedirect="{!isOkToRedirect}";
+	        if (isOkToRedirect=="true") {
+	            parent.frames.location.replace(launchUrl);
+
+	        } else {
+	        	return false;
+
+	        }
+	    }
+	</script>
+	</apex:outputPanel>
+
+</apex:page>

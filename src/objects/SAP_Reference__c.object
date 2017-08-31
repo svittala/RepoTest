@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>SAP_Reference_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object is for maintaining the information about delivery terms, payment terms, Incoterms, and other tables of reference from Baan or SAP.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Available_to_Sales_Area_Codes__c</fullName>
+        <description>List of available sales area codes, separated by semicolons</description>
+        <externalId>false</externalId>
+        <label>Available to Sales Area Codes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Code_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the full name of the code type and then follow it with a - and a 2 letter code for the code type</inlineHelpText>
+        <label>Code Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Customer Group - CG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Language - CL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delivery Priority - DP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delivery_Terms_DT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incoterm - IC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Order Series - OS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Order Type - OT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment_Terms_PT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Price Group - PG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Region Code - RC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales District - SD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Office - SO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shipping Condition - SC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Terms of Payment - TP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation Zone - TZ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warehouse Codes - WC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Code</label>
+        <length>100</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company__c</fullName>
+        <description>Company #</description>
+        <externalId>false</externalId>
+        <globalPicklist>Company_Number</globalPicklist>
+        <label>Company #</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Country_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Country Code</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Key__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <inlineHelpText>If it begins with B, it is from Baan. If it begins with S, it is from SAP. The second 2 characters describe what type of code it is.</inlineHelpText>
+        <label>Key</label>
+        <length>50</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Missing_Value__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If this is checked, the record was not previously created and it will need to be addressed in the system of record.</inlineHelpText>
+        <label>Missing Value</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>System__c</fullName>
+        <externalId>false</externalId>
+        <label>System</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Baan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SAP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>SAP Reference</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>System__c</columns>
+        <columns>Company__c</columns>
+        <columns>Key__c</columns>
+        <columns>Missing_Value__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Delivery_Terms</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Delivery_Terms_DT</value>
+        </filters>
+        <label>Delivery Terms</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Customer_Group</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Customer Group - CG</value>
+        </filters>
+        <label>EMEA Customer Group</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Admins</group>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Customer_Language</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Customer Language - CL</value>
+        </filters>
+        <label>EMEA Customer Language</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Admins</group>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Delivery_Priority</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Delivery Priority - DP</value>
+        </filters>
+        <label>EMEA  Delivery Priority</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Admins</group>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Incoterm</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Incoterm - IC</value>
+        </filters>
+        <label>EMEA Incoterm</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Admins</group>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Price_Group</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Price Group - PG</value>
+        </filters>
+        <label>EMEA Price Group</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Admins</group>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Regions</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Region Code - RC</value>
+        </filters>
+        <label>EMEA Regions</label>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Sales_District</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Sales District - SD</value>
+        </filters>
+        <label>EMEA Sales District</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Admins</group>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Sales_Districts</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Sales District - SD</value>
+        </filters>
+        <label>EMEA Sales Districts</label>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Sales_Office</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Sales Office - SO</value>
+        </filters>
+        <label>EMEA Sales Office</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Admins</group>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Shipping_Condition</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Shipping Condition - SC</value>
+        </filters>
+        <label>EMEA Shipping Condition</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Admins</group>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Terms_of_Payment</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Terms of Payment - TP</value>
+        </filters>
+        <label>EMEA Terms of Payment</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Admins</group>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Transportation_Zones</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Transportation Zone - TZ</value>
+        </filters>
+        <label>EMEA Transportation Zones</label>
+    </listViews>
+    <listViews>
+        <fullName>Missing</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>System__c</columns>
+        <columns>Company__c</columns>
+        <columns>Key__c</columns>
+        <columns>Missing_Value__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Missing_Value__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Missing</label>
+    </listViews>
+    <listViews>
+        <fullName>Order_Types</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>Company__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Order Type - OT</value>
+        </filters>
+        <label>Order Types</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Payment_Terms</fullName>
+        <columns>Code__c</columns>
+        <columns>Key__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Payment_Terms_PT,Payment Terms - PT</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>SAP_Reference__c.Enersys_SAP_Reference</value>
+        </filters>
+        <label>Payment Terms</label>
+    </listViews>
+    <listViews>
+        <fullName>Warehouse_Codes</fullName>
+        <columns>Code__c</columns>
+        <columns>NAME</columns>
+        <columns>Code_Type__c</columns>
+        <columns>Key__c</columns>
+        <columns>System__c</columns>
+        <columns>Missing_Value__c</columns>
+        <columns>Company__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Warehouse Codes - WC</value>
+        </filters>
+        <label>Warehouse Codes</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Description</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>SAP References</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Enersys_SAP_Reference</fullName>
+        <active>true</active>
+        <description>Record type for Delivery Terms, Payment Terms</description>
+        <label>Enersys SAP Reference</label>
+        <picklistValues>
+            <picklist>Code_Type__c</picklist>
+            <values>
+                <fullName>Customer Group - CG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Language - CL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Priority - DP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Terms - DT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incoterm - IC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Series - OS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Type - OT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Terms - PT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Group - PG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Region Code - RC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales District - SD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Office - SO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Condition - SC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terms of Payment - TP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation Zone - TZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehouse Codes - WC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Company_Number</picklist>
+            <values>
+                <fullName>701</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>702</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>System__c</picklist>
+            <values>
+                <fullName>Baan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Company__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Code_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>System__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Missing_Value__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Company__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Code_Type__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Code__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Company__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Code_Type__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Code__c</searchFilterFields>
+        <searchFilterFields>Code_Type__c</searchFilterFields>
+        <searchResultsAdditionalFields>Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Company__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Code_Type__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Validate_the_Key</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+				NOT(
+								Key__c =
+        &quot;B&quot; 
+        &amp; &quot;-&quot; &amp;    
+        RIGHT(TEXT(Code_Type__c), 2)
+        &amp; &quot;-&quot; &amp;
+        Code__c
+				),
+    NOT(
+								Key__c =
+        &quot;S&quot; 
+        &amp; &quot;-&quot; &amp;    
+        RIGHT(TEXT(Code_Type__c), 2)
+        &amp; &quot;-&quot; &amp;
+        Code__c
+    )
+)</errorConditionFormula>
+        <errorMessage>Please check the Key. The key entered is not formatted correctly</errorMessage>
+    </validationRules>
+</CustomObject>

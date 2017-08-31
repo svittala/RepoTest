@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- RP Approval Matrix --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- RP Approval Matrix --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- RP Approval Matrix --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- RP Approval Matrix --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- RP Approval Matrix --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- RP Approval Matrix --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- RP Approval Matrix --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- RP Approval Matrix --></value>
+    </caseValues>
+    <fields>
+        <label>im Bereich oder Anderes</label>
+        <name>In_Range_or_Other__c</name>
+    </fields>
+    <fields>
+        <label>Artikelgruppe Maximum</label>
+        <name>Item_Group_Maximum__c</name>
+    </fields>
+    <fields>
+        <label>Artikelgruppe Minimum</label>
+        <name>Item_Group_Minimum__c</name>
+    </fields>
+    <fields>
+        <label>Geschäftsbereich Beschreibung</label>
+        <name>LOB_Descripton__c</name>
+    </fields>
+    <fields>
+        <label>Geschäftsbereich Nummer</label>
+        <name>LOB_Number__c</name>
+    </fields>
+    <fields>
+        <label>Geschäftsbereich</label>
+        <name>LOB__c</name>
+        <relationshipLabel><!-- RP Approval Matrix --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Level 1 Genehmigung</label>
+        <name>Level_1_Approval__c</name>
+    </fields>
+    <fields>
+        <label>Level 2 Genehmigung</label>
+        <name>Level_2_Approval__c</name>
+    </fields>
+    <fields>
+        <label>Level 3 Genehmigung</label>
+        <name>Level_3_Approval__c</name>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>RP Approval Matrix Layout</layout>
+        <sections>
+            <label><!-- Approval Levels --></label>
+            <section>Approval Levels</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Item Group &amp; LOB --></label>
+            <section>Item Group &amp; LOB</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- RP Approval  Name --></nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Angebot</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Angebote</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Angebot --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Angebote --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Angebot --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Angebote --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Angebot --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Angebote --></value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Americas Quote Layout</layout>
+        <sections>
+            <label>Genehmiger</label>
+            <section>Approvers</section>
+        </sections>
+        <sections>
+            <label>Rechnung &amp; Versand</label>
+            <section>Billing &amp; Shipping</section>
+        </sections>
+        <sections>
+            <label>Geschäfts Einstufung</label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label>Vertrag Preisgestaltung</label>
+            <section>Contract Pricing</section>
+        </sections>
+        <sections>
+            <label>Individuelle Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Kunden Information</label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label>Rabatt Information</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label>Dokument Optionen</label>
+            <section>Document Options</section>
+        </sections>
+        <sections>
+            <label>Neuberechnung</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Steuer</label>
+            <section>Tax</section>
+        </sections>
+        <sections>
+            <label>Bedingungen</label>
+            <section>Terms</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Americas Quote Layout - Approved</layout>
+        <sections>
+            <label>Adress-Informationen</label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label>Genehmiger</label>
+            <section>Approvers</section>
+        </sections>
+        <sections>
+            <label>Geschäfts Einstufung</label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label>Individuelle Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Kunden Information</label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label>Rabatt Information</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label>Dokument Optionen</label>
+            <section>Document Options</section>
+        </sections>
+        <sections>
+            <label>Neuberechnung</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Steuer</label>
+            <section>Tax</section>
+        </sections>
+        <sections>
+            <label>Bedingungen</label>
+            <section>Terms</section>
+        </sections>
+        <sections>
+            <label><!-- Use Contract Pricing From --></label>
+            <section>Use Contract Pricing From</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Americas Rental Quote Layout</layout>
+        <sections>
+            <label><!-- Approvers --></label>
+            <section>Approvers</section>
+        </sections>
+        <sections>
+            <label><!-- Billing &amp; Shipping --></label>
+            <section>Billing &amp; Shipping</section>
+        </sections>
+        <sections>
+            <label><!-- Business Classifications --></label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Usage Location --></label>
+            <section>Usage Location</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Americas Rental Quote Layout - Approved</layout>
+        <sections>
+            <label><!-- Approvers --></label>
+            <section>Approvers</section>
+        </sections>
+        <sections>
+            <label><!-- Billing &amp; Shipping --></label>
+            <section>Billing &amp; Shipping</section>
+        </sections>
+        <sections>
+            <label><!-- Business Classifications --></label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Usage Location --></label>
+            <section>Usage Location</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EMEA Quote Layout</layout>
+        <sections>
+            <label><!-- Additional System Information --></label>
+            <section>Additional System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Addresses --></label>
+            <section>Addresses</section>
+        </sections>
+        <sections>
+            <label>Genehmiger</label>
+            <section>Approver</section>
+        </sections>
+        <sections>
+            <label><!-- Bill To and Ship To Address Detail Information --></label>
+            <section>Bill To and Ship To Address Detail Information</section>
+        </sections>
+        <sections>
+            <label><!-- Business Classifications --></label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Area Data --></label>
+            <section>Sales Area Data</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EMEA Quote Layout - Approved</layout>
+        <sections>
+            <label><!-- Additional System Information --></label>
+            <section>Additional System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Addresses --></label>
+            <section>Addresses</section>
+        </sections>
+        <sections>
+            <label><!-- Approver --></label>
+            <section>Approver</section>
+        </sections>
+        <sections>
+            <label><!-- Bill To and Ship To Address Detail Information --></label>
+            <section>Bill To and Ship To Address Detail Information</section>
+        </sections>
+        <sections>
+            <label><!-- Business Classifications --></label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Area Data --></label>
+            <section>Sales Area Data</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EMEA Rental Quote Layout</layout>
+        <sections>
+            <label><!-- Additional System Information --></label>
+            <section>Additional System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Addresses --></label>
+            <section>Addresses</section>
+        </sections>
+        <sections>
+            <label><!-- Approver --></label>
+            <section>Approver</section>
+        </sections>
+        <sections>
+            <label><!-- Bill To and Ship To Address Detail Information --></label>
+            <section>Bill To and Ship To Address Detail Information</section>
+        </sections>
+        <sections>
+            <label><!-- Business Classifications --></label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Options --></label>
+            <section>Document Options</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- SAP development information --></label>
+            <section>SAP development information</section>
+        </sections>
+        <sections>
+            <label><!-- Terms --></label>
+            <section>Terms</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EMEA Rental Quote Layout - Approved</layout>
+        <sections>
+            <label><!-- Additional System Information --></label>
+            <section>Additional System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Addresses --></label>
+            <section>Addresses</section>
+        </sections>
+        <sections>
+            <label><!-- Approver --></label>
+            <section>Approver</section>
+        </sections>
+        <sections>
+            <label><!-- Bill To and Ship To Address Detail Information --></label>
+            <section>Bill To and Ship To Address Detail Information</section>
+        </sections>
+        <sections>
+            <label><!-- Business Classifications --></label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Options --></label>
+            <section>Document Options</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- SAP development information --></label>
+            <section>SAP development information</section>
+        </sections>
+        <sections>
+            <label><!-- Terms --></label>
+            <section>Terms</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rental Quotation Approved Layout</layout>
+        <sections>
+            <label>Genehmiger</label>
+            <section>Approvers</section>
+        </sections>
+        <sections>
+            <label>Rechnung &amp; Versand</label>
+            <section>Billing &amp; Shipping</section>
+        </sections>
+        <sections>
+            <label>Geschäfts Einstufung</label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label>Individuelle Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Kunden Information</label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label>Neuberechnung</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Verwendungsort</label>
+            <section>Usage Location</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rental Quotation Layout</layout>
+        <sections>
+            <label>Genehmiger</label>
+            <section>Approvers</section>
+        </sections>
+        <sections>
+            <label>Rechnung &amp; Versand</label>
+            <section>Billing &amp; Shipping</section>
+        </sections>
+        <sections>
+            <label>Geschäfts Einstufung</label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label>Individuelle Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Kunden Information</label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label>Neuberechnung</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Verwendungsort</label>
+            <section>Usage Location</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Angebotsnummer</nameFieldLabel>
+</CustomObjectTranslation>

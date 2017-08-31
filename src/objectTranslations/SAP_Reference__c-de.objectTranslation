@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Available to Sales Area Codes --></label>
+        <name>Available_to_Sales_Area_Codes__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie den vollständigen Namen des Codetyps ein und folgen Sie dann mit einem - und einem 2-Buchstaben-Code für den Codetyp</help>
+        <label>Code Typ</label>
+        <name>Code_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer Group - CG</masterLabel>
+            <translation><!-- Customer Group - CG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Language - CL</masterLabel>
+            <translation><!-- Customer Language - CL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Priority - DP</masterLabel>
+            <translation><!-- Delivery Priority - DP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Terms - DT</masterLabel>
+            <translation>Lieferbedingungen - DT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incoterm - IC</masterLabel>
+            <translation><!-- Incoterm - IC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Series - OS</masterLabel>
+            <translation>Auftrag Serien - OS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Type - OT</masterLabel>
+            <translation>Auftrag Typ - OT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Terms - PT</masterLabel>
+            <translation>Zahlungsbedingungen - PT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Group - PG</masterLabel>
+            <translation><!-- Price Group - PG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Region Code - RC</masterLabel>
+            <translation><!-- Region Code - RC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales District - SD</masterLabel>
+            <translation><!-- Sales District - SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Office - SO</masterLabel>
+            <translation><!-- Sales Office - SO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping Condition - SC</masterLabel>
+            <translation><!-- Shipping Condition - SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terms of Payment - TP</masterLabel>
+            <translation><!-- Terms of Payment - TP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation Zone - TZ</masterLabel>
+            <translation><!-- Transportation Zone - TZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehouse Codes - WC</masterLabel>
+            <translation>Lager Codes - WC</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>Code__c</name>
+    </fields>
+    <fields>
+        <label>Firma #</label>
+        <name>Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country Code --></label>
+        <name>Country_Code__c</name>
+    </fields>
+    <fields>
+        <help>Wenn es mit B beginnt, ist es von Baan. Wenn es mit S beginnt, geht es aus SAP. Die zweiten 2 Zeichen beschreiben, welche Art von Code es ist.</help>
+        <label>Schlüssel</label>
+        <name>Key__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies überprüft wird, wurde der Datensatz noch nicht erstellt und muss in das Datensystem adressiert werden.</help>
+        <label>Fehlender Wert</label>
+        <name>Missing_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- System --></label>
+        <name>System__c</name>
+        <picklistValues>
+            <masterLabel>Baan</masterLabel>
+            <translation><!-- Baan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP</masterLabel>
+            <translation><!-- SAP --></translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>SAP Reference Layout</layout>
+        <sections>
+            <label>Individuelle Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Description --></nameFieldLabel>
+    <recordTypes>
+        <label>Erfassung Typ der Lieferbedingungen, Zahlungsbedingungen</label>
+        <name>Enersys_SAP_Reference</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please check the Key. The key entered is not formatted correctly --></errorMessage>
+        <name>Validate_the_Key</name>
+    </validationRules>
+</CustomObjectTranslation>

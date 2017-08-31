@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Dependent Picklist Value --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Dependent Picklist Value --></value>
+    </caseValues>
+    <fields>
+        <label>Contrôle du champ Nom API</label>
+        <name>Controlling_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <label>Contrôle du champ Valeur</label>
+        <name>Controlling_Field_Value__c</name>
+    </fields>
+    <fields>
+        <label>Champ dépendant Nom API</label>
+        <name>Dependent_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <label>Champ dépendant Valeur</label>
+        <name>Dependent_Field_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name for Dependent Picklist --></label>
+        <name>Object_Name_for_Dependent_Picklist__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <layouts>
+        <layout>Dependent Picklist Value Layout</layout>
+        <sections>
+            <label>Personnaliser les liens</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,4018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Account_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>BillingAddress</fields>
+        <fields>Phone</fields>
+        <fields>Status__c</fields>
+        <fields>Customer_Number__c</fields>
+        <fields>SAP_Customer_Id__c</fields>
+        <label>Account Compact Layout</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>Prospect_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>BillingAddress</fields>
+        <fields>Phone</fields>
+        <label>Prospect Compact Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>AD_Business_Area__c</fullName>
+        <externalId>false</externalId>
+        <label>AD Business Area</label>
+        <picklist>
+            <controllingField>AD_Industry__c</controllingField>
+            <picklistValues>
+                <fullName>Rotary wing</fullName>
+                <default>false</default>
+                <controllingFieldValues>Air</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed wing</fullName>
+                <default>false</default>
+                <controllingFieldValues>Air</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed wing - narrow body</fullName>
+                <default>false</default>
+                <controllingFieldValues>Air</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed wing - wide body</fullName>
+                <default>false</default>
+                <controllingFieldValues>Air</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed wing - business jet</fullName>
+                <default>false</default>
+                <controllingFieldValues>Air</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed wing - General aviation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Air</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trucks</fullName>
+                <default>false</default>
+                <controllingFieldValues>Land</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tank</fullName>
+                <default>false</default>
+                <controllingFieldValues>Land</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Troop carrier</fullName>
+                <default>false</default>
+                <controllingFieldValues>Land</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Armoured car</fullName>
+                <default>false</default>
+                <controllingFieldValues>Land</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amphibious vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Land</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Armoured engineering vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Land</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Air defence vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Land</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surface vessel</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sea</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submarine - diesel electric</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sea</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submarine - nuclear</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sea</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Small lift launch vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Space (Launcher)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium lift launch vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Space (Launcher)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Heavy lift launch vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Space (Launcher)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Super heavy lift launch vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Space (Launcher)</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>AD_Distribution_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>AD Distribution Channel</label>
+        <picklist>
+            <controllingField>AD_Industry__c</controllingField>
+            <picklistValues>
+                <fullName>Military</fullName>
+                <default>false</default>
+                <controllingFieldValues>Air</controllingFieldValues>
+                <controllingFieldValues>Land</controllingFieldValues>
+                <controllingFieldValues>Sea</controllingFieldValues>
+                <controllingFieldValues>Space (Launcher)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Civil</fullName>
+                <default>false</default>
+                <controllingFieldValues>Air</controllingFieldValues>
+                <controllingFieldValues>Land</controllingFieldValues>
+                <controllingFieldValues>Sea</controllingFieldValues>
+                <controllingFieldValues>Space (Launcher)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Armoured Fighting Vehicles [Security]</fullName>
+                <default>false</default>
+                <controllingFieldValues>Land</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>AD_Industry__c</fullName>
+        <externalId>false</externalId>
+        <label>AD Industry</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Air</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Land</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sea</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Space (Launcher)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BMS [Battery Monitoring System]</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preventative Maintenance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RFP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Acct_Auto__c</fullName>
+        <description>Account Auto Number used for BaaN integration</description>
+        <displayFormat>{0000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Acct Auto#</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Address_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Business_Area__c</fullName>
+        <description>Used for EMEA LOB only</description>
+        <externalId>false</externalId>
+        <label>Business Area</label>
+        <picklist>
+            <controllingField>Distribution_Channel__c</controllingField>
+            <picklistValues>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Orange Group</fullName>
+                <default>false</default>
+                <controllingFieldValues>OEM</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vodafone Group</fullName>
+                <default>false</default>
+                <controllingFieldValues>OEM</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Emerson group</fullName>
+                <default>false</default>
+                <controllingFieldValues>OEM</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Food Retailers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Battery Dealers and Distributor</controllingFieldValues>
+                <controllingFieldValues>End-User</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non Food Retailers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Battery Dealers and Distributor</controllingFieldValues>
+                <controllingFieldValues>End-User</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Logistic Operators</fullName>
+                <default>false</default>
+                <controllingFieldValues>Battery Dealers and Distributor</controllingFieldValues>
+                <controllingFieldValues>End-User</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ports and Warehouses</fullName>
+                <default>false</default>
+                <controllingFieldValues>Battery Dealers and Distributor</controllingFieldValues>
+                <controllingFieldValues>End-User</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FMCG</fullName>
+                <default>false</default>
+                <controllingFieldValues>Battery Dealers and Distributor</controllingFieldValues>
+                <controllingFieldValues>End-User</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <controllingFieldValues>Battery Dealers and Distributor</controllingFieldValues>
+                <controllingFieldValues>End-User</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Battery Dealers and Distributor</controllingFieldValues>
+                <controllingFieldValues>End-User</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Steel and Metal Industry</fullName>
+                <default>false</default>
+                <controllingFieldValues>Battery Dealers and Distributor</controllingFieldValues>
+                <controllingFieldValues>End-User</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Industries</fullName>
+                <default>false</default>
+                <controllingFieldValues>Battery Dealers and Distributor</controllingFieldValues>
+                <controllingFieldValues>End-User</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rotary Wind</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed Wing</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed Wing - Narrow Body</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed Wing - Business Jet</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed Wing - General Aviation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trucks</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tank</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Troop Carrier</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Armoured Car</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amphibious Vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Armoured Engineering Vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Air Defense Vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surface Vessel</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submarine - Diesel Electric</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submarine - Nuclear</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Small Lift Launch Vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium Lift Launch Vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Heavy Lift Launch Vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Super Heavy Lift Launch Vehicle</fullName>
+                <default>false</default>
+                <controllingFieldValues>Armoured Fighting Vehicles</controllingFieldValues>
+                <controllingFieldValues>Civil</controllingFieldValues>
+                <controllingFieldValues>Key End User</controllingFieldValues>
+                <controllingFieldValues>Military</controllingFieldValues>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CleanStatus</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Company_Number_Pick__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Company_Number</globalPicklist>
+        <label>Company #</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Company_Number__c</fullName>
+        <description>Customer Number from Customer Master Databases</description>
+        <externalId>false</externalId>
+        <label>Company Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Competitor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Competitor</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Data__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Integrated field showing the email where financial correspondences should be sent.</inlineHelpText>
+        <label>Financial Email</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Customer_Language__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer Language</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>SAP_Reference__c.Code_Type__c</field>
+                <operation>equals</operation>
+                <value>Customer Language - CL</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SAP_Reference__c</referenceTo>
+        <relationshipLabel>Accounts (Customer Language)</relationshipLabel>
+        <relationshipName>Customer_Language</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DandbCompanyId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Delivery_Terms__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Delivery Terms</label>
+        <lookupFilter>
+            <active>false</active>
+            <filterItems>
+                <field>SAP_Reference__c.Code_Type__c</field>
+                <operation>equals</operation>
+                <value>Delivery Terms - DT</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SAP_Reference__c</referenceTo>
+        <relationshipLabel>Accounts (Delivery Terms)</relationshipLabel>
+        <relationshipName>Accounts_Delivery_Terms</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Distribution_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Distribution Channel</label>
+        <picklist>
+            <controllingField>Industry__c</controllingField>
+            <picklistValues>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <controllingFieldValues>Telecom</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>End-User</fullName>
+                <default>false</default>
+                <controllingFieldValues>Manufacturing Plants</controllingFieldValues>
+                <controllingFieldValues>UPS</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BID</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LAD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LTC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Power System Provider</fullName>
+                <default>false</default>
+                <controllingFieldValues>Utilities</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VADs/System Integrator</fullName>
+                <default>false</default>
+                <controllingFieldValues>Renewables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Distributor / Agent (excluding VADs)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Specialty</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Truck Dealer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Battery Dealers and Distributor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Key End User</fullName>
+                <default>false</default>
+                <controllingFieldValues>Manufacturing Plants</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Military</fullName>
+                <default>false</default>
+                <controllingFieldValues>Air</controllingFieldValues>
+                <controllingFieldValues>Land</controllingFieldValues>
+                <controllingFieldValues>Sea</controllingFieldValues>
+                <controllingFieldValues>Space (Launcher)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Civil</fullName>
+                <default>false</default>
+                <controllingFieldValues>Air</controllingFieldValues>
+                <controllingFieldValues>Land</controllingFieldValues>
+                <controllingFieldValues>Sea</controllingFieldValues>
+                <controllingFieldValues>Space (Launcher)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Armoured Fighting Vehicles</fullName>
+                <default>false</default>
+                <controllingFieldValues>Air</controllingFieldValues>
+                <controllingFieldValues>Land</controllingFieldValues>
+                <controllingFieldValues>Sea</controllingFieldValues>
+                <controllingFieldValues>Space (Launcher)</controllingFieldValues>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>DunsNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>EMEA_CLASS__c</fullName>
+        <externalId>false</externalId>
+        <label>EMEA CLASS</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EMEA_JSON_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>EMEA JSON Date Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>EMEA_JSON__c</fullName>
+        <externalId>false</externalId>
+        <label>EMEA JSON</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EMEA_SAP_Quote_Ready__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(ISBLANK(SAP_Customer_Id__c),ISBLANK(EMEA_SAP_Quote_Required_Data_Checklist__c))</formula>
+        <label>EMEA SAP Quote Ready</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EMEA_SAP_Quote_Required_Data_Checklist__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>EMEA SAP Quote Required Data Checklist</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EMEA_SAP_Ready__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(ISBLANK(SAP_Customer_Id__c),ISBLANK(EMEA_SAP_Required_Data_Checklist__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>EMEA SAP Ready</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EMEA_SAP_Required_Data_Checklist__c</fullName>
+        <description>Formula field to make the user message for missing required field for SAP</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( BillingCity ), &quot;Please add a City; &quot;, &quot;&quot;) 
+&amp; 
+IF(ISBLANK(  BillingCountry ), &quot;Please add a Country; &quot;, &quot;&quot;)
+&amp; 
+IF(ISBLANK(  Transportation_Zone__c  ), &quot;Please add a Transportation Zone; &quot;, &quot;&quot;)
+&amp; 
+IF(ISBLANK(  Customer_Language__c  ), &quot;Please add a Customer Language; &quot;, &quot;&quot;)
+&amp; 
+IF( Number_of_SADs__c &lt; 1 , &quot;Please add a Sales Area Data; &quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>EMEA SAP Required Data Checklist</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <description>Customer Master</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Generic email for the company</inlineHelpText>
+        <label>Company Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ExtId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External Id for Accounts
+For Baan Account, it is generated as &apos;B-&apos;+Company_Number+&apos;-&apos;+Customer_Number</description>
+        <externalId>true</externalId>
+        <label>ExtId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Food &amp; Beverage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Industry__c</fullName>
+        <description>Custom Industry field for EMEA Classifications</description>
+        <externalId>false</externalId>
+        <label>Industry (Delete)</label>
+        <picklist>
+            <controllingField>LOB_EMEA__c</controllingField>
+            <picklistValues>
+                <fullName>AGV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AGV-LGV</fullName>
+                <default>false</default>
+                <controllingFieldValues>Motive</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Arial Platform</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Burden Carrier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cleaning machines</fullName>
+                <default>false</default>
+                <controllingFieldValues>Motive</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Floor Care</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Forklifts and Industrial trucks</fullName>
+                <default>false</default>
+                <controllingFieldValues>Motive</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GSE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GSE - Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hand Truck</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Industrial Truck Narrow Isle</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Industrial Truck Rider</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+                <controllingFieldValues>Motive</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing Plants</fullName>
+                <default>false</default>
+                <controllingFieldValues>Motive</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mining</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mining - Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other End Users MP</fullName>
+                <default>false</default>
+                <controllingFieldValues>Motive</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Reserve</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rail Lighting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rail Locomotive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rail MP</fullName>
+                <default>false</default>
+                <controllingFieldValues>Motive</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rail - Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renewables</fullName>
+                <default>false</default>
+                <controllingFieldValues>Reserve</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specialty</fullName>
+                <default>false</default>
+                <controllingFieldValues>Reserve</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+                <controllingFieldValues>Reserve</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>UPS</fullName>
+                <default>false</default>
+                <controllingFieldValues>Reserve</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <controllingFieldValues>Reserve</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Air</fullName>
+                <default>false</default>
+                <controllingFieldValues>Aerospace &amp; Defense</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Land</fullName>
+                <default>false</default>
+                <controllingFieldValues>Aerospace &amp; Defense</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sea</fullName>
+                <default>false</default>
+                <controllingFieldValues>Aerospace &amp; Defense</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Space (Launcher)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Aerospace &amp; Defense</controllingFieldValues>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LOB_EMEA__c</fullName>
+        <description>EMEA Line of Business</description>
+        <externalId>false</externalId>
+        <inlineHelpText>EMEA Line of Business</inlineHelpText>
+        <label>LOB</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Motive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reserve</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aerospace &amp; Defense</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Last_Inbound_Message__c</fullName>
+        <description>Used for integration</description>
+        <externalId>false</externalId>
+        <label>Last Inbound Message</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Last_Inbound_Tag__c</fullName>
+        <description>Used for integration</description>
+        <externalId>false</externalId>
+        <label>Last Inbound Tag</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Inbound_Time__c</fullName>
+        <description>Used for integration</description>
+        <externalId>false</externalId>
+        <label>Last Inbound Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>MP_Business_Area__c</fullName>
+        <externalId>false</externalId>
+        <label>MP Business Area</label>
+        <picklist>
+            <controllingField>MP_Industry__c</controllingField>
+            <picklistValues>
+                <fullName>Food Retailers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Logistics</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non Food Retailers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Logistics</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Logistic Operators</fullName>
+                <default>false</default>
+                <controllingFieldValues>Logistics</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ports and Warehouses</fullName>
+                <default>false</default>
+                <controllingFieldValues>Logistics</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FMCG</fullName>
+                <default>false</default>
+                <controllingFieldValues>Manufacturing Plants</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <controllingFieldValues>Manufacturing Plants</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Manufacturing Plants</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Steel and Metal Industry</fullName>
+                <default>false</default>
+                <controllingFieldValues>Manufacturing Plants</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Industries</fullName>
+                <default>false</default>
+                <controllingFieldValues>Manufacturing Plants</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mining</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>MP_Distribution_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>MP Distribution Channel</label>
+        <picklist>
+            <controllingField>MP_Industry__c</controllingField>
+            <picklistValues>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <controllingFieldValues>AGV-LGV</controllingFieldValues>
+                <controllingFieldValues>Cleaning machines</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Truck Dealer</fullName>
+                <default>false</default>
+                <controllingFieldValues>AGV-LGV</controllingFieldValues>
+                <controllingFieldValues>Cleaning machines</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>End User</fullName>
+                <default>false</default>
+                <controllingFieldValues>Logistics</controllingFieldValues>
+                <controllingFieldValues>Manufacturing Plants</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Key End User</fullName>
+                <default>false</default>
+                <controllingFieldValues>Logistics</controllingFieldValues>
+                <controllingFieldValues>Manufacturing Plants</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Battery dealer / distributor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>MP_Industry__c</fullName>
+        <externalId>false</externalId>
+        <label>MP Industry</label>
+        <picklist>
+            <picklistValues>
+                <fullName>AGV-LGV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cleaning machines</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing Plants</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Forklifts / industrial trucks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other End Users</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>NaicsCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>NaicsDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name2__c</fullName>
+        <description>Direct Map from Customer Master</description>
+        <externalId>false</externalId>
+        <label>Name2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name3__c</fullName>
+        <externalId>false</externalId>
+        <label>Name3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name4__c</fullName>
+        <externalId>false</externalId>
+        <label>Name4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>National__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Manually maintained checkbox to designate National Accounts.  Only accessible to edit by certain roles/profiles.</inlineHelpText>
+        <label>National</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Number_of_SADs__c</fullName>
+        <externalId>false</externalId>
+        <label># of SADs</label>
+        <summaryForeignKey>Sales_Area_data__c.Account__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Parent_DUNS_number__c</fullName>
+        <description>To store parent duns number for indexed searches</description>
+        <externalId>false</externalId>
+        <label>Parent DUNS number</label>
+        <length>9</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Terms__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Payment Terms</label>
+        <lookupFilter>
+            <active>false</active>
+            <filterItems>
+                <field>SAP_Reference__c.Code_Type__c</field>
+                <operation>equals</operation>
+                <value>Payment Terms - PT</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SAP_Reference__c</referenceTo>
+        <relationshipLabel>Accounts (Payment Terms)</relationshipLabel>
+        <relationshipName>Accounts_Payment_Terms</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <inlineHelpText>Phone numbers are a great way to call people on phones.  Phones are what we call our pocket computers even though we use them for games, selfies, and facebook.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Prospect__c</fullName>
+        <description>Prospect # for Prospect Account Record Types</description>
+        <externalId>false</externalId>
+        <formula>Acct_Auto__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Prospect #</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Protective_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Protective Account - only updated by EnerSys Marketing Directors.  If Checked, any quote where the account is used would need to go in for price approval.</description>
+        <externalId>false</externalId>
+        <label>Protective Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RP_Distribution_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>RP Distribution Channel</label>
+        <picklist>
+            <picklistValues>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>End User</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Power System Provider</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Value added distributor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Battery dealer / distributor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RP_Industry__c</fullName>
+        <externalId>false</externalId>
+        <label>RP Industry</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specialty</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renewable</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utility</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Region_Code__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Region Code</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>SAP_Reference__c.Code_Type__c</field>
+                <operation>equals</operation>
+                <value>Region Code - RC</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SAP_Reference__c</referenceTo>
+        <relationshipLabel>Accounts (Region Code)</relationshipLabel>
+        <relationshipName>Region_Code</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Related Shipping Accounts</relationshipLabel>
+        <relationshipName>Related_Shipping</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SAP_Customer_Id__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>SAP Customer Id</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SAP_Ship_To__c</fullName>
+        <description>KTOKD from SAP 0001 FOR sold to, 0002 for ship to only.</description>
+        <externalId>false</externalId>
+        <label>SAP Ship To</label>
+        <length>5</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__AssetQuantitiesCombined__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated.</inlineHelpText>
+        <label>Combine Asset Quantities</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CoTermedContractsCombined__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that controls whether assets and subscriptions from multiple co-teremed contracts are rolled up together. By default, each co-termed contract generates a separate group on renewal quote.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable to combine assets and subscriptions from multiple co-termed contracts. By default, each co-termed contract generates a separate group on renewal quote.</inlineHelpText>
+        <label>Combine Co-Termed Contracts</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CoTerminationEvent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines when contracts are co-terminated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines when contracts are co-terminated.</inlineHelpText>
+        <label>Co-Termination Event</label>
+        <picklist>
+            <controllingField>SBQQ__ContractCoTermination__c</controllingField>
+            <picklistValues>
+                <fullName>Add-on</fullName>
+                <default>false</default>
+                <controllingFieldValues>Always</controllingFieldValues>
+                <controllingFieldValues>Prompt</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+                <controllingFieldValues>Always</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ContractCoTermination__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines how service and subscription contracts for this customer are co-terminated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines how service and subscription contracts for this customer are co-terminated.</inlineHelpText>
+        <label>Contract Co-Termination</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Never</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Always</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prompt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DefaultOpportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Default opportunity for this account used by an e-Commerce module to obtain the customer&apos;s price book and associate with &quot;shopping cart&quot; quotes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default opportunity for this account used by an e-Commerce module to obtain the customer&apos;s price book and associate with &quot;shopping cart&quot; quotes.</inlineHelpText>
+        <label>Default Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>WebAccounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__IgnoreParentContractedPrices__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Select if contracted prices should not be inherited from the parent account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select if contracted prices should not be inherited from the parent account.</inlineHelpText>
+        <label>Ignore Parent Contracted Prices</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PreserveBundle__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Select to maintain bundle hierarchy on renewal quotes and amendments</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select checkbox to maintain bundle hierarchy on renewal quotes and amendments.</inlineHelpText>
+        <label>Preserve Bundle Structure</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceHoldEnd__c</fullName>
+        <deprecated>false</deprecated>
+        <description>End date for any price hold that may be in effect.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter date until which the prices must be held.</inlineHelpText>
+        <label>Price Hold End</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewalModel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The option to distinguish between Subscription or Asset based renewal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose Asset Based to make renewals based off of an account&apos;s Assets or choose Subscription based to makes renewals based off of subscriptions created from a quote.</inlineHelpText>
+        <label>Renewal Model</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Asset Based</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contract Based</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewalPricingMethod__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Method for pricing products on renewal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use &quot;Same&quot; to keep the same price paid last time. Use &quot;List&quot; to use current list price. Use &quot;Uplift&quot; to use the price paid last time plus some uplift.</inlineHelpText>
+        <label>Renewal Pricing Method</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Same</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Uplift</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>STR_SUPPL1__c</fullName>
+        <externalId>false</externalId>
+        <label>STR_SUPPL1</label>
+        <length>125</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STR_SUPPL2__c</fullName>
+        <externalId>false</externalId>
+        <label>STR_SUPPL2</label>
+        <length>125</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STR_SUPPL3__c</fullName>
+        <externalId>false</externalId>
+        <label>STR_SUPPL3</label>
+        <length>125</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Agent_Email__c</fullName>
+        <description>Sales Engineer Email from BaaN</description>
+        <externalId>false</externalId>
+        <label>Sales Agent Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Cust_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Type, &quot;Ship To&quot;), Address_Code__c &amp; &quot; &quot; &amp; &quot;/&quot; &amp; &quot; &quot; &amp; Related_Customer__r.Customer_Number__c, &quot;&quot;)</formula>
+        <label>Ship To/Cust No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_ExtID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Ship To ExtID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Shipping_Terms__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipping Terms</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Normal Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Doubtful Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blocked Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Credit Hold/Block</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Summit_Acct_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Summit Acct ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summit_Acct__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Summit Acct</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Terms_of_Delivery_Code__c</fullName>
+        <description>BaaN integration</description>
+        <externalId>false</externalId>
+        <label>Terms of Delivery Code</label>
+        <length>3</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Terms_of_Delivery_Desc__c</fullName>
+        <description>BaaN Integration</description>
+        <externalId>false</externalId>
+        <label>Terms of Delivery Desc</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Terms_of_Payment_Code__c</fullName>
+        <description>Customer Master</description>
+        <externalId>false</externalId>
+        <label>Terms of Payment Code</label>
+        <length>3</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Terms_of_Payment_Desc__c</fullName>
+        <externalId>false</externalId>
+        <label>Terms of Payment Desc</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Tradestyle</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Transportation_Zone__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Transportation Zone</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>SAP_Reference__c.Code_Type__c</field>
+                <operation>equals</operation>
+                <value>Transportation Zone - TZ</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SAP_Reference__c</referenceTo>
+        <relationshipLabel>Accounts (Transportation Zone)</relationshipLabel>
+        <relationshipName>Transportation_Zone</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ship To</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>End User</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>YearStarted</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <listViews>
+        <fullName>Americas_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>Customer_Number__c</columns>
+        <columns>Company_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <label>Americas Accounts</label>
+        <sharedTo>
+            <group>Americas_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Americas_Prospect</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Prospect__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Prospect</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.TYPE</field>
+            <operation>notEqual</operation>
+            <value>Ship To</value>
+        </filters>
+        <label>Americas Prospect (Not Ship To)</label>
+        <sharedTo>
+            <group>Americas_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Americas_Ship_To_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Prospect__c</columns>
+        <columns>Related_Customer__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Prospect</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.TYPE</field>
+            <operation>equals</operation>
+            <value>Ship To</value>
+        </filters>
+        <label>Americas Ship To Accounts</label>
+        <sharedTo>
+            <group>Americas_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEAS_Prospect</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Prospect__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>012410000012b9K</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.TYPE</field>
+            <operation>equals</operation>
+            <value>Prospect</value>
+        </filters>
+        <label>EMEAS Prospect</label>
+        <sharedTo>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>SAP_Ship_To__c</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>SAP_Customer_Id__c</columns>
+        <columns>MP_Distribution_Channel__c</columns>
+        <columns>MP_Industry__c</columns>
+        <columns>RP_Distribution_Channel__c</columns>
+        <columns>RP_Industry__c</columns>
+        <columns>AD_Distribution_Channel__c</columns>
+        <columns>AD_Industry__c</columns>
+        <columns>EMEA_JSON_Date_Time__c</columns>
+        <columns>EMEA_JSON__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SAP_Customer_Id__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>EMEA_JSON_Date_Time__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>EMEA Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_EAS_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <columns>SAP_Customer_Id__c</columns>
+        <columns>AD_Industry__c</columns>
+        <columns>AD_Distribution_Channel__c</columns>
+        <columns>AD_Business_Area__c</columns>
+        <columns>MP_Industry__c</columns>
+        <columns>MP_Distribution_Channel__c</columns>
+        <columns>MP_Business_Area__c</columns>
+        <columns>RP_Industry__c</columns>
+        <columns>RP_Distribution_Channel__c</columns>
+        <columns>EMEA_JSON_Date_Time__c</columns>
+        <columns>EMEA_JSON__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SAP_Customer_Id__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>EMEA_JSON_Date_Time__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>AD_Industry__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>EMEA EAS Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_MP_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <columns>SAP_Customer_Id__c</columns>
+        <columns>MP_Industry__c</columns>
+        <columns>MP_Distribution_Channel__c</columns>
+        <columns>MP_Business_Area__c</columns>
+        <columns>RP_Industry__c</columns>
+        <columns>RP_Distribution_Channel__c</columns>
+        <columns>AD_Industry__c</columns>
+        <columns>AD_Distribution_Channel__c</columns>
+        <columns>AD_Business_Area__c</columns>
+        <columns>EMEA_JSON_Date_Time__c</columns>
+        <columns>EMEA_JSON__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SAP_Customer_Id__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>EMEA_JSON_Date_Time__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>MP_Industry__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>EMEA MP Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Prospect</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Prospect__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Prospect</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.TYPE</field>
+            <operation>equals</operation>
+            <value>Prospect</value>
+        </filters>
+        <label>EMEA Prospect</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_RP_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <columns>SAP_Customer_Id__c</columns>
+        <columns>MP_Industry__c</columns>
+        <columns>MP_Distribution_Channel__c</columns>
+        <columns>MP_Business_Area__c</columns>
+        <columns>RP_Industry__c</columns>
+        <columns>RP_Distribution_Channel__c</columns>
+        <columns>AD_Industry__c</columns>
+        <columns>AD_Distribution_Channel__c</columns>
+        <columns>AD_Business_Area__c</columns>
+        <columns>EMEA_JSON_Date_Time__c</columns>
+        <columns>EMEA_JSON__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SAP_Customer_Id__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>EMEA_JSON_Date_Time__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>RP_Industry__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>EMEA RP Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>EMEA_All_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MyAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.RECORDTYPE</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Accounts</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Customer</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
+        <description>A financially approved account with a customer # in an ERP</description>
+        <label>Customer</label>
+        <picklistValues>
+            <picklist>AD_Business_Area__c</picklist>
+            <values>
+                <fullName>Air defence vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amphibious vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armoured car</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armoured engineering vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed wing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed wing - General aviation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed wing - business jet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed wing - narrow body</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed wing - wide body</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heavy lift launch vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium lift launch vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotary wing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small lift launch vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submarine - diesel electric</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submarine - nuclear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Super heavy lift launch vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Troop carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trucks</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AD_Distribution_Channel__c</picklist>
+            <values>
+                <fullName>Armoured Fighting Vehicles %5BSecurity%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Civil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Military</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AD_Industry__c</picklist>
+            <values>
+                <fullName>Air</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BMS %5BBattery Monitoring System%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Land</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Space %28Launcher%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preventative Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Business_Area__c</picklist>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Company_Number</picklist>
+            <values>
+                <fullName>701</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>702</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Distribution_Channel__c</picklist>
+            <values>
+                <fullName>BID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End-User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LAD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>AGV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AGV-LGV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arial Platform</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burden Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cleaning machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Floor Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forklifts and Industrial trucks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GSE - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hand Truck</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Truck Narrow Isle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Truck Rider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing Plants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other End Users MP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail Lighting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail Locomotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail MP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB_EMEA__c</picklist>
+            <values>
+                <fullName>Aerospace %26 Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Motive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reserve</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MP_Business_Area__c</picklist>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FMCG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistic Operators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Food Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Industries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ports and Warehouses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steel and Metal Industry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MP_Distribution_Channel__c</picklist>
+            <values>
+                <fullName>Battery dealer %2F distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Key End User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Truck Dealer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MP_Industry__c</picklist>
+            <values>
+                <fullName>AGV-LGV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cleaning machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forklifts %2F industrial trucks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing Plants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other End Users</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RP_Distribution_Channel__c</picklist>
+            <values>
+                <fullName>Battery dealer %2F distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Power System Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Value added distributor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RP_Industry__c</picklist>
+            <values>
+                <fullName>Rail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__CoTerminationEvent__c</picklist>
+            <values>
+                <fullName>Add-on</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__ContractCoTermination__c</picklist>
+            <values>
+                <fullName>Always</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Prompt</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__RenewalModel__c</picklist>
+            <values>
+                <fullName>Asset Based</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Based</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__RenewalPricingMethod__c</picklist>
+            <values>
+                <fullName>List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Uplift</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Blocked Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doubtful Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Ship To</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Prospect</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Prospect_Compact_Layout</compactLayoutAssignment>
+        <description>A prospective account that does not have financial approval or ship to account (Baan only)</description>
+        <label>Prospect</label>
+        <picklistValues>
+            <picklist>AD_Business_Area__c</picklist>
+            <values>
+                <fullName>Air defence vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amphibious vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armoured car</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armoured engineering vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed wing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed wing - General aviation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed wing - business jet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed wing - narrow body</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed wing - wide body</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heavy lift launch vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium lift launch vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotary wing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small lift launch vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submarine - diesel electric</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submarine - nuclear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Super heavy lift launch vehicle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface vessel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Troop carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trucks</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AD_Distribution_Channel__c</picklist>
+            <values>
+                <fullName>Armoured Fighting Vehicles %5BSecurity%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Civil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Military</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AD_Industry__c</picklist>
+            <values>
+                <fullName>Air</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BMS %5BBattery Monitoring System%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Land</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Space %28Launcher%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preventative Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Business_Area__c</picklist>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emerson group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FMCG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistic Operators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Food Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orange Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Industries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ports and Warehouses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steel and Metal Industry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vodafone Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Company_Number</picklist>
+            <values>
+                <fullName>701</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>702</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Distribution_Channel__c</picklist>
+            <values>
+                <fullName>BID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Battery Dealers and Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor %2F Agent %28excluding VADs%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End-User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Key End User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LAD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Power System Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Truck Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VADs%2FSystem Integrator</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>AGV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AGV-LGV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arial Platform</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burden Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cleaning machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Floor Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forklifts and Industrial trucks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GSE - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hand Truck</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Truck Narrow Isle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Truck Rider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing Plants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other End Users MP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail Lighting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail Locomotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail MP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB_EMEA__c</picklist>
+            <values>
+                <fullName>Aerospace %26 Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Motive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reserve</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MP_Business_Area__c</picklist>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FMCG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistic Operators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Food Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Industries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ports and Warehouses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steel and Metal Industry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MP_Distribution_Channel__c</picklist>
+            <values>
+                <fullName>Battery dealer %2F distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Key End User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Truck Dealer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MP_Industry__c</picklist>
+            <values>
+                <fullName>AGV-LGV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cleaning machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forklifts %2F industrial trucks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing Plants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other End Users</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RP_Distribution_Channel__c</picklist>
+            <values>
+                <fullName>Battery dealer %2F distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Power System Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Value added distributor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RP_Industry__c</picklist>
+            <values>
+                <fullName>Rail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__CoTerminationEvent__c</picklist>
+            <values>
+                <fullName>Add-on</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__ContractCoTermination__c</picklist>
+            <values>
+                <fullName>Always</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Prompt</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__RenewalModel__c</picklist>
+            <values>
+                <fullName>Asset Based</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Based</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__RenewalPricingMethod__c</picklist>
+            <values>
+                <fullName>List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Uplift</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Blocked Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doubtful Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>End User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Ship To</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Customer_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SAP_Customer_Id__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_STREET</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_STATE_CODE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.TYPE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Customer_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SAP_Customer_Id__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_STREET</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_CITY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_STATE_CODE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.PHONE1</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Customer_Number__c</lookupFilterFields>
+        <lookupFilterFields>SAP_Customer_Id__c</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.ADDRESS1_CITY</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.TYPE</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.RECORDTYPE</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.ADDRESS1_STREET</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.ADDRESS1_CITY</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.ADDRESS1_STATE_CODE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Customer_Number__c</searchFilterFields>
+        <searchFilterFields>SAP_Customer_Id__c</searchFilterFields>
+        <searchFilterFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</searchFilterFields>
+        <searchFilterFields>ACCOUNT.ADDRESS1_CITY</searchFilterFields>
+        <searchFilterFields>ACCOUNT.TYPE</searchFilterFields>
+        <searchFilterFields>ACCOUNT.RECORDTYPE</searchFilterFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Customer_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SAP_Customer_Id__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.TYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_STREET</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_CITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_STATE_CODE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Ship_To_Cust_No__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Related_Customer__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Accounts_Not_Edit_Ship_Tos</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( $User.Id &lt;&gt;  $Label.Integration_User_ID,
+ISPICKVAL(Type, &apos;Ship To&apos;),
+OR(
+ISCHANGED( Name ), 
+ISCHANGED( Related_Customer__c  ),
+ISCHANGED(  BillingStreet  ),
+ISCHANGED(  BillingCity  ),
+ISCHANGED(  BillingState  ),
+ISCHANGED(  BillingPostalCode  ),
+ISCHANGED(  BillingCountry  )
+))</errorConditionFormula>
+        <errorMessage>Account Name and Address cannot be edited when an account is designated as a Ship To Only Account.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Customer_Accounts_AccountName_ReadOnly</fullName>
+        <active>true</active>
+        <description>If the type is &quot;customer,&quot; users should not be able to edit the account name field. Standard Salesforce functionality does not allow a &quot;Read Only&quot; on that field, so we are using a validation rule instead.</description>
+        <errorConditionFormula>AND( 
+OR(NOT(ISBLANK(Customer_Number__c)),
+			NOT(ISBLANK(SAP_Customer_Id__c))
+		), 
+ISCHANGED( Name ), 
+$User.ProfileId &lt;&gt; $Label.Profile_ID_EnerSys_Integration, 
+$User.ProfileId &lt;&gt; $Label.Profile_ID_EnerSys_System_Administrator,
+$User.ProfileId &lt;&gt; $Label.Profile_ID_System_Administrator 
+
+)</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>Account Name cannot be edited in Salesforce on Customer accounts integrated from BaaN or SAP</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EMEA_Prospect_Required_Field_Creation</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+				RecordTypeId = $Label.Account_Record_Type_Prospect , 
+				CONTAINS(TEXT($User.SBU__c), &apos;EMEA&apos;), 
+				$User.ProfileId &lt;&gt; $Label.Profile_ID_EnerSys_Integration, 
+				$User.ProfileId &lt;&gt; $Label.Profile_ID_EnerSys_System_Administrator, 
+				$User.ProfileId &lt;&gt; $Label.Profile_ID_System_Administrator,
+				OR( 
+								ISBLANK(BillingCity), 
+								ISBLANK(BillingCountry),
+								AND(
+												AND(
+																ISBLANK( TEXT( MP_Industry__c )) , 
+																ISBLANK( TEXT( MP_Distribution_Channel__c )),
+																ISBLANK( TEXT( MP_Business_Area__c ))),
+												AND(
+																ISBLANK( TEXT( RP_Industry__c )), 
+																ISBLANK( TEXT( RP_Distribution_Channel__c))),
+												AND(
+																ISBLANK( TEXT( AD_Industry__c)),
+																ISBLANK( TEXT( AD_Distribution_Channel__c )),
+																ISBLANK( TEXT( AD_Business_Area__c)))
+												)
+								)
+				)</errorConditionFormula>
+        <errorMessage>Please fill in the City, Country, and Classifications for the account prior to Saving.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Users_from_Editing_National</fullName>
+        <active>true</active>
+        <description>Prevents certain Roles and Profiles from editing the National checkbox.</description>
+        <errorConditionFormula>AND( 
+ISCHANGED( National__c ) 
+,
+AND(
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+$Profile.Name &lt;&gt; &apos;EnerSys Integration&apos;, 
+$Profile.Name &lt;&gt; &apos;EnerSys System Administrator&apos;, 
+$UserRole.Name &lt;&gt; &apos;EnerSys Delaware Inc.&apos;, 
+$UserRole.Name &lt;&gt; &apos;Worldwide&apos;, 
+$UserRole.Name &lt;&gt; &apos;MP - Americas NA Support&apos;, 
+$UserRole.Name &lt;&gt; &apos;MP - Americas&apos;, 
+$UserRole.Name &lt;&gt; &apos;RP - Americas NA Support&apos;, 
+$UserRole.Name &lt;&gt; &apos;RP - Americas&apos; 
+)
+)</errorConditionFormula>
+        <errorDisplayField>National__c</errorDisplayField>
+        <errorMessage>You cannot modify the National field.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SBQQ__Amend_Assets</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Amend Assets</masterLabel>
+        <openType>sidebar</openType>
+        <page>SBQQ__AssetSelectorAmend</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>SBQQ__Renew_Assets</fullName>
+        <availability>online</availability>
+        <description>It is used to renew assets from an account when Global Settings - Renewal Model is set to Asset Based.</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Renew Assets</masterLabel>
+        <openType>sidebar</openType>
+        <page>SBQQ__AssetSelector</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

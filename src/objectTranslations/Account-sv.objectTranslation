@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AD Business Area --></label>
+        <name>AD_Business_Area__c</name>
+        <picklistValues>
+            <masterLabel>Air defence vehicle</masterLabel>
+            <translation><!-- Air defence vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amphibious vehicle</masterLabel>
+            <translation><!-- Amphibious vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoured car</masterLabel>
+            <translation><!-- Armoured car --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoured engineering vehicle</masterLabel>
+            <translation><!-- Armoured engineering vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed wing</masterLabel>
+            <translation><!-- Fixed wing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed wing - General aviation</masterLabel>
+            <translation><!-- Fixed wing - General aviation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed wing - business jet</masterLabel>
+            <translation><!-- Fixed wing - business jet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed wing - narrow body</masterLabel>
+            <translation><!-- Fixed wing - narrow body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed wing - wide body</masterLabel>
+            <translation><!-- Fixed wing - wide body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heavy lift launch vehicle</masterLabel>
+            <translation><!-- Heavy lift launch vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium lift launch vehicle</masterLabel>
+            <translation><!-- Medium lift launch vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rotary wing</masterLabel>
+            <translation><!-- Rotary wing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small lift launch vehicle</masterLabel>
+            <translation><!-- Small lift launch vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submarine - diesel electric</masterLabel>
+            <translation><!-- Submarine - diesel electric --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submarine - nuclear</masterLabel>
+            <translation><!-- Submarine - nuclear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Super heavy lift launch vehicle</masterLabel>
+            <translation><!-- Super heavy lift launch vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surface vessel</masterLabel>
+            <translation><!-- Surface vessel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tank</masterLabel>
+            <translation><!-- Tank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troop carrier</masterLabel>
+            <translation><!-- Troop carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trucks</masterLabel>
+            <translation><!-- Trucks --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AD Distribution Channel --></label>
+        <name>AD_Distribution_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Armoured Fighting Vehicles [Security]</masterLabel>
+            <translation><!-- Armoured Fighting Vehicles [Security] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Civil</masterLabel>
+            <translation><!-- Civil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Military</masterLabel>
+            <translation><!-- Military --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AD Industry --></label>
+        <name>AD_Industry__c</name>
+        <picklistValues>
+            <masterLabel>Air</masterLabel>
+            <translation><!-- Air --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS [Battery Monitoring System]</masterLabel>
+            <translation><!-- BMS [Battery Monitoring System] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Land</masterLabel>
+            <translation><!-- Land --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sea</masterLabel>
+            <translation><!-- Sea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Space (Launcher)</masterLabel>
+            <translation><!-- Space (Launcher) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Aut. kontonumr.</label>
+        <name>Acct_Auto__c</name>
+    </fields>
+    <fields>
+        <label>Adresskod</label>
+        <name>Address_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Area --></label>
+        <name>Business_Area__c</name>
+        <picklistValues>
+            <masterLabel>Air Defense Vehicle</masterLabel>
+            <translation><!-- Air Defense Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amphibious Vehicle</masterLabel>
+            <translation><!-- Amphibious Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoured Car</masterLabel>
+            <translation><!-- Armoured Car --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoured Engineering Vehicle</masterLabel>
+            <translation><!-- Armoured Engineering Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automotive</masterLabel>
+            <translation><!-- Automotive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emerson group</masterLabel>
+            <translation><!-- Emerson group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FMCG</masterLabel>
+            <translation><!-- FMCG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Wing</masterLabel>
+            <translation><!-- Fixed Wing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Wing - Business Jet</masterLabel>
+            <translation><!-- Fixed Wing - Business Jet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Wing - General Aviation</masterLabel>
+            <translation><!-- Fixed Wing - General Aviation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Wing - Narrow Body</masterLabel>
+            <translation><!-- Fixed Wing - Narrow Body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food Retailers</masterLabel>
+            <translation><!-- Food Retailers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heavy Lift Launch Vehicle</masterLabel>
+            <translation><!-- Heavy Lift Launch Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistic Operators</masterLabel>
+            <translation><!-- Logistic Operators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Lift Launch Vehicle</masterLabel>
+            <translation><!-- Medium Lift Launch Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Food Retailers</masterLabel>
+            <translation><!-- Non Food Retailers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orange Group</masterLabel>
+            <translation><!-- Orange Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Industries</masterLabel>
+            <translation><!-- Other Industries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ports and Warehouses</masterLabel>
+            <translation><!-- Ports and Warehouses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rotary Wind</masterLabel>
+            <translation><!-- Rotary Wind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Lift Launch Vehicle</masterLabel>
+            <translation><!-- Small Lift Launch Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steel and Metal Industry</masterLabel>
+            <translation><!-- Steel and Metal Industry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submarine - Diesel Electric</masterLabel>
+            <translation><!-- Submarine - Diesel Electric --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submarine - Nuclear</masterLabel>
+            <translation><!-- Submarine - Nuclear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Super Heavy Lift Launch Vehicle</masterLabel>
+            <translation><!-- Super Heavy Lift Launch Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surface Vessel</masterLabel>
+            <translation><!-- Surface Vessel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tank</masterLabel>
+            <translation><!-- Tank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troop Carrier</masterLabel>
+            <translation><!-- Troop Carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trucks</masterLabel>
+            <translation><!-- Trucks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vodafone Group</masterLabel>
+            <translation><!-- Vodafone Group --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Företag #</label>
+        <name>Company_Number_Pick__c</name>
+    </fields>
+    <fields>
+        <label>Företagsnummer</label>
+        <name>Company_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor --></label>
+        <name>Competitor__c</name>
+    </fields>
+    <fields>
+        <help>Integrerat fält för den e-postadress dit all ekonomisk korrespondens ska skickas.</help>
+        <label>E-postadress ekonomi</label>
+        <name>Contact_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Language --></label>
+        <name>Customer_Language__c</name>
+        <relationshipLabel><!-- Accounts (Customer Language) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kundnummer</label>
+        <name>Customer_Number__c</name>
+    </fields>
+    <fields>
+        <label>Leveransvillkor</label>
+        <name>Delivery_Terms__c</name>
+        <relationshipLabel>Konton (leveransvillkor)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Distributionskanal</label>
+        <name>Distribution_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Armoured Fighting Vehicles</masterLabel>
+            <translation>Bepansrade stridsfordon</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BID</masterLabel>
+            <translation><!-- BID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Battery Dealers and Distributor</masterLabel>
+            <translation>Batteriåterförsäljare och -distributörer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Civil</masterLabel>
+            <translation>Civilt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer</masterLabel>
+            <translation>Återförsäljare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor</masterLabel>
+            <translation>Distributör</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor / Agent (excluding VADs)</masterLabel>
+            <translation>Distributör/agent (exklusive VAD)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End-User</masterLabel>
+            <translation>Slutanvändare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key End User</masterLabel>
+            <translation>Nyckelslutanvändare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAD</masterLabel>
+            <translation><!-- LAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LTC</masterLabel>
+            <translation><!-- LTC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Military</masterLabel>
+            <translation>Försvaret</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Annan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power System Provider</masterLabel>
+            <translation>Kraftsystemsleverantör</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Dealer</masterLabel>
+            <translation>Lastbilsåterförsäljare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VADs/System Integrator</masterLabel>
+            <translation>VAD/systemintegratör</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- EMEA CLASS --></label>
+        <name>EMEA_CLASS__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA JSON Date Time --></label>
+        <name>EMEA_JSON_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA JSON --></label>
+        <name>EMEA_JSON__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA SAP Quote Ready --></label>
+        <name>EMEA_SAP_Quote_Ready__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA SAP Quote Required Data Checklist --></label>
+        <name>EMEA_SAP_Quote_Required_Data_Checklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA SAP Ready --></label>
+        <name>EMEA_SAP_Ready__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA SAP Required Data Checklist --></label>
+        <name>EMEA_SAP_Required_Data_Checklist__c</name>
+    </fields>
+    <fields>
+        <help>Företagets generiska e-postadress</help>
+        <label>Företagets e-postadress</label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label>ExtID</label>
+        <name>ExtId__c</name>
+    </fields>
+    <fields>
+        <label>Industri</label>
+        <name>Industry__c</name>
+        <picklistValues>
+            <masterLabel>AGV</masterLabel>
+            <translation><!-- AGV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGV-LGV</masterLabel>
+            <translation><!-- AGV-LGV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Air</masterLabel>
+            <translation>Luft</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arial Platform</masterLabel>
+            <translation>Plattformar på hög höjd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burden Carrier</masterLabel>
+            <translation>Lastfordon</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleaning machines</masterLabel>
+            <translation>Städmaskiner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Floor Care</masterLabel>
+            <translation>Golvvård</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forklifts and Industrial trucks</masterLabel>
+            <translation>Gaffel- och industritruckar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GSE</masterLabel>
+            <translation><!-- GSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GSE - Other</masterLabel>
+            <translation>GSE - övrigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Truck</masterLabel>
+            <translation>Handtruck</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial Truck Narrow Isle</masterLabel>
+            <translation>Industritruck smala gångar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial Truck Rider</masterLabel>
+            <translation>Industriåktruck</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Land</masterLabel>
+            <translation><!-- Land --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics</masterLabel>
+            <translation>Logistik</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing Plants</masterLabel>
+            <translation>Tillverkningsanläggningar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining</masterLabel>
+            <translation>Gruvdrift</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining - Other</masterLabel>
+            <translation>Gruvdrift - annat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other End Users MP</masterLabel>
+            <translation>Andra slutanvändare MP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail</masterLabel>
+            <translation>Järnväg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail - Other</masterLabel>
+            <translation>Järnväg - annat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail Lighting</masterLabel>
+            <translation>Järnvägsbelysning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail Locomotive</masterLabel>
+            <translation>Järnväg - lok</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail MP</masterLabel>
+            <translation>Järnväg MP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewables</masterLabel>
+            <translation>Förnybart</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sea</masterLabel>
+            <translation>Hav</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Space (Launcher)</masterLabel>
+            <translation>Rymd (startanordning)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty</masterLabel>
+            <translation>Special</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecom</masterLabel>
+            <translation>Telekom</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation>Energibolag</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Verksamhetsområde EMEA</help>
+        <label><!-- LOB --></label>
+        <name>LOB_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Aerospace &amp; Defense</masterLabel>
+            <translation>Flyg och försvar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motive</masterLabel>
+            <translation>Motiv</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reserve</masterLabel>
+            <translation>Reserv</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Senast inkommet - meddelande</label>
+        <name>Last_Inbound_Message__c</name>
+    </fields>
+    <fields>
+        <label>Senast inkommet - tagg</label>
+        <name>Last_Inbound_Tag__c</name>
+    </fields>
+    <fields>
+        <label>Senast inkommet - tid</label>
+        <name>Last_Inbound_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- MP Business Area --></label>
+        <name>MP_Business_Area__c</name>
+        <picklistValues>
+            <masterLabel>Automotive</masterLabel>
+            <translation><!-- Automotive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FMCG</masterLabel>
+            <translation><!-- FMCG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food Retailers</masterLabel>
+            <translation><!-- Food Retailers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistic Operators</masterLabel>
+            <translation><!-- Logistic Operators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining</masterLabel>
+            <translation><!-- Mining --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Food Retailers</masterLabel>
+            <translation><!-- Non Food Retailers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Industries</masterLabel>
+            <translation><!-- Other Industries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ports and Warehouses</masterLabel>
+            <translation><!-- Ports and Warehouses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steel and Metal Industry</masterLabel>
+            <translation><!-- Steel and Metal Industry --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MP Distribution Channel --></label>
+        <name>MP_Distribution_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Battery dealer / distributor</masterLabel>
+            <translation><!-- Battery dealer / distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End User</masterLabel>
+            <translation><!-- End User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key End User</masterLabel>
+            <translation><!-- Key End User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Dealer</masterLabel>
+            <translation><!-- Truck Dealer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MP Industry --></label>
+        <name>MP_Industry__c</name>
+        <picklistValues>
+            <masterLabel>AGV-LGV</masterLabel>
+            <translation><!-- AGV-LGV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleaning machines</masterLabel>
+            <translation><!-- Cleaning machines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forklifts / industrial trucks</masterLabel>
+            <translation><!-- Forklifts / industrial trucks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics</masterLabel>
+            <translation><!-- Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing Plants</masterLabel>
+            <translation><!-- Manufacturing Plants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other End Users</masterLabel>
+            <translation><!-- Other End Users --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail</masterLabel>
+            <translation><!-- Rail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Namn2</label>
+        <name>Name2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name3 --></label>
+        <name>Name3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name4 --></label>
+        <name>Name4__c</name>
+    </fields>
+    <fields>
+        <help><!-- Manually maintained checkbox to designate National Accounts.  Only accessible to edit by certain roles/profiles. --></help>
+        <label><!-- National --></label>
+        <name>National__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of SADs --></label>
+        <name>Number_of_SADs__c</name>
+    </fields>
+    <fields>
+        <label>Överordnat DUNS-nummer</label>
+        <name>Parent_DUNS_number__c</name>
+    </fields>
+    <fields>
+        <label>Betalningsvillkor</label>
+        <name>Payment_Terms__c</name>
+        <relationshipLabel>Konton (betalningsvillkor)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Prospekt #</label>
+        <name>Prospect__c</name>
+    </fields>
+    <fields>
+        <label>Skyddat konto</label>
+        <name>Protective_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- RP Distribution Channel --></label>
+        <name>RP_Distribution_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Battery dealer / distributor</masterLabel>
+            <translation><!-- Battery dealer / distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End User</masterLabel>
+            <translation><!-- End User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power System Provider</masterLabel>
+            <translation><!-- Power System Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value added distributor</masterLabel>
+            <translation><!-- Value added distributor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RP Industry --></label>
+        <name>RP_Industry__c</name>
+        <picklistValues>
+            <masterLabel>Rail</masterLabel>
+            <translation><!-- Rail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewable</masterLabel>
+            <translation><!-- Renewable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty</masterLabel>
+            <translation><!-- Specialty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecom</masterLabel>
+            <translation><!-- Telecom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility</masterLabel>
+            <translation><!-- Utility --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region Code --></label>
+        <name>Region_Code__c</name>
+        <relationshipLabel><!-- Accounts (Region Code) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Relaterad kund</label>
+        <name>Related_Customer__c</name>
+        <relationshipLabel>Relaterade leveranskonton</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SAP Customer Id --></label>
+        <name>SAP_Customer_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Ship To --></label>
+        <name>SAP_Ship_To__c</name>
+    </fields>
+    <fields>
+        <help><!-- Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated. --></help>
+        <label><!-- Combine Asset Quantities --></label>
+        <name>SBQQ__AssetQuantitiesCombined__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable to combine assets and subscriptions from multiple co-termed contracts. By default, each co-termed contract generates a separate group on renewal quote. --></help>
+        <label><!-- Combine Co-Termed Contracts --></label>
+        <name>SBQQ__CoTermedContractsCombined__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines when contracts are co-terminated. --></help>
+        <label><!-- Co-Termination Event --></label>
+        <name>SBQQ__CoTerminationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Add-on</masterLabel>
+            <translation><!-- Add-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Determines how service and subscription contracts for this customer are co-terminated. --></help>
+        <label><!-- Contract Co-Termination --></label>
+        <name>SBQQ__ContractCoTermination__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation><!-- Never --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prompt</masterLabel>
+            <translation><!-- Prompt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Default opportunity for this account used by an e-Commerce module to obtain the customer&apos;s price book and associate with &quot;shopping cart&quot; quotes. --></help>
+        <label><!-- Default Opportunity --></label>
+        <name>SBQQ__DefaultOpportunity__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select if contracted prices should not be inherited from the parent account. --></help>
+        <label><!-- Ignore Parent Contracted Prices --></label>
+        <name>SBQQ__IgnoreParentContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to maintain bundle hierarchy on renewal quotes and amendments. --></help>
+        <label><!-- Preserve Bundle Structure --></label>
+        <name>SBQQ__PreserveBundle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter date until which the prices must be held. --></help>
+        <label><!-- Price Hold End --></label>
+        <name>SBQQ__PriceHoldEnd__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose Asset Based to make renewals based off of an account&apos;s Assets or choose Subscription based to makes renewals based off of subscriptions created from a quote. --></help>
+        <label><!-- Renewal Model --></label>
+        <name>SBQQ__RenewalModel__c</name>
+        <picklistValues>
+            <masterLabel>Asset Based</masterLabel>
+            <translation><!-- Asset Based --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Based</masterLabel>
+            <translation><!-- Contract Based --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use &quot;Same&quot; to keep the same price paid last time. Use &quot;List&quot; to use current list price. Use &quot;Uplift&quot; to use the price paid last time plus some uplift. --></help>
+        <label><!-- Renewal Pricing Method --></label>
+        <name>SBQQ__RenewalPricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same</masterLabel>
+            <translation><!-- Same --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uplift</masterLabel>
+            <translation><!-- Uplift --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- STR_SUPPL1 --></label>
+        <name>STR_SUPPL1__c</name>
+    </fields>
+    <fields>
+        <label><!-- STR_SUPPL2 --></label>
+        <name>STR_SUPPL2__c</name>
+    </fields>
+    <fields>
+        <label><!-- STR_SUPPL3 --></label>
+        <name>STR_SUPPL3__c</name>
+    </fields>
+    <fields>
+        <label>Säljarens e-postadress</label>
+        <name>Sales_Agent_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To/Cust No. --></label>
+        <name>Ship_To_Cust_No__c</name>
+    </fields>
+    <fields>
+        <label>Leverera till ExtID</label>
+        <name>Ship_To_ExtID__c</name>
+    </fields>
+    <fields>
+        <label>Leveransvillkor</label>
+        <name>Shipping_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Blocked Customer</masterLabel>
+            <translation>Blockerad kund</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Hold/Block</masterLabel>
+            <translation>Kreditspärr</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doubtful Customer</masterLabel>
+            <translation>Tveksam kund</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal Customer</masterLabel>
+            <translation>Normal kund</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation>Prospekt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summit Acct ID --></label>
+        <name>Summit_Acct_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summit Acct --></label>
+        <name>Summit_Acct__c</name>
+    </fields>
+    <fields>
+        <label>Kod för leveransvillkor</label>
+        <name>Terms_of_Delivery_Code__c</name>
+    </fields>
+    <fields>
+        <label>Beskrivning av leveransvillkor</label>
+        <name>Terms_of_Delivery_Desc__c</name>
+    </fields>
+    <fields>
+        <label>Kod för betalningsvillkor</label>
+        <name>Terms_of_Payment_Code__c</name>
+    </fields>
+    <fields>
+        <label>Beskrivning av betalningsvillkor</label>
+        <name>Terms_of_Payment_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transportation Zone --></label>
+        <name>Transportation_Zone__c</name>
+        <relationshipLabel><!-- Accounts (Transportation Zone) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>America Customer Layout</layout>
+        <sections>
+            <label><!-- Accounting Information --></label>
+            <section>Accounting Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>America Prospect Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EMEA Customer Layout</layout>
+        <sections>
+            <label><!-- AD Classification --></label>
+            <section>AD Classification</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer SAP Details --></label>
+            <section>Customer SAP Details</section>
+        </sections>
+        <sections>
+            <label><!-- MP Classification --></label>
+            <section>MP Classification</section>
+        </sections>
+        <sections>
+            <label><!-- RP Classification --></label>
+            <section>RP Classification</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EMEA Prospect Layout</layout>
+        <sections>
+            <label><!-- AD Classification --></label>
+            <section>AD Classification</section>
+        </sections>
+        <sections>
+            <label><!-- Account SAP Details --></label>
+            <section>Account SAP Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- MP Classification --></label>
+            <section>MP Classification</section>
+        </sections>
+        <sections>
+            <label><!-- RP Classification --></label>
+            <section>RP Classification</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Customer --></label>
+        <name>Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospect --></label>
+        <name>Prospect</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Det går inte att ändra namn och adress när ett konto har angetts som Endast leveransadress.</errorMessage>
+        <name>Accounts_Not_Edit_Ship_Tos</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Name cannot be edited in Salesforce on Customer accounts integrated from BaaN or SAP --></errorMessage>
+        <name>Customer_Accounts_AccountName_ReadOnly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in the City, Country, and Classifications for the account prior to Saving. --></errorMessage>
+        <name>EMEA_Prospect_Required_Field_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot modify the National field. --></errorMessage>
+        <name>Prevent_Users_from_Editing_National</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Renew_Assets --></label>
+        <name>SBQQ__Renew_Assets</name>
+    </webLinks>
+</CustomObjectTranslation>

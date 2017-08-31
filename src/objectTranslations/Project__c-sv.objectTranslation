@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value><!-- Project --></value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value><!-- Project --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Project --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value><!-- Project --></value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value><!-- Project --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Project --></value>
+    </caseValues>
+    <fields>
+        <help>Beräknat slutdatum eller avslutsdatum då projektet (dvs. intäkten) kommer att ha säkrats.</help>
+        <label>Slutdatum</label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help>&quot;Det totala belopp projektet som helhet kan komma att ge, bestående av en eller flera prospekt.  Detta belopp ska vara det totala beräknade beloppet för alla prospekt.&quot;</help>
+        <label>Potentiellt belopp</label>
+        <name>Potential_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Hur sannolikt det är att projektet och den potentiella intäkten säkras.</help>
+        <label>Tänkbar sannolikhet</label>
+        <name>Potential_Probability__c</name>
+    </fields>
+    <fields>
+        <help>Startdatum för projektet</help>
+        <label>Startdatum</label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Typ</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>EAS</masterLabel>
+            <translation><!-- EAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motive Power</masterLabel>
+            <translation>Traktionskraft</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reserve Power</masterLabel>
+            <translation>Reservkraft</translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>Project Layout</layout>
+        <sections>
+            <label>Egna länkar</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Project Name --></nameFieldLabel>
+    <recordTypes>
+        <label>EnerSys-projekt</label>
+        <name>EnerSys_Project</name>
+    </recordTypes>
+</CustomObjectTranslation>

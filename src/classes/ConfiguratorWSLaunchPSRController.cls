@@ -1,0 +1,66 @@
+public with sharing class ConfiguratorWSLaunchPSRController {
+
+	Configurator_API_Settings__c settings;
+
+	public String isOkToRedirect {get;set;}
+	public String userMessage {get;set;}
+	public String launchUrl {get;set;}
+
+	private static final String BASE_RETURN_URL = System.URL.getSalesforceBaseUrl().toExternalForm();
+	private static final String QUOTE_FIORI_RETURN_URL = Page.FioriPlaceholder.getURL();
+	
+	private String source {get;set;}
+
+	@TestVisible private SBQQ__Quote__c quote {get;set;}
+	@TestVisible private User user {get;set;}
+	private ConfiguratorWSLaunchDao dao;
+
+	public ConfiguratorWSLaunchPSRController(ApexPages.StandardController c) {
+		source = ApexPages.currentPage().getParameters().get('source');
+		
+		settings = CustomSettingManager.verifyCustomSettings();
+		getDataForUrl(c.getRecord());
+		isOkToRedirect=isOkToRedirect();
+		userMessage = createUserMessage();
+		launchUrl = createLaunchUrl();
+	}
+
+	private void getDataForUrl(SObject quoteSObj) {
+		dao = new ConfiguratorWSLaunchDao();
+		quote = dao.fetchQuoteData(quoteSObj.Id);
+		user = dao.fetchUserData(UserInfo.getUserId());
+	}
+
+	public String isOkToRedirect() {
+		if (quote!=null && quote.SBQQ__PriceBook__c!=null) {
+			return 'true';
+		} else {
+			return 'false';
+		}
+	}
+
+	private String createUserMessage() {
+		String returnMessage = '';
+		if (isOkToRedirect()=='true') {
+			returnMessage = 'Redirecting to PSR...';
+		} else {
+			returnMessage = 'Please set the Pricebook on the Quote before proceeding';
+		}
+		return returnMessage;
+	}
+
+	private String createLaunchUrl() {
+		String returnUrl;
+		if(source == 'Fiori') {
+			returnUrl = BASE_RETURN_URL + '/one/one.app#/alohaRedirect' + QUOTE_FIORI_RETURN_URL + '?id=' + quote.Id +'&syncSAP=true';
+		} else {
+			returnUrl = BASE_RETURN_URL + '?quoteNumber=' + quote.Name;
+		}
+		
+		return String.valueOf(settings.Base_Launch_URL_PSR__c) 
+						+ '?user=' + EncodingUtil.urlEncode(user.Email, 'UTF-8') 
+						+ '&quoteNumber=' + EncodingUtil.urlEncode(quote.Name, 'UTF-8')
+						+ '&returnUrl=' + EncodingUtil.urlEncode(returnUrl, 'UTF-8');
+	}
+
+}

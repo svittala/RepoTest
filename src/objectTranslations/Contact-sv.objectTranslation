@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Big Event --></label>
+        <name>Big_Event__c</name>
+        <relationshipLabel><!-- Contacts (Big Events) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kontakttyp</label>
+        <name>Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Admin</masterLabel>
+            <translation><!-- Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation>Teknik</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation>Chef</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation>Finans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation>Marknadsföring</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Annan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation>Inköp</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation>Försäljning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service/Maintenance</masterLabel>
+            <translation>Service/underhåll</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation>Teknik</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>&quot;Om du får reda på att den här personen har lämnat företaget, men inte känner till nästa arbetsplats, markera denna ruta för att ange att det är en f.d. anställd. Om du vet var personen tog vägen, uppdatera hans/hennes konto.&quot;</help>
+        <label>Tidigare anställd</label>
+        <name>Former_Employee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <label>Postlista för semestrar</label>
+        <name>Holiday_Mailing_List__c</name>
+    </fields>
+    <fields>
+        <help>Från leadskonversation</help>
+        <label>Datum för första kontakttillfälle</label>
+        <name>Initial_Contact_Event_Date__c</name>
+    </fields>
+    <fields>
+        <help>Från leadskonvertering</help>
+        <label>Första kontakttillfälle</label>
+        <name>Initial_Contact_Event__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provide additional information about the individuals type if &apos;Other&apos; is selected. --></help>
+        <label><!-- Other --></label>
+        <name>Other_Contact_Type__c</name>
+    </fields>
+    <fields>
+        <help>Används för att hantera information om en kontakt för att kunna bygga upp en god relation.</help>
+        <label>Personlig information</label>
+        <name>Personal_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Personnel ID --></label>
+        <name>SAP_Personnel_ID__c</name>
+    </fields>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Source --></label>
+            <section>Lead Source</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label>EnerSys - kontakt</label>
+        <name>EnerSys_Contact</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Use the &apos;Other&apos; field only for additional text when the Contact Type field is set to Other. Please delete any text in this field or change the role to &apos;Other&apos;. --></errorMessage>
+        <name>Other_Field_For_Roles_Contact</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

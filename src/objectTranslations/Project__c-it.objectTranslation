@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Project --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Project --></value>
+    </caseValues>
+    <fields>
+        <help>&quot;La data di fine o chiusura prevista del progetto, ovvero il momento in cui verranno generati i ricavi.&quot;</help>
+        <label>Data di fine</label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help>&quot;Importo potenziale totale dell&apos;intero progetto, costituito da una o più opportunità.  Si tratta dell&apos;importo totale stimato di tutte le opportunità.&quot;</help>
+        <label>Importo potenziale</label>
+        <name>Potential_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Probabilità di concludere il progetto e potenziale ricavo.</help>
+        <label>Probabilità potenziale</label>
+        <name>Potential_Probability__c</name>
+    </fields>
+    <fields>
+        <help>Data di inizio del progetto.</help>
+        <label>Data di inizio</label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Tipo</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>EAS</masterLabel>
+            <translation><!-- EAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motive Power</masterLabel>
+            <translation><!-- Motive Power --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reserve Power</masterLabel>
+            <translation><!-- Reserve Power --></translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <layouts>
+        <layout>Project Layout</layout>
+        <sections>
+            <label>Collegamenti personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Project Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Progetto EnerSys</label>
+        <name>EnerSys_Project</name>
+    </recordTypes>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

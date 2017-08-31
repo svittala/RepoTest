@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Configurator Name --></label>
+        <name>Configurator_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label>JSON Offertkonfig</label>
+        <name>JSON_QuoteConfig__c</name>
+    </fields>
+    <fields>
+        <label>Offertrad - skapad datum</label>
+        <name>Quote_Line_Creation_Date__c</name>
+    </fields>
+    <fields>
+        <label>Offertrad - fel när skapad</label>
+        <name>Quote_Line_Creation_Errors__c</name>
+    </fields>
+    <fields>
+        <label>Offertrad - varningar när skapad</label>
+        <name>Quote_Line_Creation_Warnings__c</name>
+    </fields>
+    <fields>
+        <label>Offert</label>
+        <name>Quote__c</name>
+        <relationshipLabel>Externa konfiguration</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- WS Request --></label>
+        <name>WS_Request__c</name>
+        <relationshipLabel><!-- External Configurations --></relationshipLabel>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>External Configuration Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- External Configuration Name --></nameFieldLabel>
+</CustomObjectTranslation>

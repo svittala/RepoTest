@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>SBQQ__Account__c</field>
+        <field>SBQQ__Opportunity2__c</field>
+        <field>SBQQ__CustomerAmount__c</field>
+        <field>Reason_for_Discount__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>First level of approval required. Approvals required are based on the net amount.  Note:  Motive and Reserve/AES have different thresholds.</description>
+        <entryCriteria>
+            <formula>AND(OR(AND(ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;), (SBQQ__NetAmount__c &gt;= 50000)),AND(OR(ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;), (ISPICKVAL(SBU__c, &apos;EAS - EMEA&apos;))),(SBQQ__NetAmount__c)&gt;=100000)), SBQQ__NetAmount__c&lt;250000)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Sales Manager</label>
+        <name>EMEA_Quote_Revenue_Level_1_Approval</name>
+        <rejectionActions>
+            <action>
+                <name>Update_Status_after_Rejection</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>GM_Approver__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Second level of approval required. Approvals required are based on the net amount.</description>
+        <entryCriteria>
+            <formula>AND(OR(ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;), ISPICKVAL(SBU__c, &apos;EAS -EMEA&apos;)) ,( SBQQ__NetAmount__c &gt;=250000), (SBQQ__NetAmount__c&lt;750000))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Sales Director</label>
+        <name>EMEA_Quote_Revenue_Level_2_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Update_Status_after_Rejection</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Marketing_Approver__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Third level of approval required. Approvals required are based on the net amount.</description>
+        <entryCriteria>
+            <formula>AND(OR(ISPICKVAL(SBU__c,&apos;MP - EMEA&apos;),ISPICKVAL (SBU__c,&apos;RP - EMEA&apos;), ISPICKVAL (SBU__c,&apos;EAS - EMEA&apos;)), (SBQQ__NetAmount__c &gt;= 750000), (SBQQ__NetAmount__c&lt;2000000))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>EMEA Sales Director Multi -Country</label>
+        <name>EMEA_Quote_Revenue_Level_3_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Update_Status_after_Rejection</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>VP_Approver__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Fourth level of approval required. Approvals required are based on the net amount.</description>
+        <entryCriteria>
+            <formula>AND(OR(ISPICKVAL(SBU__c,&apos;MP - EMEA&apos;),ISPICKVAL (SBU__c,&apos;RP - EMEA&apos;), ISPICKVAL (SBU__c,&apos;EAS - EMEA&apos;)), (SBQQ__NetAmount__c &gt;= 2000000), (SBQQ__NetAmount__c&lt; 5000000))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>VP</label>
+        <name>EMEA_Quote_Revenue_Level_4_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>enersys6@summa.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Fifth level of approval required. Approvals required are based on the net amount.</description>
+        <entryCriteria>
+            <formula>AND(OR(ISPICKVAL(SBU__c,&apos;MP - EMEA&apos;),ISPICKVAL(SBU__c,&apos;RP - EMEA&apos;),ISPICKVAL(SBU__c,&apos;EAS - EMEA&apos;)), (SBQQ__NetAmount__c &gt;=5000000))</formula>
+        </entryCriteria>
+        <label>President</label>
+        <name>EMEA_President_Quote_Revenue_Level_5_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Approval process for EMEA quotes based on revenue levels</description>
+    <emailTemplate>unfiled$public/Quote_Template_Language</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.Americas__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.SBQQ__Status__c</field>
+            <operation>equals</operation>
+            <value>Draft</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.SBQQ__Status__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Notification_of_Quote_Approval</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_Record_Type_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Status_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Watermark_Checkbox</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Request_to_Revise_Quote</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Update_Quote_Status</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>EMEA Quote Revenue Level Approvals</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recallActions>
+        <action>
+            <name>Update_Status_Draft</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

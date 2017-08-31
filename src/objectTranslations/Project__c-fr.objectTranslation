@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Projet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projets</value>
+    </caseValues>
+    <fields>
+        <help>La date de fin ou de fermeture estimée du moment où le projet (c.-à-d. les revenus) sera sécurisé</help>
+        <label>Date de fin</label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Le montant potentiel total d&apos;un projet dans son ensemble comprenant une ou plusieurs opportunités.  Ce montant doit correspondre au montant total estimé de toutes les opportunités.</help>
+        <label>Montant potentiel</label>
+        <name>Potential_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Probabilité de sécuriser le projet et le revenu potentiel.</help>
+        <label>Probabilité</label>
+        <name>Potential_Probability__c</name>
+    </fields>
+    <fields>
+        <help>Date de début du projet</help>
+        <label>Date de début</label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>EAS</masterLabel>
+            <translation><!-- EAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motive Power</masterLabel>
+            <translation>Batterie de traction</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reserve Power</masterLabel>
+            <translation>Batteries stationnaires</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Project Layout</layout>
+        <sections>
+            <label>Personnaliser les liens</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Projet Name</nameFieldLabel>
+    <recordTypes>
+        <label>Projet EnerSys</label>
+        <name>EnerSys_Project</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

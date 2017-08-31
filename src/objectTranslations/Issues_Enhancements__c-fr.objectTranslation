@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Issues &amp; Enhancements --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Issues &amp; Enhancements --></value>
+    </caseValues>
+    <gender><!-- Masculine --></gender>
+    <layouts>
+        <layout>Issues &amp; Enhancements Layout</layout>
+        <sections>
+            <label>Modifier détails du lot</label>
+            <section>Change Set Details</section>
+        </sections>
+        <sections>
+            <label>Personnaliser les liens</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Liste de vérification déploiement</label>
+            <section>Deployment Checklist</section>
+        </sections>
+        <sections>
+            <label>Détails de la requête</label>
+            <section>Request Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Item Number --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

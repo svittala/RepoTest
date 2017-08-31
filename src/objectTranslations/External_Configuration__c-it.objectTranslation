@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- External Configuration --></value>
+    </caseValues>
+    <fields>
+        <label>Nome configuratore</label>
+        <name>Configurator_Name__c</name>
+    </fields>
+    <fields>
+        <label>ID esterno</label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label>QuoteConfig JSON</label>
+        <name>JSON_QuoteConfig__c</name>
+    </fields>
+    <fields>
+        <label>Data creazione riga offerta</label>
+        <name>Quote_Line_Creation_Date__c</name>
+    </fields>
+    <fields>
+        <label>Errori creazione riga offerta</label>
+        <name>Quote_Line_Creation_Errors__c</name>
+    </fields>
+    <fields>
+        <label>Avvisi creazione riga offerta</label>
+        <name>Quote_Line_Creation_Warnings__c</name>
+    </fields>
+    <fields>
+        <label>Offerta</label>
+        <name>Quote__c</name>
+        <relationshipLabel>Configurazioni esterne</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Richiesta WS</label>
+        <name>WS_Request__c</name>
+        <relationshipLabel>Configurazioni esterne</relationshipLabel>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <layouts>
+        <layout>External Configuration Layout</layout>
+        <sections>
+            <label>Collegamenti personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- External Configuration Name --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

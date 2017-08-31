@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Item Group --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Item Group --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label>Code de groupe d&apos;éléments</label>
+        <name>Item_Group_Code__c</name>
+    </fields>
+    <fields>
+        <label>Description du groupe d&apos;éléments</label>
+        <name>Item_Group_Description__c</name>
+    </fields>
+    <fields>
+        <label>Catalogue de prix</label>
+        <name>Price_Book__c</name>
+        <picklistValues>
+            <masterLabel>EAS</masterLabel>
+            <translation><!-- EAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RP</masterLabel>
+            <translation><!-- RP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Écraser la catégorie de produit</label>
+        <name>Product_Category_Override__c</name>
+    </fields>
+    <fields>
+        <label>Catégorie de produit</label>
+        <name>Product_Category__c</name>
+    </fields>
+    <fields>
+        <label>Point d&apos;orgue des ventes</label>
+        <name>Sales_Highlight__c</name>
+    </fields>
+    <fields>
+        <help>Les réductions supérieures à ce pourcentage passeront par ce niveau d&apos;approbation</help>
+        <label>Niveau 1</label>
+        <name>Tier_1__c</name>
+    </fields>
+    <fields>
+        <help>Les réductions supérieures à ce pourcentage passeront par ce niveau d&apos;approbation</help>
+        <label>Niveau 2</label>
+        <name>Tier_2__c</name>
+    </fields>
+    <fields>
+        <help>Les réductions supérieures à ce pourcentage passeront par ce niveau d&apos;approbation.</help>
+        <label>Niveau 3</label>
+        <name>Tier_3__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <layouts>
+        <layout>Item Group Layout</layout>
+        <sections>
+            <label>Seuils d&apos;approbation</label>
+            <section>Approval Thresholds</section>
+        </sections>
+        <sections>
+            <label>Catégorie</label>
+            <section>Category</section>
+        </sections>
+        <sections>
+            <label>Personnaliser les liens</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Points d&apos;orgue des ventes</label>
+            <section>Sales Highlights</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Auto Number --></nameFieldLabel>
+    <recordTypes>
+        <label>Groupe d&apos;éléments pour l&apos;intégration Baan Amériques</label>
+        <name>Americas_Item_Group</name>
+    </recordTypes>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

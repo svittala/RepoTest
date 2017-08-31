@@ -1,0 +1,202 @@
+<aura:component implements="lightning:actionOverride,force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="SalesAreaDataController" access="global">
+    <aura:attribute name="account" type="Account" />
+    
+    <aura:attribute name="SalesAreaData" type="Sales_Area_data__c" default="{'sobjectType':'Sales_Area_data__c',
+                                                                            'Account__c':'',
+                                                                            'Account_at_Customer_Code__c':'',
+                                                                            'Incoterm_Code_lookup__c':'',                                     
+                                                                            'Price_Group_lookup__c':'',                             
+                                                                            'Sales_Area_Sales_Organisation_Code__c':'',                                        
+                                                                            'Sales_Contact__c':'',
+                                                                            'Sales_District__c':'',
+                                                                            'Sales_Office_lookup__c':'',
+                                                                            'Shipping_Conditions__c':'',
+                                                                            'Terms_of_Payment_lookup__c':'',
+                                                                            'CurrencyIsoCode':''
+                                                                            }"/>
+    <aura:attribute name="SalesAreaCode" type="String" default=""/>
+    <aura:attribute name="selectedSalesAreaLookupRecord" type="SObject" default="{}"/>
+    <aura:attribute name="selectedAccountRecord" type="SObject" default="{}"/>
+    <aura:attribute name="selectedSalesDistrict" type="SObject" default="{}"/>
+    <aura:attribute name="selectedPriceGroup" type="SObject" default="{}"/>
+    <aura:attribute name="selectedCustomerGroup" type="SObject" default="{}"/>
+    <aura:attribute name="selectedSalesOffice" type="SObject" default="{}"/>
+    <aura:attribute name="selectedSalesContact" type="SObject" default="{}"/>
+    <aura:attribute name="selectedInOfficeContact" type="SObject" default="{}"/>
+    <aura:attribute name="selectedTermsOfPayment" type="SObject" default="{}"/>
+    <aura:attribute name="selectedIncoterm" type="SObject" default="{}"/>
+    <aura:attribute name="selectedDeliveryPriority" type="SObject" default="{}"/>
+    <aura:attribute name="selectedShippingConditions" type="SObject" default="{}"/>
+    
+    
+    <aura:attribute name="accountAtCustomerCode" type="String" default=""/>
+    <aura:attribute name="currency" type="String" default=""/>
+    <aura:attribute name="currencyPicklistValues" type="AuraSelectOption[]"/>
+    <aura:attribute name="validForm" type="Boolean" default="false"/>    
+    <aura:attribute name="response" type="String" default=""/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="oSelectedRecordEvent" event="c:SelectedSObjectRecordEvent" action="{!c.handleComponentEvent}"/>
+    <aura:handler name="change" value="{!v.response}" action="{!c.handleStatusChange}"/>
+    
+   <!-- <section aura:id="modalDialog" role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                    
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Create Sales Area Data</h2>
+            </header>
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1"> 
+                -->
+                <div class="">
+                    <div class="slds-form slds-form_compound">
+                        <div class="slds-section">
+                            <aura:if isTrue="{!v.response}">
+                                <div class="slds-notify_container slds-is-relative">
+                                    <div class="slds-notify slds-notify_toast slds-theme_info" role="alert">
+                                        <span class="slds-assistive-text">info</span>
+                                        <span class="slds-icon_container slds-icon-utility-info slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+                                            
+                                        </span>
+                                        <div class="slds-notify__content">
+                                            <h2 class="slds-text-heading_small">{!v.response}</h2>
+                                        </div>
+                                        <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close">
+                                            
+                                            <span class="slds-assistive-text">Close</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </aura:if>
+                        </div>
+                        <div class="slds-section">
+                            <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder section-header-container"><span class="section-header-title section-header-title slds-p-horizontal--small slds-truncate">Information</span></h3>
+                            
+                            <div class="slds-form-element__row">    
+                                <div class="slds-form-element slds-size_1-of-2">
+                                    <!--<c:CustomLookup isRequired="true" aura:id="requiredField, accountSel" objectAPIName="Account" IconName="standard:account" selectedRecord="{!v.selectedAccountRecord}" label="Account"/>-->
+                                    <div class="slds-form-element">
+                                        <label class="slds-form-element__label" for="input-id-01"><abbr class="slds-required" title="required">*</abbr>Account</label>
+                                        <div class="slds-form-element__control">
+                                            <ui:outputText value="{!v.selectedAccountRecord.Name}"/>
+                                      	</div>
+                                    </div>
+                                </div>
+                                <div class="slds-form-element slds-size_1-of-2">
+                                    <c:CustomLookup isRequired="true" aura:id="requiredField" objectAPIName="Sales_Area__c " IconName="action:map" selectedRecord="{!v.selectedSalesAreaLookupRecord}" label="Sales Area Code"/>
+                                </div>
+                            </div>  
+                            
+                            <div class="slds-form-element__row">
+                                <div class="slds-form-element slds-size__1-of-2">
+                                    <c:CustomLookup isRequired="true" aura:id="requiredField" objectAPIName="SAP_Reference__c" filter="Sales District" IconName="" selectedRecord="{!v.selectedSalesDistrict}" label="Sales District"/>
+                                </div>
+                                <div class="slds-form-element slds-size__1-of-2"/>
+                            </div>
+                            
+                            <div class="slds-form-element__row">
+                                <div class="slds-form-element slds-size__1-of-2">
+                                    <c:CustomLookup isRequired="true" aura:id="requiredField" objectAPIName="SAP_Reference__c" filter="Customer Group" IconName="" selectedRecord="{!v.selectedCustomerGroup}" label="Customer Group"/>
+                                </div>
+                                <div class="slds-form-element slds-size__1-of-2"/>
+                            </div>  
+                            
+                            <div class="slds-form-element__row">
+                                <div class="slds-form-element slds-size__1-of-2">
+                                    <lightning:input label="Account at Customer Code" name="Account at Customer Code" value="{!v.accountAtCustomerCode}"/>
+                                </div>
+                                <div class="slds-form-element slds-size__1-of-2"/>
+                            </div>
+                            
+                            <div class="slds-form-element__row">
+                                <div class="slds-form-element slds-size__1-of-2">
+                                    <c:CustomLookup isRequired="true" aura:id="requiredField" objectAPIName="SAP_Reference__c" filter="{!'Sales Office'+v.selectedSalesAreaLookupRecord.Name}" IconName="" selectedRecord="{!v.selectedSalesOffice}" label="Sales Office"/>
+                                </div>
+                                <div class="slds-form-element slds-size__1-of-2"/>
+                            </div>  
+                        </div>
+                        
+                        <div class="slds-section">
+                            <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder section-header-container"><span class="section-header-title section-header-title slds-p-horizontal--small slds-truncate">EnerSys Contacts</span></h3>
+                            <div class="slds-form-element__row">
+                                <div class="slds-form-element slds-size__1-of-2">
+                                    <c:CustomLookup objectAPIName="Contact" filter="Contact" IconName="standard:contact" selectedRecord="{!v.selectedSalesContact}" label="Sales Contact"/>
+                                </div>
+                                
+                                <div class="slds-form-element slds-size__1-of-2">
+                                    <c:CustomLookup objectAPIName="Contact" filter="Contact" IconName="standard:contact" selectedRecord="{!v.selectedInOfficeContact}" label="In Office Contact"/>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-section">
+                            <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder section-header-container"><span class="section-header-title section-header-title slds-p-horizontal--small slds-truncate">Payment</span></h3>
+                            <div class="slds-form-element__row">
+                                
+                                <div class="slds-form-element slds-size__1-of-2">
+                                	<c:CustomLookup objectAPIName="SAP_Reference__c" filter="Price Group" IconName="" selectedRecord="{!v.selectedPriceGroup}" label="Price Group"/>    
+                                </div>
+                                <div class="slds-form-element slds-size__1-of-2">
+                                    <div class="form-group">
+                                        <ui:inputSelect aura:id="currency" label="Currency" change="{!c.handleCurrencyChange}">
+                                            <aura:iteration items="{!v.currencyPicklistValues}" var="pickval">
+                                                <ui:inputSelectOption text="{!pickval.value}" label="{!pickval.label}"/>
+                                            </aura:iteration>
+                                        </ui:inputSelect>
+                                    </div>
+                                    
+                                </div>
+                            </div>                                
+                            <div class="slds-form-element__row">
+                                
+                                <div class="slds-form-element slds-size__1-of-2">
+                                    <c:CustomLookup isRequired="true" aura:id="requiredField" objectAPIName="SAP_Reference__c" filter="Terms Of Payment" IconName="" selectedRecord="{!v.selectedTermsOfPayment}" label="Terms Of Payment"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-section">
+                            <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder section-header-container"><span class="section-header-title section-header-title slds-p-horizontal--small slds-truncate">Delivery</span></h3>
+                            <div class="slds-form-element__row">
+                                <div class="slds-form-element slds-size__1-of-2">
+                                    
+                                    <c:CustomLookup isRequired="true" aura:id="requiredField" objectAPIName="SAP_Reference__c" filter="Incoterm" IconName="custom:custom98" selectedRecord="{!v.selectedIncoterm}" label="Incoterm Code"/>
+                                    
+                                </div>
+                                <div class="slds-form-element slds-size__1-of-2">
+                                    <c:CustomLookup isRequired="true" aura:id="requiredField" objectAPIName="SAP_Reference__c" filter="Delivery Priority" IconName="custom:custom98" selectedRecord="{!v.selectedDeliveryPriority}" label="Delivery Priority"/>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slds-form-element__row">
+                                <div class="slds-form-element slds-size__1-of-2">
+                                </div>
+                                <div class="slds-form-element slds-size__1-of-2">
+                                    
+                                    <c:CustomLookup isRequired="true" aura:id="requiredField" objectAPIName="SAP_Reference__c" filter="Shipping Conditions" IconName="custom:custom98" selectedRecord="{!v.selectedShippingConditions}" label="Shipping Conditions"/>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <lightning:button label="Cancel" onclick="{!c.closeModal}" class="slds-m-top--medium" />
+				    <lightning:button label="Save Sales Area Data" onclick="{!c.saveRecord}"  variant="brand" class="slds-m-top--medium" disabled="{!v.validForm == false}"/>
+
+                </div>
+                
+          <!--  </div>
+            
+            <footer class="slds-modal__footer">
+                <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}">Cancel</button>
+                <button class="slds-button slds-button_brand"  onclick="{!c.saveRecord}">Save</button>
+            </footer>
+        </div>
+    </section> -->
+    <!-- <div aura:id="backdrop" class="slds-backdrop slds-backdrop_open"></div>   -->
+    
+    <!-- save, cancel, save + new -->          
+</aura:component>

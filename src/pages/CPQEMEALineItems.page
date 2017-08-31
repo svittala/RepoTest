@@ -1,0 +1,550 @@
+<apex:page showHeader="false" sidebar="false" cache="false" contentType="text/xml" controller="CPQEMEALineItemsController" language="{!lang}">
+   <block>
+        <table table-layout="fixed" width="100%" margin-top="0pt" margin-bottom="0pt">
+            <table-column column-width="5%"/>
+            <table-column column-width="45%"/>
+            <table-column column-width="10%"/>
+            <table-column column-width="10%"/>
+            <table-column column-width="10%"/>
+            <table-column column-width="10%"/>
+            <table-column column-width="10%"/>
+            <table-header>
+               <table-row font-size="0.667em" font-weight="bold" color="#000000" background-color="#DCDCDC" keep-with-next.within-page="always">
+                  <table-cell padding="2pt">
+                     <block>{!$Label.EMEA_Quote_Line_Item}</block>
+                  </table-cell>
+                  <table-cell padding="2pt">
+                     <block>{!$Label.EMEA_Line_Item_Material_Descirption}</block>
+                  </table-cell>
+                  <table-cell padding="2pt" text-align="center">
+                     <block>{!$Label.EMEA_Line_Item_Quantity}</block>
+                  </table-cell>
+                  <table-cell padding="2pt" text-align="right">
+                     <block>{!$Label.EMEA_Line_Item_Price}</block>
+                  </table-cell>
+                  <table-cell padding="2pt" text-align="left">
+                     <block>{!$Label.EMEA_Line_Item_Currency}</block>
+                  </table-cell>
+                  <table-cell padding="2pt" text-align="center">
+                     <block>{!$Label.EMEA_Line_Item_Price_Unit}</block>
+                  </table-cell>
+                  <table-cell padding="2pt" text-align="right">
+                     <block>{!$Label.EMEA_Line_Item_Value}</block>
+                  </table-cell>
+               </table-row>
+            </table-header>
+            <table-body>
+               <apex:repeat var="ungroupedLine" value="{!quoteDocument.lineItems}" rendered="{!quoteDocument.lineItems.size != 0}">
+                  <table-row font-size="0.667em" background-color="#ffffff" keep-with-next.within-page="always">
+                     <table-cell padding="2pt">
+                        <block><apex:outputText value="{!ungroupedLine.lineNumber}" /></block>
+                     </table-cell>
+                     <table-cell padding="2pt">
+                        <block>
+                        	<table table-layout="fixed" width="100%" padding="0">
+                              <table-column column-width="100%" />
+                              <table-header>
+                                 <table-row font-size="0px" keep-with-next.within-page="always">
+                                    <table-cell>
+                                       <block>&nbsp;</block>
+                                    </table-cell>
+                                 </table-row>
+                              </table-header>
+                              <table-body>
+                                 <table-row>
+                                    <table-cell>
+                                       <block>{!HTMLENCODE(ungroupedLine.materialNumber)}</block>
+                                    </table-cell>
+                                 </table-row>
+                                 <table-row>
+                                    <table-cell>
+                                       <block>{!HTMLENCODE(ungroupedLine.materialDescription)}</block>
+                                    </table-cell>
+                                 </table-row>
+                              </table-body>
+                           </table>
+                        </block>
+                     </table-cell>
+                     <table-cell padding="2pt" text-align="center">
+                        <block>
+                        	<apex:outputText value="{!TEXT(ungroupedLine.quantity) & ' ' & IF(NOT(ISBLANK(ungroupedLine.priceUnit)), ungroupedLine.priceUnit, 'PC')}" />
+                        </block>
+                     </table-cell>
+                     <table-cell padding="2pt" text-align="right">
+                        <block>
+                        	<c:euroFormatter value="{!ungroupedLine.amount}" rendered="{!AND(NOT(quoteDocument.orderValue), ungroupedLine.value != 0)}"/>
+                        </block>
+                     </table-cell>
+                     <table-cell padding="2pt" text-align="left">
+                        <block>
+                           	<apex:outputText value="{!ungroupedLine.currencyISOCode}" rendered="{!AND(NOT(quoteDocument.orderValue), ungroupedLine.value != 0)}"/>
+                        </block>
+                     </table-cell>
+                     <table-cell padding="2pt" text-align="center">
+                     	<block>
+                     		<apex:outputText value="1 {!IF(NOT(ISBLANK(ungroupedLine.priceUnit)), ungroupedLine.priceUnit, 'PC')}"  rendered="{!AND(NOT(quoteDocument.orderValue), ungroupedLine.value != 0)}"/>
+                        </block>
+                     </table-cell>
+                     <table-cell padding="2pt" text-align="right">
+                        <block>
+                           	<c:euroFormatter value="{!ungroupedLine.value}" rendered="{!AND(NOT(quoteDocument.orderValue), ungroupedLine.value != 0)}"/>
+                        </block>
+                     </table-cell>
+                  </table-row>
+                  
+                  <!-- item text -->
+                  <apex:outputPanel layout="none" rendered="{!ungroupedLine.hasItemText}">
+	                  <apex:repeat var="itemTxt" value="{!ungroupedLine.itemText}">
+		                  <table-row font-size="0.667em" text-align="center" background-color="#ffffff" keep-with-next.within-page="always">
+		                     <table-cell padding="2pt">
+		                        <block>&nbsp;</block>
+		                     </table-cell>
+		                     <table-cell padding="2pt" text-align="left" number-columns-spanned="5">
+		                     	<block>
+		                        	{!itemTxt}
+		                        </block>
+		                     </table-cell>
+		                  </table-row>
+	                  </apex:repeat>
+                  </apex:outputPanel>
+                  
+                  <apex:repeat value="{!ungroupedLine.conditions}" var="cond">
+	                  <table-row font-size="0.667em" text-align="center" background-color="#ffffff" keep-with-next.within-page="always">
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt" text-align="left">
+	                        <block>
+	                           <table table-layout="fixed" width="100%" padding="0">
+	                              <table-column column-width="10%" />
+	                              <table-column column-width="90%" />
+	                              <table-header>
+	                                 <table-row font-size="0px" keep-with-next.within-page="always">
+	                                    <table-cell>
+	                                       <block>&nbsp;</block>
+	                                    </table-cell>
+	                                    <table-cell>
+	                                       <block>&nbsp;</block>
+	                                    </table-cell>
+	                                 </table-row>
+	                              </table-header>
+	                              <table-body>
+	                                 <table-row>
+	                                    <table-cell>
+	                                       <block>&nbsp;</block>
+	                                    </table-cell>
+	                                    <table-cell>
+	                                       <block>{!HTMLENCODE(cond.name)}</block>
+	                                    </table-cell>
+	                                 </table-row>
+	                              </table-body>
+	                           </table>
+	                        </block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt" text-align="right">
+	                        <block>
+	                        	<apex:outputPanel layout="none" rendered="{!AND(cond.unit == '%', cond.amount != 0)}">
+		                        	<apex:outputText value="{0, Number,###,###,##0.000}">
+		                           		<apex:param value="{!cond.amount}" />
+		                           	</apex:outputText>
+		                         </apex:outputPanel>
+		                         <apex:outputPanel layout="none" rendered="{!AND(cond.unit != '%', cond.amount != 0)}">
+		                         	<c:euroFormatter value="{!cond.amount}" />
+		                         </apex:outputPanel>
+	                        </block>
+	                     </table-cell>
+	                     <table-cell padding="2pt" text-align="left">
+	                        <block>
+	                           <apex:outputText value="{!cond.unit}" />
+	                        </block>
+	                     </table-cell>
+	                     <table-cell padding="2pt" text-align="center">
+	                        <block>
+	                        	<apex:outputText value="{!cond.priceUnit}" /> 
+	                        </block>
+	                     </table-cell>
+	                     <table-cell padding="2pt" text-align="right">
+	                        <block>
+	                        	<c:euroFormatter value="{!cond.value}" />
+	                        </block>
+	                     </table-cell>
+	                  </table-row>
+	              </apex:repeat>
+	              
+	              <!-- configuration 1 -->
+                  <table-row font-size="0.667em" text-align="center" background-color="#ffffff" keep-with-next.within-page="always">
+                     <table-cell>
+                        <block>&nbsp;</block>
+                     </table-cell>
+                     <table-cell text-align="left">
+                        <block>
+	                           <table table-layout="fixed" width="100%" padding="0">
+	                              <table-column column-width="50%" />
+	                              <table-column column-width="50%" />
+	                              <table-header>
+	                                 <table-row font-size="0px" keep-with-next.within-page="always">
+	                                    <table-cell>
+	                                       <block>&nbsp;</block>
+	                                    </table-cell>
+	                                    <table-cell>
+	                                       <block>&nbsp;</block>
+	                                    </table-cell>
+	                                 </table-row>
+	                              </table-header>
+	                              <table-body>
+	                              	 <apex:outputPanel layout="none" rendered="{!ungroupedLine.brand != ''}">
+	                              	 	<table-row>
+	                                       <table-cell>
+	                                          <block>
+	                                             <apex:outputText value="{!$Label.EMEA_Line_Item_Brand}" />
+	                                          </block>
+	                                       </table-cell>
+	                                       <table-cell>
+	                                          <block>
+                                                  {!HTMLENCODE(ungroupedLine.brand)}
+	                                          </block>
+	                                       </table-cell>
+	                                    </table-row>
+	                              	 </apex:outputPanel>
+	                              	 <apex:outputPanel layout="none" rendered="{!ungroupedLine.deliveryDate != ''}">
+	                              	 	<table-row>
+	                                       <table-cell>
+	                                          <block>
+	                                             <apex:outputText value="{!$Label.EMEA_Line_Item_Delivery_Date}" />
+	                                          </block>
+	                                       </table-cell>
+	                                       <table-cell>
+	                                          <block>
+                                                  {!HTMLENCODE(ungroupedLine.deliveryDate)}
+	                                          </block>
+	                                       </table-cell>
+	                                    </table-row>
+	                              	 </apex:outputPanel>
+	                              	 <apex:outputPanel layout="none" rendered="{!ungroupedLine.subsequentItems != ''}">
+	                              	 	<table-row>
+	                                       <table-cell>
+	                                          <block>
+	                                             <apex:outputText value="{!$Label.EMEA_Line_Item_Subsequent_Items}" />
+	                                          </block>
+	                                       </table-cell>
+	                                       <table-cell>
+	                                          <block>
+                                                  {!HTMLENCODE(ungroupedLine.subsequentItems)}	                                             
+	                                          </block>
+	                                       </table-cell>
+	                                    </table-row>
+	                              	 </apex:outputPanel>
+	                              	 <apex:outputPanel layout="none" rendered="{!ungroupedLine.drawingNo != ''}">
+	                              	 	<table-row>
+	                                       <table-cell>
+	                                          <block>
+	                                             <apex:outputText value="{!$Label.EMEA_Line_Item_Drawing_No}" />
+	                                          </block>
+	                                       </table-cell>
+	                                       <table-cell>
+	                                          <block>
+                                                  {!HTMLENCODE(ungroupedLine.drawingNo)}
+	                                          </block>
+	                                       </table-cell>
+	                                    </table-row>
+	                              	 </apex:outputPanel>
+	                              	 <apex:outputPanel layout="none" rendered="{!ungroupedLine.dimensions != ''}">
+	                              	 	<table-row>
+	                                       <table-cell>
+	                                          <block>
+	                                             <apex:outputText value="{!$Label.EMEA_Line_Item_Dimensions}" />
+	                                          </block>
+	                                       </table-cell>
+	                                       <table-cell>
+	                                          <block>
+                                                  {!HTMLENCODE(ungroupedLine.dimensions)}
+	                                          </block>
+	                                       </table-cell>
+	                                    </table-row>
+	                              	 </apex:outputPanel>
+	                                 <apex:outputPanel layout="none" rendered="{!AND(ungroupedLine.brand == '', ungroupedLine.deliveryDate == '', ungroupedLine.subsequentItems == '', ungroupedLine.drawingNo == '', ungroupedLine.dimensions == '')}">
+	                              	 	<table-row>
+	                                       <table-cell>
+	                                          <block>
+	                                             &nbsp;
+	                                          </block>
+	                                       </table-cell>
+	                                       <table-cell>
+	                                          <block>
+	                                            &nbsp;
+	                                          </block>
+	                                       </table-cell>
+	                                    </table-row>
+	                              	 </apex:outputPanel>
+	                              </table-body>
+	                           </table>
+                        </block>
+                     </table-cell>
+                     <table-cell>
+                        <block>&nbsp;</block>
+                     </table-cell>
+                     <table-cell text-align="right">
+                        <block>&nbsp;</block>
+                     </table-cell>
+                     <table-cell text-align="left">
+                        <block>&nbsp;</block>
+                     </table-cell>
+                     <table-cell text-align="center">
+                        <block>&nbsp;</block>
+                     </table-cell>
+                     <table-cell text-align="right">
+                        <block>&nbsp;</block>
+                     </table-cell>
+                  </table-row>
+	                       
+                  <!-- configuration 2 -->
+                  <apex:repeat var="config" value="{!ungroupedLine.configuration}" rendered="{!ungroupedLine.hasConfiguration}">
+	                  <table-row font-size="0.667em" text-align="center" background-color="#ffffff" keep-with-next.within-page="always">
+	                     <table-cell>
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell text-align="left">
+	                        <block>
+		                           <table table-layout="fixed" width="100%" padding="0">
+		                              <table-column column-width="50%" />
+		                              <table-column column-width="50%" />
+		                              <table-header>
+		                                 <table-row font-size="0px" keep-with-next.within-page="always">
+		                                    <table-cell>
+		                                       <block>&nbsp;</block>
+		                                    </table-cell>
+		                                    <table-cell>
+		                                       <block>&nbsp;</block>
+		                                    </table-cell>
+		                                 </table-row>
+		                              </table-header>
+		                              <table-body>
+	                                    <table-row>
+	                                       <table-cell>
+	                                          <block>
+	                                             {!HTMLENCODE(config.name)}
+	                                          </block>
+	                                       </table-cell>
+	                                       <table-cell>
+	                                          <block>
+	                                             {!HTMLENCODE(config.value)}
+	                                          </block>
+	                                       </table-cell>
+	                                    </table-row>
+		                              </table-body>
+		                           </table>
+	                        </block>
+	                     </table-cell>
+	                     <table-cell>
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell text-align="right">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell text-align="left">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell text-align="center">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell text-align="right">
+	                        <block><c:euroFormatter value="{!config.amount}" rendered="{!config.amount != 0}"/></block>
+	                     </table-cell>
+	                  </table-row>
+                  </apex:repeat>
+                  
+                  <!-- ship to party -->
+                  <apex:outputPanel layout="none" rendered="{!ungroupedLine.shipToParty != ''}">
+	                  <table-row font-size="0.667em" text-align="center" background-color="#ffffff" keep-with-next.within-page="always">
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt" text-align="left" number-columns-spanned="1">
+	                     	<block>
+		                        <table table-layout="fixed" width="100%" padding="0">
+	                              <table-column column-width="50%" />
+	                              <table-column column-width="50%" />
+	                              <table-header>
+	                                 <table-row font-size="0px" keep-with-next.within-page="always">
+	                                    <table-cell>
+	                                       <block>&nbsp;</block>
+	                                    </table-cell>
+	                                    <table-cell>
+	                                       <block>&nbsp;</block>
+	                                    </table-cell>
+	                                 </table-row>
+	                              </table-header>
+	                              <table-body>
+	                                 <table-row>
+	                                    <table-cell display-align="center">
+	                                       <block><apex:outputText value="{!$Label.EMEA_Line_Item_Ship_to_Party}" /></block>
+	                                    </table-cell>
+	                                    <table-cell>
+	                                       <block linefeed-treatment="preserve" white-space-treatment="preserve" white-space-collapse="false">
+                                               {!HTMLENCODE(ungroupedLine.shipToParty)}
+	                                       </block>
+	                                    </table-cell>
+	                                 </table-row>
+	                              </table-body>
+	                           </table>
+                           </block>
+	                     </table-cell>
+	                  </table-row>
+                  </apex:outputPanel>
+                  
+                  <!-- empty line for spacing -->
+                  <table-row font-size="0.667em" text-align="center" background-color="#ffffff" keep-with-next.within-page="always">
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>
+	                           &nbsp;
+	                        </block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                  </table-row>
+               </apex:repeat>
+               <apex:outputPanel layout="none" rendered="{!quoteDocument.lineItems.size == 0}">
+               		<table-row font-size="0.667em" text-align="center" background-color="#ffffff" keep-with-next.within-page="always">
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>
+	                           &nbsp;
+	                        </block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                     <table-cell padding="2pt">
+	                        <block>&nbsp;</block>
+	                     </table-cell>
+	                  </table-row>
+               </apex:outputPanel>
+            </table-body>
+         </table>
+   		
+   	   <!-- Separator -->
+	   <table table-layout="fixed" width="100%" margin-top="10pt" margin-bottom="0pt" border-bottom-style="solid">
+	      <table-column column-width="100%"/>
+	      <table-body>
+		         <table-row font-size="0.667em" background-color="#ffffff" keep-with-next.within-page="always">
+		            <table-cell padding="2pt" text-align="left">
+		               <block>
+		                  <block>
+		                  </block>
+		               </block>
+		            </table-cell>
+		         </table-row>
+	      </table-body> 
+	   </table>
+	   
+	   <!-- Summary -->
+	   <table table-layout="fixed" width="100%" margin-top="10pt" margin-bottom="0pt">
+	      <table-column column-width="25%"/>
+	      <table-column column-width="25%"/>
+	      <table-column column-width="25%"/>
+	      <table-column column-width="25%"/>
+	      <table-body>
+	         <!-- Totals -->
+	         <apex:outputPanel layout="none" rendered="{!NOT(quoteDocument.orderValue)}">
+		         <table-row font-size="0.667em" background-color="#ffffff" keep-with-next.within-page="always">
+		            <table-cell padding="2pt" text-align="left">
+		               <block>
+		                  <block>
+		                  		{!$Label.EMEA_Line_Item_Items_Total}
+		                  </block>
+		               </block>
+		            </table-cell>
+		            <table-cell padding="2pt">
+		               <block>&nbsp;</block>
+		            </table-cell>
+		            <table-cell padding="2pt">
+		               <block>&nbsp;</block>
+		            </table-cell>
+		            <table-cell padding="2pt" text-align="right">
+		               <block>
+		               		<c:euroFormatter value="{!quoteDocument.value}" />
+		               </block>
+		            </table-cell>
+		         </table-row>
+	         </apex:outputPanel>
+	         
+	         <!-- Header conditions -->
+	         <apex:repeat var="cond" value="{!quoteDocument.headerConditions}">
+		         <table-row font-size="0.667em" background-color="#ffffff" keep-with-next.within-page="always">
+		            <table-cell padding="2pt"  text-align="left">
+		               <block>{!HTMLENCODE(cond.name)}</block>
+		            </table-cell>
+		            <table-cell padding="2pt" text-align="right">
+		               <block>
+		           		<apex:outputText value="{0, Number,###,###,##0.000}" rendered="{!cond.baseAmount != 0}">
+		              		<apex:param value="{!cond.rate}"/>
+		              	</apex:outputText>
+		              	<apex:outputText value="%" rendered="{!cond.rate != 0}"/>
+		               </block>
+		            </table-cell>
+		            <table-cell padding="2pt" text-align="right">
+		               <block>
+		               		<c:euroFormatter value="{!cond.baseAmount}" rendered="{!cond.rate != 0}"/>
+		               </block>
+		            </table-cell>
+		            <table-cell padding="2pt" text-align="right">
+		               <block>
+		               		<c:euroFormatter value="{!cond.amount}" />
+		               </block>
+		            </table-cell>
+		         </table-row>
+	         </apex:repeat>
+	         
+	         <!-- Final amount -->
+	         <table-row font-size="0.667em" font-weight="bold" background-color="#ffffff" keep-with-next.within-page="always" border-top-style="solid">
+	            <table-cell padding="2pt" padding-top="10pt" text-align="left">
+	               <block>{!$Label.EMEA_Line_Item_Final_amount}</block>
+	            </table-cell>
+	            <table-cell padding="2pt">
+	               <block>&nbsp;</block>
+	            </table-cell>
+	            <table-cell padding="2pt" padding-top="10pt" text-align="right">
+	               <block>
+	                  <apex:outputText value="{!quoteDocument.currencyISOCode}"/>
+	               </block>
+	            </table-cell>
+	            <table-cell padding="2pt" padding-top="10pt" text-align="right">
+	               <block>               		
+	               		<c:euroFormatter value="{!quoteDocument.grossValue}" />
+	               </block>
+	            </table-cell>
+	         </table-row>
+	      </table-body> 
+	   </table>
+   </block>
+</apex:page>

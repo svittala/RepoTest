@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- SAP Reference --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Available to Sales Area Codes --></label>
+        <name>Available_to_Sales_Area_Codes__c</name>
+    </fields>
+    <fields>
+        <help>&quot;Ange kodtypens fullständiga namn, därefter ett ”-” och en kod bestående av två bokstäver som kodtyp&quot;</help>
+        <label>Kodtyp</label>
+        <name>Code_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer Group - CG</masterLabel>
+            <translation><!-- Customer Group - CG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Language - CL</masterLabel>
+            <translation><!-- Customer Language - CL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Priority - DP</masterLabel>
+            <translation><!-- Delivery Priority - DP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Terms - DT</masterLabel>
+            <translation>Leveransvillkor - DT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incoterm - IC</masterLabel>
+            <translation><!-- Incoterm - IC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Series - OS</masterLabel>
+            <translation>Orderserie - OS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Type - OT</masterLabel>
+            <translation>Ordertyp - OT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Terms - PT</masterLabel>
+            <translation>Betalningsvillkor - PT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Group - PG</masterLabel>
+            <translation><!-- Price Group - PG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Region Code - RC</masterLabel>
+            <translation><!-- Region Code - RC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales District - SD</masterLabel>
+            <translation><!-- Sales District - SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Office - SO</masterLabel>
+            <translation><!-- Sales Office - SO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping Condition - SC</masterLabel>
+            <translation><!-- Shipping Condition - SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terms of Payment - TP</masterLabel>
+            <translation><!-- Terms of Payment - TP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation Zone - TZ</masterLabel>
+            <translation><!-- Transportation Zone - TZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehouse Codes - WC</masterLabel>
+            <translation>Lagerkoder - WC</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>kod</label>
+        <name>Code__c</name>
+    </fields>
+    <fields>
+        <label>Företag #</label>
+        <name>Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country Code --></label>
+        <name>Country_Code__c</name>
+    </fields>
+    <fields>
+        <help>Om den börjar med ”B” kommer den från Baan. Om den börjar med ”S” kommer den från SAP. Nästföljande två tecken beskriver vilken typ av kod det är.</help>
+        <label>Nyckel</label>
+        <name>Key__c</name>
+    </fields>
+    <fields>
+        <help>Om denna ruta är markerad finns inte posten ännu och detta måste åtgärdas i det system där registreringen hanteras.</help>
+        <label>Saknat värde</label>
+        <name>Missing_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- System --></label>
+        <name>System__c</name>
+        <picklistValues>
+            <masterLabel>Baan</masterLabel>
+            <translation><!-- Baan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP</masterLabel>
+            <translation><!-- SAP --></translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>SAP Reference Layout</layout>
+        <sections>
+            <label>Egna länkar</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Description --></nameFieldLabel>
+    <recordTypes>
+        <label>&quot;Record type for Delivery Terms, Payment Terms&quot;</label>
+        <name>Enersys_SAP_Reference</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please check the Key. The key entered is not formatted correctly --></errorMessage>
+        <name>Validate_the_Key</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,168 @@
+<apex:page standardController="SBQQ__Quote__c" showHeader="false" standardStylesheets="false" sidebar="false" docType="html-5.0" applyHtmlTag="false" extensions="FioriPlaceholderVFController">
+    <apex:slds />
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+    <head>
+    </head>
+    
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        #container {
+            width: 100%;
+        }
+        
+        #container iframe {
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+        }
+    </style>
+    
+    <body class="slds-scope">
+    <div id="header" class="slds-page-header" role="banner">
+        <div class="slds-grid">
+            <div class="slds-col slds-has-flexi-truncate">
+                <div class="slds-media slds-no-space slds-grow">
+                    <div class="slds-media__figure">
+                  <span class="slds-icon_container slds-icon-custom-custom93">
+                    <svg class="slds-icon" aria-hidden="true">
+                      <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/custom-sprite/svg/symbols.svg#custom93')}"></use>
+                    </svg>
+                  </span>
+                    </div>
+                    <div class="slds-media__body">
+                        <p class="slds-text-title_caps slds-line-height_reset">{!$ObjectType.SBQQ__Quote__c.Label}</p>
+                        <h1 class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate" title="{!SBQQ__Quote__c.Name}">{!SBQQ__Quote__c.Name}</h1>
+                    </div>
+                </div>
+            </div>
+
+            <apex:outputPanel rendered="{!NOT(canAddProducts)}">
+                <div role="alertdialog" tabindex="-1" aria-labelledby="prompt-heading-id" aria-describedby="prompt-message-wrapper" class="slds-modal slds-fade-in-open slds-modal--prompt">
+                    <div class="slds-modal__container">
+                        <div class="slds-modal__header slds-theme--error slds-theme--alert-texture">
+                            <h2 class="slds-text-heading--medium" id="prompt-heading-id">{!$Label.Fiori_Cannot_add_products}</h2>
+                        </div>
+                        <div class="slds-modal__content slds-p-around--medium">
+                            <div>
+                                <p>{!$Label.Fiori_Cannot_add_products_description}</p>
+                            </div>
+                        </div>
+                        <div class="slds-modal__content slds-p-around--medium">
+                            <div>
+                                <p><apex:outputText value="{!errorString}" escape="false" /></p>
+                            </div>
+                        </div>
+                        <div class="slds-modal__footer slds-theme--default">
+                            <button class="slds-button slds-button--neutral" onclick="location.reload(); return false;">{!$Label.Refresh}</button>
+                            <button class="slds-button slds-button--neutral" onclick="sforce.one.navigateToSObject('{!SBQQ__Quote__c.Id}');">{!$Label.Back}</button>
+                        </div>
+                    </div>
+                </div>
+            </apex:outputPanel>
+
+
+            <div class="slds-col slds-no-flex slds-grid slds-align-top">
+                <div class="slds-button-group" role="group">                    
+                    <button class="slds-button slds-button--neutral" onclick="onLaunchClick('BSP')">{!$Label.Launch_BSP}</button>
+                    <button class="slds-button slds-button--neutral" onclick="onLaunchClick('PSR')">{!$Label.Launch_PSR}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <apex:outputPanel rendered="{!AND(canAddProducts, errorString != '')}">
+        <div class="slds-box slds-m-vertical_none slds-m-horizontal_none slds-theme--error slds-theme--alert-texture slds-align_absolute-center">
+            <h2>
+                <apex:outputText value="{!errorString}" escape="false" />
+            </h2>
+        </div>
+    </apex:outputPanel>
+
+    <apex:outputPanel rendered="{!canAddProducts}" layout="none">
+        
+        <div id="container"></div>
+         
+        <apex:canvasApp applicationName="Fiori" containerId="container" width="100%" height="100%" maxHeight="infinite" maxWidth="infinite" parameters="{ recordId :'{!SBQQ__Quote__c.SAP_Quote_Number__c}', lang : '{!SBQQ__Quote__c.Language__c}'}" onCanvasAppLoad="onCanvasLoaded" />
+
+        <script type="text/javascript" src="/canvas/sdk/js/30.0/controller.js"></script>
+        <script>
+            
+            var setIframeHeight = function(e) {         
+                var headerHeight = $('#header').outerHeight();
+                var windowHeight = window.innerHeight;
+                var iframeHeight = windowHeight - headerHeight;
+                
+                // set height on iframe
+                $('#container').height(iframeHeight);       
+            }
+            
+            var onLaunchClick = function (t) {
+                Sfdc.canvas.controller.publish({name : 'quickSaveEvent', payload : { target : t }});
+            }
+
+            var onQuickSaveCompleted = function(e) {
+                console.log('recieved quickSaveCompleted event target ' + e.target);                
+                if(e.target === 'PSR') {
+                    launchPSR();
+                } else if(e.target === 'BSP') {
+                    launchBSP();
+                }
+            }
+
+            var launchBSP = function(e) {
+                if(typeof sforce != 'undefined') {
+                    sforce.one.navigateToURL('{!$Page.ConfiguratorWSLaunchBSP}?id={!SBQQ__Quote__c.Id}&source=Fiori');
+                } else {
+                    window.location = '{!$Page.ConfiguratorWSLaunchBSP}?id={!SBQQ__Quote__c.Id}&source=Fiori';
+                }
+            }
+
+            var launchPSR = function(e) {
+                if(typeof sforce != 'undefined') {
+                    sforce.one.navigateToURL('{!$Page.ConfiguratorWSLaunchPSR}?id={!SBQQ__Quote__c.Id}&source=Fiori');
+                } else {
+                    window.location = '{!$Page.ConfiguratorWSLaunchPSR}?id={!SBQQ__Quote__c.Id}&source=Fiori';
+                }
+            }
+
+            var onProductsSelected = function(e) {
+                console.log('recieved productsSelectedEvent event');
+                if(sforce !== undefined) {
+                    sforce.one.navigateToSObject('{!SBQQ__Quote__c.Id}');
+                }
+            }
+            
+            var onCanvasLoaded = function(e) {
+                var url = new URL(location.href);
+                var syncSAP = (url.searchParams.get("syncSAP") == 'true');
+
+                if(syncSAP) {
+                    console.log('publishing syncSAP event');
+                    Sfdc.canvas.controller.publish({name : 'sapSyncEvent', payload : {}});
+                }
+            }
+            
+            window.onload = function(e) {
+                setIframeHeight(e);
+            }
+            
+            window.onresize = function(e) {
+                setIframeHeight(e);
+            }
+        
+            Sfdc.canvas(function() {
+                Sfdc.canvas.controller.subscribe({name : 'productsSelectedEvent', onData : onProductsSelected });
+                Sfdc.canvas.controller.subscribe({name : 'quickSaveCompletedEvent', onData : onQuickSaveCompleted });
+            });
+        </script>
+
+    </apex:outputPanel>
+    </body>
+    </html>
+    <apex:includeScript value="{!URLFOR($Resource.SBQQ__jQuery)}"  />
+</apex:page>
