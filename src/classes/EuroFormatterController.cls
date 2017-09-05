@@ -15,7 +15,8 @@ public with sharing class EuroFormatterController {
 	    cents = cents.setScale(2);
 	    
 	    String amountText;
-	    if(amount < 0) {
+
+	    if(cents < 0) {
 	    	amountText = eur.format().replace(',', '.')+','+ cents.toPlainString().substring(3);
 	    } else {
 	    	amountText = eur.format().replace(',', '.')+','+ cents.toPlainString().substring(2);

@@ -42,14 +42,14 @@ public with sharing class SAPCreateQuoteTestDataFactory {
 
 	public List<SAP_Reference__c> upsertTestSapReferences() {
 		List<SAP_Reference__c> refs = new List<SAP_Reference__c>{};
-		refs.add(new SAP_Reference__c(Name='Test INCOTERMS Z16', Code__c='Z16', System__c='SAP', Code_Type__c='Incoterm - IC'));
-		refs.add(new SAP_Reference__c(Name='Test INCOTERMS Z17', Code__c='Z17', System__c='SAP', Code_Type__c='Incoterm - IC'));
-		refs.add(new SAP_Reference__c(Name='Test PMNTTRMS Z000', Code__c='Z000', System__c='SAP', Code_Type__c='Terms of Payment - TP'));
-		refs.add(new SAP_Reference__c(Name='Test PMNTTRMS Z001', Code__c='Z001', System__c='SAP', Code_Type__c='Terms of Payment - TP'));
-		refs.add(new SAP_Reference__c(Name='Test SHIP_COND 03', Code__c='03', System__c='SAP', Code_Type__c='Shipping Condition - SC'));
-		refs.add(new SAP_Reference__c(Name='Test SHIP_COND 04', Code__c='04', System__c='SAP', Code_Type__c='Shipping Condition - SC'));
-		refs.add(new SAP_Reference__c(Name='Test SALES_OFF 0210', Code__c='0210', System__c='SAP', Code_Type__c='Sales Office - SO'));
-		refs.add(new SAP_Reference__c(Name='Test SALES_OFF 0211', Code__c='0211', System__c='SAP', Code_Type__c='Sales Office - SO'));
+		refs.add(new SAP_Reference__c(Name='Test INCOTERMS Z16', Key__c='SIC-Z16', Code__c='Z16', System__c='SAP', Code_Type__c='Incoterm - IC'));
+		refs.add(new SAP_Reference__c(Name='Test INCOTERMS Z17', Key__c='SIC-Z17', Code__c='Z17', System__c='SAP', Code_Type__c='Incoterm - IC'));
+		refs.add(new SAP_Reference__c(Name='Test PMNTTRMS Z000', Key__c='STP-Z000', Code__c='Z000', System__c='SAP', Code_Type__c='Terms of Payment - TP'));
+		refs.add(new SAP_Reference__c(Name='Test PMNTTRMS Z001', Key__c='STP-Z001', Code__c='Z001', System__c='SAP', Code_Type__c='Terms of Payment - TP'));
+		refs.add(new SAP_Reference__c(Name='Test SHIP_COND 03', Key__c='SSC-03', Code__c='03', System__c='SAP', Code_Type__c='Shipping Condition - SC'));
+		refs.add(new SAP_Reference__c(Name='Test SHIP_COND 04', Key__c='SSC-04', Code__c='04', System__c='SAP', Code_Type__c='Shipping Condition - SC'));
+		refs.add(new SAP_Reference__c(Name='Test SALES_OFF 0210', Key__c='SSO-0210', Code__c='0210', System__c='SAP', Code_Type__c='Sales Office - SO'));
+		refs.add(new SAP_Reference__c(Name='Test SALES_OFF 0211', Key__c='SSO-0211', Code__c='0211', System__c='SAP', Code_Type__c='Sales Office - SO'));
 		Database.upsert(refs, SAP_Reference__c.Name, true);
 		return refs;
 	}

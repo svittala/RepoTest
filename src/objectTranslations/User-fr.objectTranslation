@@ -38,6 +38,11 @@
         <relationshipLabel>Utilisateurs (Approbateur Marketing)</relationshipLabel>
     </fields>
     <fields>
+        <label><!-- President --></label>
+        <name>President__c</name>
+        <relationshipLabel><!-- Users (President) --></relationshipLabel>
+    </fields>
+    <fields>
         <label>Resp. ventes SAP #</label>
         <name>SAP_Sales_Rep__c</name>
     </fields>

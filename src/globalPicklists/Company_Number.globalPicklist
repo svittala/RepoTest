@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalPicklist xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Legal Entities within EnerSys</description>
+    <globalPicklistValues>
+        <fullName>701</fullName>
+        <default>false</default>
+    </globalPicklistValues>
+    <globalPicklistValues>
+        <fullName>702</fullName>
+        <default>false</default>
+    </globalPicklistValues>
+    <masterLabel>Company #</masterLabel>
+    <sorted>false</sorted>
+</GlobalPicklist>

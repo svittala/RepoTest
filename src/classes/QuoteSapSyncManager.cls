@@ -29,15 +29,17 @@ public with sharing class QuoteSapSyncManager {
 
 	private Map<Id, SBQQ__Quote__c> filterToEmeaOnly(Map<Id, SBQQ__Quote__c> quoteMap) {
 		Map<Id, SBQQ__Quote__c> returnMap = new Map<Id, SBQQ__Quote__c>{};
-
-		for (Id qId : quoteMap.keySet()) {
-			SBQQ__Quote__c q = quoteMap.get(qId);
-			if (q.SBU__c!=null && q.SBU__c.contains('EMEA')) {
-				returnMap.put(qId, q);
-
-			}
-
-		}
+		
+        if(quoteMap != null) {
+            for (Id qId : quoteMap.keySet()) {
+                SBQQ__Quote__c q = quoteMap.get(qId);
+                if (q.SBU__c!=null && q.SBU__c.contains('EMEA')) {
+                    returnMap.put(qId, q);
+    
+                }
+    
+            }
+        }
 
 		return returnMap;
 	}
@@ -60,7 +62,7 @@ public with sharing class QuoteSapSyncManager {
 			if (quotesForSync.size() > 0) {
 				Utils.logContents('Quotes For Sync (Trigger)', String.valueOf(quotesForSync));
 
-				SObject quoteSObj = (SObject)quotesForSync.values()[0];
+                SObject quoteSObj = (SObject)quotesForSync.values()[0];
 				bso = new SapCreateQuoteBso();
 				bso.syncQuoteHeaderToSap(quoteSObj, true);
 
@@ -85,7 +87,8 @@ public with sharing class QuoteSapSyncManager {
 				|| newQuote.SBQQ__ExpirationDate__c != oldQuote.SBQQ__ExpirationDate__c
 				//|| newQuote.Ship_To_Data__c != oldQuote.Ship_To_Data__c
 				//|| newQuote.Select_Ship_To_SAD__c != oldQuote.Select_Ship_To_SAD__c
-				|| newQuote.Ship_To_SAP_ID__c != oldQuote.Ship_To_SAP_ID__c 
+				//|| newQuote.Ship_To_SAP_ID__c != oldQuote.Ship_To_SAP_ID__c 
+				|| newQuote.Ship_To_SAP_ID_Text__c != oldQuote.Ship_To_SAP_ID_Text__c 
 				|| newQuote.Shipping_Conditions__c != oldQuote.Shipping_Conditions__c
 				|| newQuote.Valid_From__c != oldQuote.Valid_From__c
 				) {

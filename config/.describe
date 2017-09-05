@@ -529,6 +529,6 @@
         }
     ],
     "organizationNamespace": "",
-    "partialSaveAllowed": false,
-    "testRequired": true
+    "partialSaveAllowed": true,
+    "testRequired": false
 }

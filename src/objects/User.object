@@ -136,6 +136,15 @@
         <type>Hierarchy</type>
     </fields>
     <fields>
+        <fullName>President__c</fullName>
+        <externalId>false</externalId>
+        <label>President</label>
+        <relationshipName>User</relationshipName>
+        <restrictedAdminField>false</restrictedAdminField>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
         <fullName>SAP_Sales_Rep__c</fullName>
         <caseSensitive>false</caseSensitive>
         <description>Use for Account integration</description>
@@ -435,7 +444,7 @@
     </listViews>
     <listViews>
         <fullName>Summa_Team</fullName>
-        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>FULL_NAME</columns>
         <columns>CORE.USERS.EMAIL</columns>
         <columns>CORE.USERS.USERNAME</columns>
         <columns>CORE.PROFILE.NAME</columns>

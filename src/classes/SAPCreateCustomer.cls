@@ -7,6 +7,9 @@ global without sharing class SAPCreateCustomer {
     public Account act;
     public List<Sales_Area_Data__c> sadList;
     public SAPCustomer sapCustomerData;
+    public Map<String,Sales_Area__c> saMap;
+    public Map<String,Sales_Area_data__c> sadMap;
+    public Map<String,Ship_To_Data__c> stMap;
 
     public class SAPChar {
         public String ATNAM;
@@ -48,23 +51,20 @@ global without sharing class SAPCreateCustomer {
     
     private String JSONString() {
         String s = JSON.serializePretty( sapCustomerData, true );
-        return s.replaceAll('CLASST_T_T', 'CLASS' );
+        return EncodingUtil.urlEncode(s.replaceAll('CLASST_T_T','CLASS'),'UTF-8');
     }
 
     private void updateAccount() {
         if ( String.isBlank(sapCustomerId) ) return;
         if ( act == null || String.isNotBlank(act.SAP_Customer_Id__c) ) return;
-        String CustomerRecordTypeId = [select Id from RecordType where Name='Customer' and SObjectType='Account'].Id;
         try {
             // This is added to check if the Sap Custom Id is already on salesforce, reset to make room if exist.
             // It is only needed for QA test because the data and SAP may be out of sync
-            List<Account> oldActList = [select Id, SAP_Customer_Id__c from Account where SAP_Customer_Id__c = :sapCustomerId];
-            if ( oldActList != null && oldActList.size() > 0 ) {
-                oldActList[0].SAP_Customer_Id__c = 'invalid_'+sapCustomerId;
-                update oldActList;
+            for ( Account a : [select Id, SAP_Customer_Id__c from Account where SAP_Customer_Id__c = :sapCustomerId] ) {
+                AccountUtil.EmeaUpdateExtId( a.Id, 'invalid_'+sapCustomerId );
             }
             // Now update prospect with SAP Customer Id
-            update new Account( Id = act.Id, SAP_Customer_Id__c = sapCustomerId, RecordTypeId = CustomerRecordTypeId, Type='Customer' );
+            AccountUtil.EmeaUpdateExtId( act.Id, sapCustomerId );
             System.debug( 'Account '+act.Id+' ('+act.Name+') updated with SAP Customer Id '+sapCustomerId );
         }
         catch (Exception e) {
@@ -179,15 +179,12 @@ global without sharing class SAPCreateCustomer {
                 	sad.LPRIO = s.Delivery_Priority__r.Code__c; 										// Delivery Priority Code',
                 	sad.VSBED = s.Shipping_Conditions__r.Code__c; 										// Shipping Conditions Code'
 					sad.SHIP_TO_PARTIES = new List<String>();
-                    if ( s.Ship_To_Data__r != null ) {
-              			system.debug( s.Ship_To_Data__r.size() );
-                        for ( Ship_To_Data__c std : s.Ship_To_Data__r ) {
-                            system.debug( 'ship_to: '+std.Ship_To_Account__r.SAP_Customer_Id__c );
-                            if ( String.isNotBlank(std.Ship_To_Account__r.SAP_Customer_Id__c) ) {
-                            	sad.SHIP_TO_PARTIES.add( std.Ship_To_Account__r.SAP_Customer_Id__c );
-                            }
+                    for ( Ship_To_Data__c std : s.Ship_To_Data__r ) {
+                        system.debug( 'ship_to: '+std.Ship_To_Account__r.SAP_Customer_Id__c );
+                        if ( String.isNotBlank(std.Ship_To_Account__r.SAP_Customer_Id__c) ) {
+                            sad.SHIP_TO_PARTIES.add( std.Ship_To_Account__r.SAP_Customer_Id__c );
                         }
-                    }                    
+                    }
                 }
             }
         }
@@ -294,7 +291,18 @@ global without sharing class SAPCreateCustomer {
     	}		
     }    
     
-
+    public Boolean ValidStructure( Sales_Area_Data__c[] sList ) {
+        for ( Sales_Area_Data__c s : sList ) {
+            for ( Ship_To_Data__c std : s.Ship_To_Data__r ) {
+                if (std.Ship_To_Account__c != s.Account__c && String.isBlank(std.Ship_To_Account__r.SAP_Customer_Id__c) ) {
+                    message = 'Ship T Account '+std.Ship_To_Account__r.Name+' is not a valid SAP Ship To account';
+                    return false;
+                }
+            }
+        }
+                
+        return true;
+    }
     
     public void LoadData() {
         if ( String.isBlank( accountId ) ) {
@@ -345,8 +353,12 @@ global without sharing class SAPCreateCustomer {
             message = 'Account not ready to be sent to SAP: '+act.EMEA_SAP_Required_Data_Checklist__c;
             return;
         }
-        
-        sadList = [   Select Account_at_Customer_Code__c
+
+        sadList = [   Select ExtId__c
+                           , Id
+                           , Sales_Area_Code_Text__c
+                   		   , Account_at_Customer_Code__c
+                           , Account__c
                            , CurrencyIsoCode
                            //, Currency_Code__c
                            , Shipcond_Code__c
@@ -370,12 +382,15 @@ global without sharing class SAPCreateCustomer {
                            , Shipping_Conditions__c
                            , Terms_of_Payment_lookup__c
                            , Sales_Area_Sales_Organisation_Code__c
-                           , (select Ship_To_Account__r.SAP_Customer_Id__c from Ship_To_Data__r )
+                           , (select Ship_To_Account__c
+                                   , Ship_To_Account__r.SAP_Customer_Id__c
+                                from Ship_To_Data__r )
                         from Sales_Area_Data__c
                        WHERE Account__c = :accountId ];
-            
-        sapCustomerData = new SAPCustomer( act, sadList );
         
+        if ( ValidStructure( sadList ) ) {
+        	sapCustomerData = new SAPCustomer( act, sadList );
+        }
         return;
     }
     

@@ -674,7 +674,6 @@
         <name>Name4__c</name>
     </fields>
     <fields>
-        <help><!-- Manually maintained checkbox to designate National Accounts.  Only accessible to edit by certain roles/profiles. --></help>
         <label><!-- National --></label>
         <name>National__c</name>
     </fields>
@@ -1027,6 +1026,10 @@
     <validationRules>
         <errorMessage>Il est impossible de modifier le nom du compte et l&apos;adresse si le compte est un compte destinataire uniquement.</errorMessage>
         <name>Accounts_Not_Edit_Ship_Tos</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fix this rule cedric --></errorMessage>
+        <name>Classification_Validation</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Account Name cannot be edited in Salesforce on Customer accounts integrated from BaaN or SAP --></errorMessage>

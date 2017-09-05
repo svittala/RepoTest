@@ -18,6 +18,10 @@
                 <behavior>Edit</behavior>
                 <field>SUPER_USER__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>President__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

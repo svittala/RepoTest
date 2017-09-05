@@ -25,7 +25,8 @@ public with sharing class SAPCreateQuoteDao {
 		List<Opportunity> opps = [Select 
 											Account.BillingCity, 
 											Account.SAP_Customer_Id__c, 
-											Currency_Code__c, 
+											Currency_Code__c,
+											CurrencyIsoCode, 
 											EMEA_SAP_Ready__c, EMEA_SAP_Required_Data_Checklist__c, 
 											Id, Name, Pricebook2Id, 
 											Sales_Area_Data__r.Incoterm_Code_lookup__c, 
@@ -36,6 +37,7 @@ public with sharing class SAPCreateQuoteDao {
 											Sales_Area_Data__r.Shipping_Conditions__c, 
 											Sales_Area_Data__r.Terms_of_Payment_lookup__c, 
 											SBU__c, 
+											Select_Ship_To_SAD__c, 
 											Select_Ship_To_SAD__r.Account__r.SAP_Customer_Id__c
 										 From Opportunity Where Id = :oppId];
 		if (opps!=null && opps.size() > 0) {
@@ -64,7 +66,8 @@ public with sharing class SAPCreateQuoteDao {
 											SBU__c, 
 											Select_Ship_To_SAD__c, 
 											Select_Ship_To_SAD__r.Account__r.SAP_Customer_Id__c,
-											Ship_To_SAP_ID__c,  
+											Ship_To_SAP_ID__c,
+											Ship_To_SAP_ID_Text__c, 
 											Shipping_Conditions__c, Shipping_Conditions__r.Code__c,
 											Valid_From__c,
 											Your_Contact_in_the_Office__c, Your_Contact_in_the_Office__r.SAP_Personnel_ID__c, 

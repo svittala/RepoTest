@@ -26,7 +26,8 @@ global without sharing class AccountUtil {
                         	  , Email
                         	  , IsActive
                            FROM User
-                          where IsActive=true] )
+                          where IsActive=true
+                          order by LastModifiedDate ] )
         {
             userMap.put( u.Email.toLowerCase(), u );
         }
@@ -256,7 +257,7 @@ global without sharing class AccountUtil {
                 Object obj= passXml( a.EMEA_JSON__c );
                 EmeaClassification( a, FindValue( obj, 'CLASSIFICATION' ) );
                 
-                a.Type = ( a.SAP_Ship_To__c == '0001' ) ? 'Customer' : 'Ship To';
+                a.Type = EmeaAccountType(a);
 
                 String country = (String) FindValue( obj, 'COUNTRY' );
                 String region = (String) FindValue( obj, 'REGION' );
@@ -335,6 +336,55 @@ global without sharing class AccountUtil {
         }
     }
 
+
+    public static String EmeaAccountType( Account a ) {
+        return (String.isBlank(a.SAP_Ship_To__c) || a.SAP_Ship_To__c=='0001') ? 'Customer' : 'Ship To';
+    }
+    
+    
+    public static void EmeaUpdateExtId( Id accountId, String SAP_Id ) {
+        
+        String CustomerRecordTypeId = [select Id from RecordType where Name='Customer' and SObjectType='Account'].Id;
+        Account a = [select SAP_Ship_To__c from Account where Id = :accountId];        
+        String t = EmeaAccountType(a);
+        
+        update new Account( Id = accountId, SAP_Customer_Id__c = SAP_Id, RecordTypeId = CustomerRecordTypeId, Type = t );
+        
+        List<Sales_Area_Data__c> sadList = new List<Sales_Area_Data__c>();
+        Map<Id,Sales_Area__c> saMap = new Map<Id,Sales_Area__c>();
+        Map<String,Ship_To_Data__c> stdMap = new Map<String,Ship_To_Data__c>();
+        
+        for ( Sales_Area_Data__c sad : [   Select ExtId__c
+                                                , Id
+                                                , Sales_Area_Sales_Organisation_Code__c
+                                                , Sales_Area_Sales_Organisation_Code__r.Name
+                                                , Sales_Area_Sales_Organisation_Code__r.ExtId__c
+                                                , (select Id
+                                                        , Ship_To_Account__c
+                                                        , Ship_To_Account__r.SAP_Customer_Id__c
+                                                     from Ship_To_Data__r)
+                                 			 from Sales_Area_Data__c
+                                            WHERE Account__c = :accountId ] )
+        {
+            String sadKey = SAP_Id+':'+sad.Sales_Area_Sales_Organisation_Code__r.Name;
+            sadList.add( new Sales_Area_Data__c( Id = sad.Id, ExtId__c = sadKey ) );
+            if ( String.isBlank(sad.Sales_Area_Sales_Organisation_Code__r.ExtId__c) ) {
+                saMap.put( sad.Sales_Area_Sales_Organisation_Code__c, new Sales_Area__c( Id = sad.Sales_Area_Sales_Organisation_Code__c, ExtId__c = sad.Sales_Area_Sales_Organisation_Code__r.Name) );
+            }
+            for ( Ship_To_Data__c std : sad.Ship_To_Data__r ) {
+                if ( String.isNotBlank(std.Ship_To_Account__r.SAP_Customer_Id__c) ) {
+                    String stdKey = sadKey+':'+std.Ship_To_Account__r.SAP_Customer_Id__c;
+                    stdMap.put( stdKey, new Ship_To_Data__c( Id = std.Id, ExtId__c = stdKey ) );
+                }
+            }
+        }
+        if ( ! sadList.isEmpty() ) update sadList;
+        if ( ! saMap.isEmpty() )   update saMap.values();
+        if ( ! stdMap.isEmpty() )  update stdMap.values();
+   }
+    
+    
+    
     public static void EmeaAfter( List<Account> aList ) {
         Map<String,Account> aMap = new Map<String,Account>();
         Map<String,Sales_Area__c> saMap = new Map<String,Sales_Area__c>();

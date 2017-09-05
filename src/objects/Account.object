@@ -1486,7 +1486,6 @@ For Baan Account, it is generated as &apos;B-&apos;+Company_Number+&apos;-&apos;
         <fullName>National__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <inlineHelpText>Manually maintained checkbox to designate National Accounts.  Only accessible to edit by certain roles/profiles.</inlineHelpText>
         <label>National</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -3855,6 +3854,9 @@ For Baan Account, it is generated as &apos;B-&apos;+Company_Number+&apos;-&apos;
         <fullName>Accounts_Not_Edit_Ship_Tos</fullName>
         <active>true</active>
         <errorConditionFormula>AND( $User.Id &lt;&gt;  $Label.Integration_User_ID,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+$Profile.Name &lt;&gt; &apos;EnerSys Integration&apos;, 
+$Profile.Name &lt;&gt; &apos;EnerSys System Administrator&apos;,
 ISPICKVAL(Type, &apos;Ship To&apos;),
 OR(
 ISCHANGED( Name ), 
@@ -3866,6 +3868,14 @@ ISCHANGED(  BillingPostalCode  ),
 ISCHANGED(  BillingCountry  )
 ))</errorConditionFormula>
         <errorMessage>Account Name and Address cannot be edited when an account is designated as a Ship To Only Account.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Classification_Validation</fullName>
+        <active>true</active>
+        <description>Requires at least MP Industry + Distribution Channel OR RP Industry + Distribution Channel OR AD Industry + Distribution Channel for EMEA Users</description>
+        <errorConditionFormula>(ISPICKVAL( MP_Industry__c , &quot;&quot;) || ISPICKVAL(  MP_Distribution_Channel__c  , &quot;&quot;)) &amp;&amp; (ISPICKVAL(  RP_Industry__c  , &quot;&quot;) || ISPICKVAL(   RP_Distribution_Channel__c   , &quot;&quot;)) &amp;&amp;
+ (ISPICKVAL(  AD_Industry__c  , &quot;&quot;) || ISPICKVAL(   AD_Distribution_Channel__c   , &quot;&quot;))</errorConditionFormula>
+        <errorMessage>Fix this rule cedric</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Customer_Accounts_AccountName_ReadOnly</fullName>
@@ -3923,13 +3933,8 @@ ISCHANGED( National__c )
 AND(
 $Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
 $Profile.Name &lt;&gt; &apos;EnerSys Integration&apos;, 
-$Profile.Name &lt;&gt; &apos;EnerSys System Administrator&apos;, 
-$UserRole.Name &lt;&gt; &apos;EnerSys Delaware Inc.&apos;, 
-$UserRole.Name &lt;&gt; &apos;Worldwide&apos;, 
-$UserRole.Name &lt;&gt; &apos;MP - Americas NA Support&apos;, 
-$UserRole.Name &lt;&gt; &apos;MP - Americas&apos;, 
-$UserRole.Name &lt;&gt; &apos;RP - Americas NA Support&apos;, 
-$UserRole.Name &lt;&gt; &apos;RP - Americas&apos; 
+$Profile.Name &lt;&gt; &apos;EnerSys System Administrator&apos;,
+$Profile.Name &lt;&gt; &apos;Americas Elevated User&apos;
 )
 )</errorConditionFormula>
         <errorDisplayField>National__c</errorDisplayField>

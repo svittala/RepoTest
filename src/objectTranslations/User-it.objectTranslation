@@ -38,6 +38,11 @@
         <relationshipLabel>Utenti (Responsabile approvazione marketing)</relationshipLabel>
     </fields>
     <fields>
+        <label><!-- President --></label>
+        <name>President__c</name>
+        <relationshipLabel><!-- Users (President) --></relationshipLabel>
+    </fields>
+    <fields>
         <label>Codice Sap Venditore #</label>
         <name>SAP_Sales_Rep__c</name>
     </fields>

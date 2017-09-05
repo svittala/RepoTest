@@ -51,6 +51,11 @@
                                  </table-row>
                               </table-header>
                               <table-body>
+                              	  <table-row>
+                                    <table-cell>
+                                       <block>{!HTMLENCODE(ungroupedLine.itemNote)}</block>
+                                    </table-cell>
+                                 </table-row>
                                  <table-row>
                                     <table-cell>
                                        <block>{!HTMLENCODE(ungroupedLine.materialNumber)}</block>

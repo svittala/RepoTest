@@ -708,24 +708,20 @@
     <validationRules>
         <fullName>Validate_the_Key</fullName>
         <active>true</active>
-        <errorConditionFormula>AND(
-				NOT(
-								Key__c =
-        &quot;B&quot; 
-        &amp; &quot;-&quot; &amp;    
-        RIGHT(TEXT(Code_Type__c), 2)
-        &amp; &quot;-&quot; &amp;
-        Code__c
-				),
-    NOT(
-								Key__c =
-        &quot;S&quot; 
-        &amp; &quot;-&quot; &amp;    
-        RIGHT(TEXT(Code_Type__c), 2)
-        &amp; &quot;-&quot; &amp;
-        Code__c
-    )
-)</errorConditionFormula>
+        <errorConditionFormula>IF(
+ ISPICKVAL(System__c, &apos;Baan&apos;), 
+ &quot;B&quot; &amp; RIGHT(TEXT(Code_Type__c), 2) &amp;&quot;-&quot; &amp;Code__c,
+ IF(
+  ISPICKVAL(System__c, &apos;SAP&apos;),
+  &quot;S&quot; &amp; RIGHT(TEXT(Code_Type__c), 2) &amp;&quot;-&quot; &amp;Code__c,
+  NULL)
+)&amp;
+IF(
+ ISBLANK(TEXT(Company__c)),
+ &quot;&quot;,
+ &quot;-&quot;&amp;TEXT(Company__c)
+)
+!=Key__c</errorConditionFormula>
         <errorMessage>Please check the Key. The key entered is not formatted correctly</errorMessage>
     </validationRules>
 </CustomObject>

@@ -4106,6 +4106,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>User.President__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>User.SAP_Sales_Rep__c</field>
         <readable>true</readable>
     </fieldPermissions>

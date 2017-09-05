@@ -2940,7 +2940,9 @@ ISPICKVAL( SBQQ__PrimaryQuote__r.SBQQ__Status__c, &quot;Presented&quot;)
         <fullName>Approved_primary_quote</fullName>
         <active>true</active>
         <errorConditionFormula>AND( 
-
+ $Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+ $Profile.Name &lt;&gt; &apos;EnerSys Integration&apos;, 
+ $Profile.Name &lt;&gt; &apos;EnerSys System Administrator&apos;,
  IsWon = true ,
  
  NOT(Primary_Quote_approved__c )
@@ -2974,6 +2976,9 @@ NOT(ISBLANK(Associated_Winning_Opportunity__c))
         <active>true</active>
         <description>Must add the competitor when an opportunity is set to closed/lost</description>
         <errorConditionFormula>AND( ISPICKVAL(StageName, &apos;Closed Lost&apos;), 
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+$Profile.Name &lt;&gt; &apos;EnerSys Integration&apos;, 
+$Profile.Name &lt;&gt; &apos;EnerSys System Administrator&apos;,
 NOT(ISPICKVAL(SBU__c , &apos;EAS&apos;)),
 NOT(ISPICKVAL(Win_Loss_Reason__c, &apos;Won with Another Opportunity&apos;)),  
 ISBLANK(Competitor_Lost_To__c) )</errorConditionFormula>
@@ -2989,7 +2994,10 @@ OR(
 ISPICKVAL(StageName, &apos;Closed Won&apos;),
 ISPICKVAL(StageName, &apos;Closed Lost&apos;)
 ), 
-ISBLANK(TEXT(Win_Loss_Reason__c))
+ISBLANK(TEXT(Win_Loss_Reason__c)),
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+$Profile.Name &lt;&gt; &apos;EnerSys Integration&apos;, 
+$Profile.Name &lt;&gt; &apos;EnerSys System Administrator&apos;
 )</errorConditionFormula>
         <errorDisplayField>Win_Loss_Reason__c</errorDisplayField>
         <errorMessage>Please select.</errorMessage>
@@ -2999,18 +3007,15 @@ ISBLANK(TEXT(Win_Loss_Reason__c))
         <active>true</active>
         <description>Prevent creation of Opportunities on Accounts flagged as National, excluding some roles and Profiles.</description>
         <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;EnerSys System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;EnerSys Integration&quot;,
+$Profile.Name &lt;&gt; &quot;Americas Elevated User&quot;,
+ISNEW(),
 Account.National__c,
-AND(
-$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
-$Profile.Name &lt;&gt; &apos;EnerSys Integration&apos;,
-$Profile.Name &lt;&gt; &apos;EnerSys System Administrator&apos;,
-$UserRole.Name &lt;&gt; &apos;EnerSys Delaware Inc.&apos;,
-$UserRole.Name &lt;&gt; &apos;Worldwide&apos;,
-$UserRole.Name &lt;&gt; &apos;MP - Americas NA Support&apos;,
-$UserRole.Name &lt;&gt; &apos;MP - Americas&apos;,
-$UserRole.Name &lt;&gt; &apos;RP - Americas NA Support&apos;,
-$UserRole.Name &lt;&gt; &apos;RP - Americas&apos;
-)
+CONTAINS($UserRole.Name,&quot;MP&quot;),
+NOT(CONTAINS($UserRole.Name, &quot;Americas&quot;)),
+NOT(CONTAINS($UserRole.Name, &quot;EMEA&quot;))
 )</errorConditionFormula>
         <errorMessage>You cannot create an Opportunity on a Account flagged as National.</errorMessage>
     </validationRules>

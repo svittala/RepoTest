@@ -168,10 +168,6 @@
     <layouts>
         <layout>EMEA Quote Layout</layout>
         <sections>
-            <label><!-- Additional System Information --></label>
-            <section>Additional System Information</section>
-        </sections>
-        <sections>
             <label><!-- Addresses --></label>
             <section>Addresses</section>
         </sections>
@@ -204,16 +200,16 @@
             <section>Recalculating</section>
         </sections>
         <sections>
+            <label><!-- SAP Sync Information --></label>
+            <section>SAP Sync Information</section>
+        </sections>
+        <sections>
             <label><!-- Sales Area Data --></label>
             <section>Sales Area Data</section>
         </sections>
     </layouts>
     <layouts>
         <layout>EMEA Quote Layout - Approved</layout>
-        <sections>
-            <label><!-- Additional System Information --></label>
-            <section>Additional System Information</section>
-        </sections>
         <sections>
             <label><!-- Addresses --></label>
             <section>Addresses</section>
@@ -245,6 +241,10 @@
         <sections>
             <label><!-- Recalculating --></label>
             <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- SAP Sync Info --></label>
+            <section>SAP Sync Info</section>
         </sections>
         <sections>
             <label><!-- Sales Area Data --></label>

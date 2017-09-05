@@ -26,14 +26,14 @@ public with sharing class QuoteDocumentDynamicSectionManager {
 
 	private List<SBQQ__Quote__c> filterToEmeaOnly(List<SBQQ__Quote__c> quoteList) {
 		List<SBQQ__Quote__c> returnList = new List<SBQQ__Quote__c>{};
-
-		for (SBQQ__Quote__c q : quoteList) {
-			if (q.SBU__c!=null && q.SBU__c.contains('EMEA')) {
-				returnList.add(q);
-
-			}
-
-		}
+		
+        if(quoteList != null) {
+            for (SBQQ__Quote__c q : quoteList) {
+                if (q.SBU__c!=null && q.SBU__c.contains('EMEA')) {
+                    returnList.add(q);
+                }
+            }
+        }
 
 		return returnList;
 	}

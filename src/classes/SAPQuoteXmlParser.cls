@@ -94,6 +94,11 @@ public with sharing class SAPQuoteXmlParser {
 	    			}
 	    		}
 	    		
+	    		// item note
+	    		if(item.getChildElement('ZZ_ABV_ITEM_TXT', null) != null && item.getChildElement('ZZ_ABV_ITEM_TXT', null).getChildElement('DATA', null) != null && item.getChildElement('ZZ_ABV_ITEM_TXT', null).getChildElement('DATA', null).getChildElement('TDLINE', null) != null) {
+	    			lineItem.itemNote = item.getChildElement('ZZ_ABV_ITEM_TXT', null).getChildElement('DATA', null).getChildElement('TDLINE', null).getText();
+	    		}
+	    		
 	    		// item text
 	    		if(item.getChildElement('ITEM_TEXT_DYNAMIC', null) != null) {
 	    			parseHtmlNode(item.getChildElement('ITEM_TEXT_DYNAMIC', null), lineItem.itemText);
@@ -205,6 +210,7 @@ public with sharing class SAPQuoteXmlParser {
     	
     	public Set<String> itemText { get; set; }
     	public String shipToParty { get; set; }
+    	public String itemNote { get; set; }
     	
     	public SAPQuoteDocumentLineItem() {
     		configuration = new List<SAPConfiguration>();
